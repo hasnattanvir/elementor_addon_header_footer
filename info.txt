@@ -1,0 +1,15 @@
+1. curlware-header-footer-elementor.php
+socoders_elements_footer_widget_function{
+    register new one
+}
+
+2. go widgets-manager/widgets
+- create new one class-authorbio.php
+- getname 'widget name'
+
+3. go widgets-manager/class-widgets-loader.php
+- register name widget_list array
+
+4. admin/class-curlware-admin.php
+- inti page function add new setting
+- make a class back block function ( this function return admin dashboard control icon)
