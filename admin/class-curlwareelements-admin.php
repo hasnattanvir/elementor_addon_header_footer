@@ -665,13 +665,17 @@ class socoders_elements_Admin {
 
 
 	}
-// test my test
+// -------- Register Function -----------
 	/**
      * Print the Section text
      */
     public function CurlWareelements_section_info() {
         //print 'Enter your settings below:';
     }
+
+    /**
+     * Author Bio Pic
+     */
 
     public function curlwareelements_SC_AuthorBiopic_block() {
         ?><div class="checkbox">

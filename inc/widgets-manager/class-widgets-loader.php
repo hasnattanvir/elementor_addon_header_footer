@@ -208,7 +208,7 @@ class Widgets_Loader {
 		// Register Widgets.
 		$curlwareelements_addon_setting = get_option( 'curlwareelements_addon_option' );
 		
-		// My New One
+		// My New One Authorbio
 		if( isset( $curlwareelements_addon_setting['curlwareelements_SC_AuthorBiopic'] ) == 'curlwareelements_SC_AuthorBiopic' ) {
 			Plugin::instance()->widgets_manager->register( new Widgets\Author_Bio() );
 		}

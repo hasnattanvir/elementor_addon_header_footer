@@ -29,7 +29,7 @@ class Author_Bio extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Page Title', 'CurlWare-header-footer-elementor' );
+		return __( 'CW NEW Author Bio', 'CurlWare-header-footer-elementor' );
 	}
 
 	/**
