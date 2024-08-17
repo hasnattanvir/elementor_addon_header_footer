@@ -27,7 +27,7 @@ class SC_Accordion extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Accordion', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Accordion', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -68,7 +68,7 @@ class SC_Accordion extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'Accordion Item', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Accordion Item', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -77,11 +77,11 @@ class SC_Accordion extends Widget_Base {
         $repeater->add_control(
             'name',
             [
-                'label' => esc_html__('Item Title', 'CurlWare-header-footer-elementor'),
+                'label' => esc_html__('Item Title', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('', 'CurlWare-header-footer-elementor'),
+                'default' => esc_html__('', 'curlware-header-footer-elementor'),
                 'label_block' => true,
-                'placeholder' => esc_html__( 'Title', 'CurlWare-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
                 'separator'   => 'before',
             ]
         );
@@ -89,11 +89,11 @@ class SC_Accordion extends Widget_Base {
         $repeater->add_control(
             'description',
             [
-                'label' => esc_html__('Item Description', 'CurlWare-header-footer-elementor'),
+                'label' => esc_html__('Item Description', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::TEXTAREA,
-                'default' => esc_html__('', 'CurlWare-header-footer-elementor'),
+                'default' => esc_html__('', 'curlware-header-footer-elementor'),
                 'label_block' => true,
-                'placeholder' => esc_html__( 'Description', 'CurlWare-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'Description', 'curlware-header-footer-elementor' ),
                 'separator'   => 'before',
             ]
         );
@@ -111,7 +111,7 @@ class SC_Accordion extends Widget_Base {
         $this->add_control(
             'accordion_style',
             [
-                'label'   => esc_html__( 'Select Style', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Select Style', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'style1',               
                 'options' => [                    
@@ -146,7 +146,7 @@ class SC_Accordion extends Widget_Base {
 		$this->start_controls_section(
             '_accordion_style',
             [
-                'label' => esc_html__( 'Title Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Style', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -154,7 +154,7 @@ class SC_Accordion extends Widget_Base {
        $this->add_control(
             'title_color',
             [
-                'label' => esc_html__( 'Title Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .accordion .cart-button-rt' => 'color: {{VALUE}} !important',
@@ -174,7 +174,7 @@ class SC_Accordion extends Widget_Base {
        $this->add_control(
             'title_number_color',
             [
-                'label' => esc_html__( 'Title Number Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Number Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .accordion.style2 .cart-button-rt span' => 'color: {{VALUE}} !important',
@@ -186,7 +186,7 @@ class SC_Accordion extends Widget_Base {
         $this->add_control(
             'desc__color',
             [
-                'label' => esc_html__( 'Desccription Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Desccription Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .accordion .card-body' => 'color: {{VALUE}} !important',

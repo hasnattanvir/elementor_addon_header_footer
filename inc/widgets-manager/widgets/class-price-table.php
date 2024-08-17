@@ -28,7 +28,7 @@ class SC_PriceTable extends \Elementor\Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Price Table', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Price Table', 'curlware-header-footer-elementor' );
 	}
 
 	/**

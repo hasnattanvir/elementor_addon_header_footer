@@ -35,7 +35,7 @@ class Site_Logo extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Site Logo', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Site Logo', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -71,17 +71,17 @@ class Site_Logo extends Widget_Base {
 		$this->start_controls_section(
 			'section_site_image',
 			[
-				'label' => __( 'Site Logo', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Site Logo', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'site_logo_fallback',
 			[
-				'label'       => __( 'Custom Image', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Custom Image', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::SWITCHER,
-				'yes'         => __( 'Yes', 'CurlWare-header-footer-elementor' ),
-				'no'          => __( 'No', 'CurlWare-header-footer-elementor' ),
+				'yes'         => __( 'Yes', 'curlware-header-footer-elementor' ),
+				'no'          => __( 'No', 'curlware-header-footer-elementor' ),
 				'default'     => 'no',
 				'render_type' => 'template',
 			]
@@ -90,7 +90,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'custom_image',
 			[
-				'label'     => __( 'Add Image', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Add Image', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::MEDIA,
 				'dynamic'   => [
 					'active' => true,
@@ -108,26 +108,26 @@ class Site_Logo extends Widget_Base {
 			Group_Control_Image_Size::get_type(),
 			[
 				'name'    => 'site_logo_size',
-				'label'   => __( 'Image Size', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Image Size', 'curlware-header-footer-elementor' ),
 				'default' => 'medium',
 			]
 		);
 		$this->add_responsive_control(
 			'align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'   => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -142,11 +142,11 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'caption_source',
 			[
-				'label'   => __( 'Caption', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Caption', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => [
-					'no'  => __( 'No', 'CurlWare-header-footer-elementor' ),
-					'yes' => __( 'Yes', 'CurlWare-header-footer-elementor' ),
+					'no'  => __( 'No', 'curlware-header-footer-elementor' ),
+					'yes' => __( 'Yes', 'curlware-header-footer-elementor' ),
 				],
 				'default' => 'no',
 			]
@@ -155,10 +155,10 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'caption',
 			[
-				'label'       => __( 'Custom Caption', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Custom Caption', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::TEXT,
 				'default'     => '',
-				'placeholder' => __( 'Enter caption', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => __( 'Enter caption', 'curlware-header-footer-elementor' ),
 				'condition'   => [
 					'caption_source' => 'yes',
 				],
@@ -172,14 +172,14 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'link_to',
 			[
-				'label'   => __( 'Link', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Link', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'default',
 				'options' => [
-					'default' => __( 'Default', 'CurlWare-header-footer-elementor' ),
-					'none'    => __( 'None', 'CurlWare-header-footer-elementor' ),
-					'file'    => __( 'Media File', 'CurlWare-header-footer-elementor' ),
-					'custom'  => __( 'Custom URL', 'CurlWare-header-footer-elementor' ),
+					'default' => __( 'Default', 'curlware-header-footer-elementor' ),
+					'none'    => __( 'None', 'curlware-header-footer-elementor' ),
+					'file'    => __( 'Media File', 'curlware-header-footer-elementor' ),
+					'custom'  => __( 'Custom URL', 'curlware-header-footer-elementor' ),
 				],
 			]
 		);
@@ -187,12 +187,12 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'link',
 			[
-				'label'       => __( 'Link', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Link', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::URL,
 				'dynamic'     => [
 					'active' => true,
 				],
-				'placeholder' => __( 'https://your-link.com', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => __( 'https://your-link.com', 'curlware-header-footer-elementor' ),
 				'condition'   => [
 					'link_to' => 'custom',
 				],
@@ -203,13 +203,13 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'open_lightbox',
 			[
-				'label'     => __( 'Lightbox', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Lightbox', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'default',
 				'options'   => [
-					'default' => __( 'Default', 'CurlWare-header-footer-elementor' ),
-					'yes'     => __( 'Yes', 'CurlWare-header-footer-elementor' ),
-					'no'      => __( 'No', 'CurlWare-header-footer-elementor' ),
+					'default' => __( 'Default', 'curlware-header-footer-elementor' ),
+					'yes'     => __( 'Yes', 'curlware-header-footer-elementor' ),
+					'no'      => __( 'No', 'curlware-header-footer-elementor' ),
 				],
 				'condition' => [
 					'link_to' => 'file',
@@ -220,7 +220,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'view',
 			[
-				'label'   => __( 'View', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'View', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::HIDDEN,
 				'default' => 'traditional',
 			]
@@ -234,7 +234,7 @@ class Site_Logo extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_site_logo_image',
 			[
-				'label' => __( 'Site logo', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Site logo', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -242,7 +242,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'width',
 			[
-				'label'              => __( 'Width', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Width', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'unit' => '%',
@@ -278,7 +278,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'space',
 			[
-				'label'              => __( 'Max Width', 'CurlWare-header-footer-elementor' ) . ' (%)',
+				'label'              => __( 'Max Width', 'curlware-header-footer-elementor' ) . ' (%)',
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'unit' => '%',
@@ -306,7 +306,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'logo_height',
 			[
-				'label'              => __( 'Height', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Height', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'unit' => '%',
@@ -342,7 +342,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'logo_min_height',
 			[
-				'label'              => __( 'Height', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Height', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'unit' => '%',
@@ -386,7 +386,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'site_logo_background_color',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-site-logo-set .sce-site-logo-container' => 'background-color: {{VALUE}};',
@@ -397,16 +397,16 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'site_logo_image_border',
 			[
-				'label'       => __( 'Border Style', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Border Style', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'default'     => 'none',
 				'label_block' => false,
 				'options'     => [
-					'none'   => __( 'None', 'CurlWare-header-footer-elementor' ),
-					'solid'  => __( 'Solid', 'CurlWare-header-footer-elementor' ),
-					'double' => __( 'Double', 'CurlWare-header-footer-elementor' ),
-					'dotted' => __( 'Dotted', 'CurlWare-header-footer-elementor' ),
-					'dashed' => __( 'Dashed', 'CurlWare-header-footer-elementor' ),
+					'none'   => __( 'None', 'curlware-header-footer-elementor' ),
+					'solid'  => __( 'Solid', 'curlware-header-footer-elementor' ),
+					'double' => __( 'Double', 'curlware-header-footer-elementor' ),
+					'dotted' => __( 'Dotted', 'curlware-header-footer-elementor' ),
+					'dashed' => __( 'Dashed', 'curlware-header-footer-elementor' ),
 				],
 				'selectors'   => [
 					'{{WRAPPER}} .sce-site-logo-container .sce-site-logo-img' => 'border-style: {{VALUE}};',
@@ -416,7 +416,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'site_logo_image_border_size',
 			[
-				'label'      => __( 'Border Width', 'CurlWare-header-footer-elementor' ),
+				'label'      => __( 'Border Width', 'curlware-header-footer-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'default'    => [
@@ -438,7 +438,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'site_logo_image_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -456,7 +456,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'image_border_radius',
 			[
-				'label'              => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::DIMENSIONS,
 				'size_units'         => [ 'px', '%' ],
 				'selectors'          => [
@@ -482,14 +482,14 @@ class Site_Logo extends Widget_Base {
 		$this->start_controls_tab(
 			'normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'opacity',
 			[
-				'label'     => __( 'Opacity', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Opacity', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -517,13 +517,13 @@ class Site_Logo extends Widget_Base {
 		$this->start_controls_tab(
 			'hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
 			'opacity_hover',
 			[
-				'label'     => __( 'Opacity', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Opacity', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -540,7 +540,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'background_hover_transition',
 			[
-				'label'     => __( 'Transition Duration', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Transition Duration', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -565,7 +565,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => __( 'Hover Animation', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover Animation', 'curlware-header-footer-elementor' ),
 				'type'  => Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -583,7 +583,7 @@ class Site_Logo extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_caption',
 			[
-				'label'     => __( 'Caption', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Caption', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'caption_source!' => 'none',
@@ -594,7 +594,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'text_color',
 			[
-				'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [
@@ -609,7 +609,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_control(
 			'caption_background_color',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .widget-image-caption' => 'background-color: {{VALUE}};',
@@ -639,7 +639,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'caption_padding',
 			[
-				'label'              => __( 'Padding', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Padding', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::DIMENSIONS,
 				'size_units'         => [ 'px', 'em', '%' ],
 				'selectors'          => [
@@ -651,7 +651,7 @@ class Site_Logo extends Widget_Base {
 		$this->add_responsive_control(
 			'caption_space',
 			[
-				'label'              => __( 'Spacing', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Spacing', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [

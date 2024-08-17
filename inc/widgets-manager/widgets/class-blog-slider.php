@@ -22,7 +22,7 @@ class BlogSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Blog Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Blog Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -89,7 +89,7 @@ class BlogSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'Blog Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Blog Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -187,7 +187,7 @@ class BlogSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_general_settings',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
         $this->add_control(
@@ -685,19 +685,19 @@ class BlogSlider extends Widget_Base {
         $this->add_responsive_control(
             'meta_align',
             [
-                'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::CHOOSE,
                 'options'            => [
                     'space-between'   => [
-                        'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => __( 'Left', 'curlware-header-footer-elementor' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => __( 'Center', 'curlware-header-footer-elementor' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'space-around'  => [
-                        'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => __( 'Right', 'curlware-header-footer-elementor' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -809,7 +809,7 @@ class BlogSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_readmore',
 			[
-				'label' => __( 'Read More', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Read More', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -826,7 +826,7 @@ class BlogSlider extends Widget_Base {
         $this->add_control(
 			'readmore_color',
 			[
-				'label'     => __( 'Readmore Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Readmore Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-transparent-btn' => 'color: {{VALUE}};',
@@ -873,7 +873,7 @@ class BlogSlider extends Widget_Base {
         $this->add_control(
 			'readmore_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-transparent-btn' => 'border-color: {{VALUE}};',
@@ -892,7 +892,7 @@ class BlogSlider extends Widget_Base {
         $this->add_control(
 			'readmore_hover_color',
 			[
-				'label'     => __( 'Readmore Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Readmore Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-transparent-btn:hover' => 'color: {{VALUE}};',
@@ -916,7 +916,7 @@ class BlogSlider extends Widget_Base {
         $this->add_control(
 			'readmore_border_color_hover',
 			[
-				'label'     => __( 'Border Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-transparent-btn' => 'border-color: {{VALUE}};',
@@ -994,19 +994,19 @@ class BlogSlider extends Widget_Base {
         $this->add_responsive_control(
             'meta_box_alignment',
             [
-                'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::CHOOSE,
                 'options'            => [
                     'left'   => [
-                        'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => __( 'Left', 'curlware-header-footer-elementor' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => __( 'Center', 'curlware-header-footer-elementor' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => __( 'Right', 'curlware-header-footer-elementor' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],

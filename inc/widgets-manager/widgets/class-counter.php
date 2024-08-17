@@ -24,7 +24,7 @@ class scCounter extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Counter', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Counter', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -65,7 +65,7 @@ class scCounter extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -84,7 +84,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'icon',
 			[
-				'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 			]
@@ -93,7 +93,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'before_number',
 			[
-				'label'   => __( 'Number Before Text', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Number Before Text', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
 			]
 		);
@@ -101,7 +101,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'counter_number',
 			[
-				'label'   => __( 'Number', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Number', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
 				'default' => __( '550' ),
 			]
@@ -110,7 +110,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'after_number',
 			[
-				'label'   => __( 'Number After Text', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Number After Text', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
 			]
 		);
@@ -118,32 +118,32 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label'   => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Title', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Happy Customer', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Happy Customer', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'heading_text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -166,7 +166,7 @@ class scCounter extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label'     => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'icon[value]!' => '',
@@ -176,7 +176,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'icon_bg',
 			[
-				'label'     => __( 'Icon Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -229,7 +229,7 @@ class scCounter extends Widget_Base {
 		$this->start_controls_section(
 			'number_typography',
 			[
-				'label' => __( 'Number', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Number', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -237,7 +237,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'number_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -273,7 +273,7 @@ class scCounter extends Widget_Base {
 		$this->start_controls_section(
 			'section_heading_typography',
 			[
-				'label' => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Title', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -281,7 +281,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'heading_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -317,7 +317,7 @@ class scCounter extends Widget_Base {
 		$this->start_controls_section(
 			'section_desc_typography',
 			[
-				'label' => __( 'Description', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Description', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -325,7 +325,7 @@ class scCounter extends Widget_Base {
         $this->add_control(
 			'desc_color',
 			[
-				'label'     => __( 'Description Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Description Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -341,7 +341,7 @@ class scCounter extends Widget_Base {
 		$this->start_controls_section(
 			'section_global_style',
 			[
-				'label'     => __( 'Global Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Global Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -349,7 +349,7 @@ class scCounter extends Widget_Base {
 		$this->add_control(
 			'service_bg',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .counter-style-box-two, {{WRAPPER}} .sc-statistics-service-box'   => 'background: {{VALUE}};',
@@ -360,7 +360,7 @@ class scCounter extends Widget_Base {
 		$this->add_responsive_control(
 			'section_padding',
 			[
-				'label'              => __( 'Area Padding', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Area Padding', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::DIMENSIONS,
 				'size_units'         => [ 'px' ],
 				'selectors'          => [
@@ -371,7 +371,7 @@ class scCounter extends Widget_Base {
 		$this->add_responsive_control(
 			'section_margin',
 			[
-				'label'              => __( 'Area Margin', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Area Margin', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::DIMENSIONS,
 				'size_units'         => [ 'px' ],
 				'selectors'          => [

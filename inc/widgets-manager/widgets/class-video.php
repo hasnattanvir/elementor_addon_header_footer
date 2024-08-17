@@ -47,7 +47,7 @@ class Video extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'SC Video', 'CurlWare-header-footer-elementor' );
+		return __( 'SC Video', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -92,27 +92,27 @@ class Video extends Widget_Base {
 		$this->start_controls_section(
 			'section_counter',
 			[
-				'label' => esc_html__( 'Content', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Content', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
 			'video_link',
 			[
-				'label' => esc_html__( 'Enter Link Here', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Enter Link Here', 'curlware-header-footer-elementor' ),
 				'type' => Controls_Manager::TEXT,
 				'default'     => '#',
-				'placeholder' => esc_html__( 'Video link here', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => esc_html__( 'Video link here', 'curlware-header-footer-elementor' ),
 				'separator' => 'before',
 			]
 		);
 		$this->add_control(
 			'description',
 			[
-				'label' => esc_html__( 'Video Description', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Video Description', 'curlware-header-footer-elementor' ),
 				'type' => Controls_Manager::TEXTAREA,
 				'label_block' => true,	
 				'default'     => 'Add your video description here',
-				'placeholder' => esc_html__( 'Add your video description here..', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => esc_html__( 'Add your video description here..', 'curlware-header-footer-elementor' ),
 				'separator' => 'before',
 			]
 			
@@ -124,14 +124,14 @@ class Video extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => esc_html__( 'Content', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Content', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_control(
             'title_color',
             [
-                'label' => esc_html__( 'Content Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-banner-section-area a.popup-video' => 'color: {{VALUE}};',
@@ -143,7 +143,7 @@ class Video extends Widget_Base {
         $this->add_control(
             'title_color_hover',
             [
-                'label' => esc_html__( 'Content Text Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Text Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-banner-section-area a.popup-video:hover' => 'color: {{VALUE}};',
@@ -164,7 +164,7 @@ class Video extends Widget_Base {
         $this->add_responsive_control(
 		    'video_full_area_margin',
 		    [
-		        'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [
@@ -175,7 +175,7 @@ class Video extends Widget_Base {
         $this->add_responsive_control(
 		    'video_inner_area_padding',
 		    [
-		        'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [
@@ -187,7 +187,7 @@ class Video extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'background_gradient_border',
-                'label' => esc_html__( 'Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Color', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .sc-banner-section-area',
             ]
@@ -195,7 +195,7 @@ class Video extends Widget_Base {
         $this->add_control(
             'icon_color',
             [
-                'label' => esc_html__( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-banner-section-area a.popup-video i' => 'color: {{VALUE}}; border: 1px solid {{VALUE}};',
@@ -208,7 +208,7 @@ class Video extends Widget_Base {
         $this->add_control(
             'icon_color_hover',
             [
-                'label' => esc_html__( 'Icon Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-banner-section-area a.popup-video:hover i' => 'color: {{VALUE}}; border: 1px solid {{VALUE}};',
@@ -219,7 +219,7 @@ class Video extends Widget_Base {
         $this->add_responsive_control(
 		    'icon__margin',
 		    [
-		        'label' => esc_html__( 'Icon Margin', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Icon Margin', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [

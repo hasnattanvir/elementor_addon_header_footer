@@ -24,7 +24,7 @@ class Site_Title extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Site Title', 'CurlWare-header-footer-elementor' );
+		return __( 'Site Title', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -65,14 +65,14 @@ class Site_Title extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'before',
 			[
-				'label'   => __( 'Before Title Text', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Before Title Text', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
@@ -83,7 +83,7 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'after',
 			[
-				'label'   => __( 'After Title Text', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'After Title Text', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
@@ -94,7 +94,7 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'icon',
 			[
-				'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 			]
@@ -103,7 +103,7 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'icon_indent',
 			[
-				'label'     => __( 'Icon Spacing', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Spacing', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -122,11 +122,11 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'custom_link',
 			[
-				'label'   => __( 'Link', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Link', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => [
-					'custom'  => __( 'Custom URL', 'CurlWare-header-footer-elementor' ),
-					'default' => __( 'Default', 'CurlWare-header-footer-elementor' ),
+					'custom'  => __( 'Custom URL', 'curlware-header-footer-elementor' ),
+					'default' => __( 'Default', 'curlware-header-footer-elementor' ),
 				],
 				'default' => 'default',
 			]
@@ -135,9 +135,9 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'heading_link',
 			[
-				'label'       => __( 'Link', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Link', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => __( 'https://your-link.com', 'curlware-header-footer-elementor' ),
 				'dynamic'     => [
 					'active' => true,
 				],
@@ -153,16 +153,16 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'size',
 			[
-				'label'   => __( 'Size', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Size', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'default',
 				'options' => [
-					'default' => __( 'Default', 'CurlWare-header-footer-elementor' ),
-					'small'   => __( 'Small', 'CurlWare-header-footer-elementor' ),
-					'medium'  => __( 'Medium', 'CurlWare-header-footer-elementor' ),
-					'large'   => __( 'Large', 'CurlWare-header-footer-elementor' ),
-					'xl'      => __( 'XL', 'CurlWare-header-footer-elementor' ),
-					'xxl'     => __( 'XXL', 'CurlWare-header-footer-elementor' ),
+					'default' => __( 'Default', 'curlware-header-footer-elementor' ),
+					'small'   => __( 'Small', 'curlware-header-footer-elementor' ),
+					'medium'  => __( 'Medium', 'curlware-header-footer-elementor' ),
+					'large'   => __( 'Large', 'curlware-header-footer-elementor' ),
+					'xl'      => __( 'XL', 'curlware-header-footer-elementor' ),
+					'xxl'     => __( 'XXL', 'curlware-header-footer-elementor' ),
 				],
 			]
 		);
@@ -170,15 +170,15 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'heading_tag',
 			[
-				'label'   => __( 'HTML Tag', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'HTML Tag', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'options' => [
-					'h1' => __( 'H1', 'CurlWare-header-footer-elementor' ),
-					'h2' => __( 'H2', 'CurlWare-header-footer-elementor' ),
-					'h3' => __( 'H3', 'CurlWare-header-footer-elementor' ),
-					'h4' => __( 'H4', 'CurlWare-header-footer-elementor' ),
-					'h5' => __( 'H5', 'CurlWare-header-footer-elementor' ),
-					'h6' => __( 'H6', 'CurlWare-header-footer-elementor' ),
+					'h1' => __( 'H1', 'curlware-header-footer-elementor' ),
+					'h2' => __( 'H2', 'curlware-header-footer-elementor' ),
+					'h3' => __( 'H3', 'curlware-header-footer-elementor' ),
+					'h4' => __( 'H4', 'curlware-header-footer-elementor' ),
+					'h5' => __( 'H5', 'curlware-header-footer-elementor' ),
+					'h6' => __( 'H6', 'curlware-header-footer-elementor' ),
 				],
 				'default' => 'h2',
 			]
@@ -187,23 +187,23 @@ class Site_Title extends Widget_Base {
 		$this->add_responsive_control(
 			'heading_text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -225,7 +225,7 @@ class Site_Title extends Widget_Base {
 		$this->start_controls_section(
 			'section_heading_typography',
 			[
-				'label' => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Title', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -242,7 +242,7 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'heading_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -266,22 +266,22 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'blend_mode',
 			[
-				'label'     => __( 'Blend Mode', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Blend Mode', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => [
-					''            => __( 'Normal', 'CurlWare-header-footer-elementor' ),
-					'multiply'    => __( 'Multiply', 'CurlWare-header-footer-elementor' ),
-					'screen'      => __( 'Screen', 'CurlWare-header-footer-elementor' ),
-					'overlay'     => __( 'Overlay', 'CurlWare-header-footer-elementor' ),
-					'darken'      => __( 'Darken', 'CurlWare-header-footer-elementor' ),
-					'lighten'     => __( 'Lighten', 'CurlWare-header-footer-elementor' ),
-					'color-dodge' => __( 'Color Dodge', 'CurlWare-header-footer-elementor' ),
-					'saturation'  => __( 'Saturation', 'CurlWare-header-footer-elementor' ),
-					'color'       => __( 'Color', 'CurlWare-header-footer-elementor' ),
-					'difference'  => __( 'Difference', 'CurlWare-header-footer-elementor' ),
-					'exclusion'   => __( 'Exclusion', 'CurlWare-header-footer-elementor' ),
-					'hue'         => __( 'Hue', 'CurlWare-header-footer-elementor' ),
-					'luminosity'  => __( 'Luminosity', 'CurlWare-header-footer-elementor' ),
+					''            => __( 'Normal', 'curlware-header-footer-elementor' ),
+					'multiply'    => __( 'Multiply', 'curlware-header-footer-elementor' ),
+					'screen'      => __( 'Screen', 'curlware-header-footer-elementor' ),
+					'overlay'     => __( 'Overlay', 'curlware-header-footer-elementor' ),
+					'darken'      => __( 'Darken', 'curlware-header-footer-elementor' ),
+					'lighten'     => __( 'Lighten', 'curlware-header-footer-elementor' ),
+					'color-dodge' => __( 'Color Dodge', 'curlware-header-footer-elementor' ),
+					'saturation'  => __( 'Saturation', 'curlware-header-footer-elementor' ),
+					'color'       => __( 'Color', 'curlware-header-footer-elementor' ),
+					'difference'  => __( 'Difference', 'curlware-header-footer-elementor' ),
+					'exclusion'   => __( 'Exclusion', 'curlware-header-footer-elementor' ),
+					'hue'         => __( 'Hue', 'curlware-header-footer-elementor' ),
+					'luminosity'  => __( 'Luminosity', 'curlware-header-footer-elementor' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} .sce-heading-text' => 'mix-blend-mode: {{VALUE}}',
@@ -294,7 +294,7 @@ class Site_Title extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label'     => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'icon[value]!' => '',
@@ -304,7 +304,7 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'icon_color',
 			[
-				'label'     => __( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -322,7 +322,7 @@ class Site_Title extends Widget_Base {
 		$this->add_control(
 			'icons_hover_color',
 			[
-				'label'     => __( 'Icon Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => [
 					'icon[value]!' => '',

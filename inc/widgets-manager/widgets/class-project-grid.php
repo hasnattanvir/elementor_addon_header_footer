@@ -307,7 +307,7 @@ class ProjectGrid extends Widget_Base {
 		$this->add_control(
 			'border_radius',
 			[
-				'label'     => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [

@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: CurlWare Framework
+ * Plugin Name: CurlWare Header Footer Builder
  * Plugin URI:  https://themeforest.net/user/CurlWare/portfolio
  * Description: CurlWare header footer builder
  * Author:      CurlWare The
  * Author URI:  https://themeforest.net/user/CurlWare/portfolio
- * Text Domain: CurlWare-header-footer-elementor
+ * Text Domain: curlware-header-footer-elementor
  * Domain Path: /languages
  * Version: 1.0.0
  */

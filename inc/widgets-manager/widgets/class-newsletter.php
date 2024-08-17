@@ -33,7 +33,7 @@ class Newsletter extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Newsletter', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Newsletter', 'curlware-header-footer-elementor' );
 	}
 	/**
 	 * Retrieve the widget icon.
@@ -105,14 +105,14 @@ class Newsletter extends Widget_Base {
         $this->start_controls_section(
             '_section_form_wrapper',
             [
-                'label' => esc_html__( 'Form Wrapper', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Form Wrapper', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_responsive_control(
             'form_wrapper_padding',
             [
-                'label' => esc_html__( 'Wrapper Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Wrapper Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -123,7 +123,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'form_wrapper_margin',
             [
-                'label' => esc_html__( 'Wrapper Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Wrapper Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -134,7 +134,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'form_wrapper_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields' => 'background: {{VALUE}}',
@@ -151,7 +151,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'form_wrapper_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -162,7 +162,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'wrapper_p_margin',
             [
-                'label' => esc_html__( 'Wrapper P Tag Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Wrapper P Tag Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ '%', 'px' ],
                 'range' => [
@@ -184,15 +184,15 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'box_horizontal_align',
             [
-                'label' => esc_html__( 'Box Style (Inline / Block)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Box Style (Inline / Block)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex' => [
-                        'title' => esc_html__( 'Inline', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Inline', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-post-list',
                     ],
                     'block' => [
-                        'title' => esc_html__( 'Block', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Block', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-posts-grid',
                     ],
                 ],
@@ -206,19 +206,19 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'box_vertical_align',
             [
-                'label' => esc_html__( 'Vertical Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Vertical Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-v',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Middle', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Middle', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-v',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-v',
                     ],
                 ],
@@ -234,23 +234,23 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'box_direction',
             [
-                'label' => esc_html__( 'Box Direction', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Box Direction', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'row' => [
-                        'title' => esc_html__( 'Row', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Row', 'curlware-header-footer-elementor' ),
                         'icon' => ' eicon-arrow-right',
                     ],
                     'row-reverse' => [
-                        'title' => esc_html__( 'Row Reverse', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Row Reverse', 'curlware-header-footer-elementor' ),
                         'icon' => ' eicon-arrow-left',
                     ],
                     'column' => [
-                        'title' => esc_html__( 'Column ', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Column ', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-arrow-down',
                     ],
                     'column-reverse' => [
-                        'title' => esc_html__( 'Column Reverse', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Column Reverse', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-arrow-up',
                     ],
                 ],
@@ -266,23 +266,23 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'flex_box_h_align',
             [
-                'label' => esc_html__( 'Horizontal Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Horizontal Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Start', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Start', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-h',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-h',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'End', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'End', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-h',
                     ],
                     'space-between' => [
-                        'title' => esc_html__( 'Space Between', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Space Between', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-justify-space-between-h',
                     ],
 
@@ -302,7 +302,7 @@ class Newsletter extends Widget_Base {
         $this->start_controls_section(
             '_section_fields_style',
             [
-                'label' => esc_html__( 'Form Fields', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Form Fields', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -310,7 +310,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_width',
             [
-                'label' => esc_html__( 'Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'unit' => '%',
@@ -342,7 +342,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_height',
             [
-                'label' => esc_html__( 'Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['%', 'px'],
                 'range' => [
@@ -366,7 +366,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -378,7 +378,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_margin',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -390,7 +390,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -404,7 +404,7 @@ class Newsletter extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'field_typography',
-                'label' => esc_html__( 'Typography', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Typography', 'curlware-header-footer-elementor' ),
                 'selector' => '{{WRAPPER}} .mc4wp-form-fields  input',
             ]
         );
@@ -412,7 +412,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'field_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields input[type="email"]' => 'color: {{VALUE}}',
@@ -423,7 +423,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'field_placeholder_color',
             [
-                'label' => esc_html__( 'Placeholder Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Placeholder Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} ::-webkit-input-placeholder' => 'color: {{VALUE}};',
@@ -438,7 +438,7 @@ class Newsletter extends Widget_Base {
         $this->start_controls_tab(
             'tab_field_normal',
             [
-                'label' => esc_html__( 'Normal', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Normal', 'curlware-header-footer-elementor' ),
             ]
         );
 
@@ -461,7 +461,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'field_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields input[type="email"]' => 'background-color: {{VALUE}}',
@@ -474,7 +474,7 @@ class Newsletter extends Widget_Base {
         $this->start_controls_tab(
             'tab_field_focus',
             [
-                'label' => esc_html__( 'Focus', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Focus', 'curlware-header-footer-elementor' ),
             ]
         );
 
@@ -500,7 +500,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'field_focus_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields input[type="email"]:focus' => 'background-color: {{VALUE}}',
@@ -517,7 +517,7 @@ class Newsletter extends Widget_Base {
         $this->start_controls_section(
             '_label',
             [
-                'label' => esc_html__( 'Label', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Label', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -533,7 +533,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'label_color',
             [
-                'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -545,7 +545,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'label_margin',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -560,7 +560,7 @@ class Newsletter extends Widget_Base {
         $this->start_controls_section(
             'submit',
             [
-                'label' => esc_html__( 'Submit Button', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Submit Button', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -570,14 +570,14 @@ class Newsletter extends Widget_Base {
             $this->start_controls_tab(
                 'tab_button_normal',
                 [
-                    'label' => esc_html__( 'Normal', 'CurlWare-header-footer-elementor' ),
+                    'label' => esc_html__( 'Normal', 'curlware-header-footer-elementor' ),
                 ]
             );
 
             $this->add_control(
                 'submit_color',
                 [
-                    'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                    'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'default' => '',
                     'selectors' => [
@@ -589,7 +589,7 @@ class Newsletter extends Widget_Base {
             $this->add_control(
                 'submit_bg_color',
                 [
-                    'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                    'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .mc4wp-form-fields input[type="submit"]' => 'background-color: {{VALUE}};',
@@ -602,14 +602,14 @@ class Newsletter extends Widget_Base {
         $this->start_controls_tab(
             'tab_button_hover',
             [
-                'label' => esc_html__( 'Hover', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Hover', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $this->add_control(
             'submit_hover_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields input[type="submit"]:hover, {{WRAPPER}} .mc4wp-form-fields input[type="submit"]:focus' => 'color: {{VALUE}};',
@@ -620,7 +620,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'submit_hover_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields input[type="submit"]:hover, {{WRAPPER}} .mc4wp-form-fields input[type="submit"]:focus' => 'background-color: {{VALUE}} !important;',
@@ -631,7 +631,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'submit_hover_border_color',
             [
-                'label' => esc_html__( 'Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .mc4wp-form-fields input[type="submit"]:hover, {{WRAPPER}} .mc4wp-form-fields input[type="submit"]:focus' => 'border-color: {{VALUE}};',
@@ -645,7 +645,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_width_btn',
             [
-                'label' => esc_html__( 'Button Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Button Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'unit' => '%',
@@ -678,7 +678,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'field_height_btn',
             [
-                'label' => esc_html__( 'Button Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Button Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'unit' => '%',
@@ -705,7 +705,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'submit_margin',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -717,7 +717,7 @@ class Newsletter extends Widget_Base {
         $this->add_responsive_control(
             'submit_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -745,7 +745,7 @@ class Newsletter extends Widget_Base {
         $this->add_control(
             'submit_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [

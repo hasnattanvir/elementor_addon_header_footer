@@ -24,7 +24,7 @@ class ServiceGrid extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Service Grid', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Service Grid', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -65,7 +65,7 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -115,7 +115,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'icon',
 			[
-				'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
                 'condition' => [
@@ -127,17 +127,17 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label'   => __( 'Service Title', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Service Title', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Service Title', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Service Title', 'curlware-header-footer-elementor' ),
 			]
 		);
         $this->add_control(
             'service_number__',
             [
-                'label'   => __( 'Service Number', 'CurlWare-header-footer-elementor' ),
+                'label'   => __( 'Service Number', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::TEXT,
-                'default' => __( '1', 'CurlWare-header-footer-elementor' ),
+                'default' => __( '1', 'curlware-header-footer-elementor' ),
                 'condition' => [
                     'service_style' => ['style8'],
                 ]
@@ -146,9 +146,9 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'title_link',
 			[
-				'label'       => __( 'Title Link', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Title Link', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'placeholder' => __( 'https://your-link.com', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => __( 'https://your-link.com', 'curlware-header-footer-elementor' ),
                 'condition' =>[
                     'service_style!'=>['style2']
                 ]
@@ -157,17 +157,17 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'service_desc',
 			[
-				'label'   => __( 'Service Description', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Service Description', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXTAREA,
-				'default' => __( 'Busto auctor lectus better best conbia euismot rhoncus dolora gorgeous system nicest does had blessed face winged female', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Busto auctor lectus better best conbia euismot rhoncus dolora gorgeous system nicest does had blessed face winged female', 'curlware-header-footer-elementor' ),
 			]
 		);
         $this->add_control(
             'service_eight_number__',
             [
-                'label'   => __( 'Number', 'CurlWare-header-footer-elementor' ),
+                'label'   => __( 'Number', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::TEXT,
-                'default' => __( '−1,777.64 (1.28%)', 'CurlWare-header-footer-elementor' ),
+                'default' => __( '−1,777.64 (1.28%)', 'curlware-header-footer-elementor' ),
                 'condition' => [
                     'service_style' => ['style2'],
                 ]
@@ -176,7 +176,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_control(
             'service_eight_number_icon',
             [
-                'label'       => __( 'Number Icon', 'CurlWare-header-footer-elementor' ),
+                'label'       => __( 'Number Icon', 'curlware-header-footer-elementor' ),
                 'type'        => Controls_Manager::ICONS,
                 'label_block' => 'true',
                 'condition' => [
@@ -199,9 +199,9 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'read_text',
 			[
-				'label'   => __( 'Read More', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Read More', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Read More', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Read More', 'curlware-header-footer-elementor' ),
 				'dynamic' => [
 					'active' => true,
 				],
@@ -213,7 +213,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'readmore_icon',
 			[
-				'label'       => __( 'Read More Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Read More Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 				'condition' => [
@@ -224,9 +224,9 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'read_link',
 			[
-				'label'       => __( 'Read More Link', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Read More Link', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'placeholder' => __( 'https://your-link.com', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => __( 'https://your-link.com', 'curlware-header-footer-elementor' ),
 				'condition' => [
 					'service_style' => ['style1', 'style3', 'style4'],
 				]
@@ -235,23 +235,23 @@ class ServiceGrid extends Widget_Base {
 		$this->add_responsive_control(
 			'heading_text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -272,7 +272,7 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_section(
 			'section_heading_typography',
 			[
-				'label' => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Title', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -280,7 +280,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'heading_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-services-item .sc-service-content .title, {{WRAPPER}} .sc-about-service-box a.title, {{WRAPPER}} .sc-services-style3 .service-title a, {{WRAPPER}} .sc-service-style-three .title, {{WRAPPER}} .sc-service-content-box .sc-service-text .title, {{WRAPPER}} .sc-about-item .sc-process-content .title, {{Wrapper}} .sc-service-section-area .sc-service-content-box a, {{WRAPPER}} .sc-service-content h4 a,{{WRAPPER}} .sc-service-section-area3 .sc-service-content-box h4 a , {{WRAPPER}} .sc-service-section-area3 .sc-service-content-box h4, {{WRAPPER}} .sc-service-section-area4 .sc-service-content-box h4 a , {{WRAPPER}} .sc-service-section-area4 .sc-service-content-box h4, {{WRAPPER}} .sc-service-section-area7 .sc-service-content-box .sc-text-area h4, {{WRAPPER}} .sc-crupto-section-area .sc-crupto-item .sc-crupto-content-box .sc-content h4' => 'color: {{VALUE}};',
@@ -290,7 +290,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'heading_hover_color',
 			[
-				'label'     => __( 'Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -324,14 +324,14 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_section(
 			'section_desc_typography',
 			[
-				'label' => __( 'Description', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Description', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_control(
 			'desc_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -368,7 +368,7 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label'     => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
                     'icon[value]!' => '',
@@ -378,7 +378,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'icon_bg',
 			[
-				'label'     => __( 'Icon Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => [
 					'icon[value]!' => '',
@@ -392,7 +392,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_control(
             'icon_bg_img_gradiant_title',
             [
-                'label' => esc_html__( 'Icon Background Image & Gradiant', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Background Image & Gradiant', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -408,7 +408,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'icon_hover_bg',
 			[
-				'label'     => __( 'Icon Hover Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Hover Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => [
 					'icon[value]!' => '',
@@ -422,7 +422,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_control(
             'icon_dashed_border_color',
             [
-                'label'     => __( 'Icon Dashed Border Color', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( 'Icon Dashed Border Color', 'curlware-header-footer-elementor' ),
                 'type'      => Controls_Manager::COLOR,
                'condition' => [
                     'service_style' => ['style6'],
@@ -470,7 +470,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control( 
 			'icon_color',
 			[
-				'label'     => __( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => [
 					'icon[value]!' => '',
@@ -485,7 +485,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control( 
 			'icon_hover_color',
 			[
-				'label'     => __( 'Icon Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => [
 					'icon[value]!' => '',
@@ -501,7 +501,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'icon_bg_color',
 			[
-				'label'     => __( 'Icon Hover Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Hover Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'condition' => [
 					'icon[value]!' => '',
@@ -524,7 +524,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'icon_width',
             [
-                'label' => esc_html__( 'Icon Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -550,7 +550,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'icon_height',
             [
-                'label' => esc_html__( 'Icon Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -572,7 +572,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'icon_line_height',
             [
-                'label' => esc_html__( 'Icon Line Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Line Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -611,7 +611,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'border_radiusread',
 			[
-				'label'     => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -634,7 +634,7 @@ class ServiceGrid extends Widget_Base {
         $this->start_controls_section(
             'section_img',
             [
-                'label'     => __( 'Icon Image Style', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( 'Icon Image Style', 'curlware-header-footer-elementor' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'select_icon__' => ['img'],
@@ -644,7 +644,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_control(
             'img__bg',
             [
-                'label'     => __( 'Image Background', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( 'Image Background', 'curlware-header-footer-elementor' ),
                 'type'      => Controls_Manager::COLOR,
 
                 'selectors' => [
@@ -667,7 +667,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'img__width',
             [
-                'label' => esc_html__( 'Image Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -689,7 +689,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'img__height',
             [
-                'label' => esc_html__( 'Image Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -710,7 +710,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'img__line_height',
             [
-                'label' => esc_html__( 'Image Line Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Line Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -751,7 +751,7 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_section(
 			'section_readmore',
 			[
-				'label' => __( 'Read More', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Read More', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'service_style' => ['style1', 'style3', 'style4', 'style6'],
@@ -761,7 +761,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'border_radius2',
 			[
-				'label'     => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -783,14 +783,14 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'readmore_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-transparent-btn' => 'color: {{VALUE}};',
@@ -804,7 +804,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'readmore_bg_color',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-service-btn, {{WRAPPER}} .sc-service-style-three .sc-service-btn, {{WRAPPER}} .sc-transparent-btn:after' => 'background: {{VALUE}};',
@@ -816,7 +816,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'readmore_beforebg_color',
 			[
-				'label'     => __( 'Before Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Before Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-services-item .sc-service-btn:before' => 'background-color: {{VALUE}};',
@@ -827,7 +827,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'readmore_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-service-btn, {{WRAPPER}} .sc-service-style-three .sc-service-btn, {{WRAPPER}} .sc-transparent-btn' => 'border-color: {{VALUE}};',
@@ -839,14 +839,14 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'readmore_hover_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-transparent-btn:hover' => 'color: {{VALUE}};',
@@ -859,7 +859,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_bg_color',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-service-btn:hover, {{WRAPPER}} .sc-transparent-btn:before' => 'background: {{VALUE}};',
@@ -872,7 +872,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-service-btn:hover, {{WRAPPER}} .sc-transparent-btn:hover' => 'border-color: {{VALUE}};',
@@ -888,7 +888,7 @@ class ServiceGrid extends Widget_Base {
         $this->start_controls_section(
 			'section_content_style',
 			[
-				'label'     => __( 'Service Content Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Service Content Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'icon[value]!' => '',
@@ -905,7 +905,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'content_border_radius',
 			[
-				'label'     => __( 'Content Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Content Border Radius', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -941,7 +941,7 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_section(
 			'section_global_style',
 			[
-				'label'     => __( 'Service Global Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Service Global Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1023,14 +1023,14 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_globa_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'service_bg',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-services-item, {{WRAPPER}} .sc-about-service-box, {{WRAPPER}} .sc-service-section-area .sc-service-content-box:after, .sc-service-section-area .sc-service-content-box:before, {{WRAPPER}} .sc-services-style3, {{WRAPPER}} .sc-service-content-box, {{WRAPPER}} .sc-service-section-area4 .sc-service-content-box, {{WRAPPER}} .sc-crupto-section-area .sc-crupto-item'  => 'background: {{VALUE}};',
@@ -1058,13 +1058,13 @@ class ServiceGrid extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_globa_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
 			'service_hover_bg',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-services-style3:hover, {{WRAPPER}} .sc-service-content-box:hover'   => 'background: {{VALUE}};',
@@ -1075,7 +1075,7 @@ class ServiceGrid extends Widget_Base {
 		$this->add_control(
 			'service_hover_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
                     '{{WRAPPER}} .sc-services-style3:hover, {{WRAPPER}} .sc-service-content-box:hover'   => 'border-color: {{VALUE}};',
@@ -1097,7 +1097,7 @@ class ServiceGrid extends Widget_Base {
         $this->start_controls_section(
             'service_number_style',
             [
-                'label'     => __( 'Service Number Style', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( 'Service Number Style', 'curlware-header-footer-elementor' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                  'condition' => [
                         'service_style' => ['style8', 'style2'],
@@ -1119,7 +1119,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'number___width',
             [
-                'label' => esc_html__( 'Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -1145,7 +1145,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'number___height',
             [
-                'label' => esc_html__( 'Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -1170,7 +1170,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'number___line__height',
             [
-                'label' => esc_html__( 'Line Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Line Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -1195,7 +1195,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_control(
             'number___color',
             [
-                'label'     => __( ' Text Color', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( ' Text Color', 'curlware-header-footer-elementor' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-section-area7 .sc-service-content-box .sc-text-number .sc-number, {{WRAPPER}} .sc-crupto-section-area .sc-crupto-item .sc-red-color'   => 'color: {{VALUE}};',
@@ -1213,7 +1213,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_control(
             'number_icon__color',
             [
-                'label'     => __( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-crupto-section-area .sc-crupto-item .sc-red-color i, {{WRAPPER}} .sc-crupto-section-area .sc-crupto-item .sc-red-color svg path'   => 'color: {{VALUE}};',
@@ -1293,7 +1293,7 @@ class ServiceGrid extends Widget_Base {
         $this->add_responsive_control(
             'number___bg__width',
             [
-                'label' => esc_html__( 'Background Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [

@@ -22,7 +22,7 @@ class TestimonialSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Testimonial Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Testimonial Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -154,14 +154,14 @@ class TestimonialSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'project_slider_style',
 			[
-				'label'   => esc_html__( 'Select Style', 'CurlWare-header-footer-elementor' ),
+				'label'   => esc_html__( 'Select Style', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'style1',				
 				'options' => [
@@ -519,7 +519,7 @@ class TestimonialSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_slider_style',
 			[
-				'label' => esc_html__( 'Testimonials Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Testimonials Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -527,7 +527,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'descrition_color',
             [
-                'label' => esc_html__( 'Descrition Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Descrition Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-content-area .sc-testimonial-content .des' => 'color: {{VALUE}};',
@@ -548,7 +548,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'descrition_margin',
             [
-                'label'              => __( 'Description Margin', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Description Margin', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::DIMENSIONS,
                 'size_units'         => ['px', '%'],
                 'selectors'          => [
@@ -559,7 +559,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'descrition_padding',
             [
-                'label'              => __( 'Description Padding', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Description Padding', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::DIMENSIONS,
                 'size_units'         => ['px', '%'],
                 'selectors'          => [
@@ -571,7 +571,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'author_color',
             [
-                'label' => esc_html__( 'Author Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Author Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-auother-texty .title' => 'color: {{VALUE}};',
@@ -593,7 +593,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'author_margin',
             [
-                'label'              => __( 'Author Margin', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Author Margin', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::DIMENSIONS,
                 'size_units'         => ['px', '%'],
                 'selectors'          => [
@@ -604,7 +604,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'author_padding',
             [
-                'label'              => __( 'Author Padding', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Author Padding', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::DIMENSIONS,
                 'size_units'         => ['px', '%'],
                 'selectors'          => [
@@ -615,7 +615,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'degination_color',
             [
-                'label' => esc_html__( 'Degination Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Degination Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-auother-texty span' => 'color: {{VALUE}};',
@@ -637,7 +637,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'designation_margin',
             [
-                'label'              => __( 'Designation Margin', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Designation Margin', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::DIMENSIONS,
                 'size_units'         => ['px', '%'],
                 'selectors'          => [
@@ -648,7 +648,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'designation_padding',
             [
-                'label'              => __( 'Designation Padding', 'CurlWare-header-footer-elementor' ),
+                'label'              => __( 'Designation Padding', 'curlware-header-footer-elementor' ),
                 'type'               => Controls_Manager::DIMENSIONS,
                 'size_units'         => ['px', '%'],
                 'selectors'          => [
@@ -696,7 +696,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'image_overlay',
             [
-                'label' => esc_html__( 'Image Hover Overlay', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Hover Overlay', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'project_slider_style' => 'style3',
@@ -710,23 +710,23 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
 			'text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa-solid fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa-solid fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa-solid fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa-solid fa-align-justify',
 					],
 				],
@@ -741,7 +741,7 @@ class TestimonialSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_navigation_arrow',
 			[
-				'label' => __( 'Navigation Arrow Style', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Navigation Arrow Style', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'slider_nav' => 'true',
@@ -752,7 +752,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_color',
             [
-                'label' => esc_html__( 'Arrow Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-prev i, {{WRAPPER}} .swiper-button-next i' => 'color: {{VALUE}};',
@@ -765,7 +765,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_hover_color',
             [
-                'label' => esc_html__( 'Arrow Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-prev:hover i, {{WRAPPER}} .swiper-button-next:hover i' => 'color: {{VALUE}};',
@@ -778,7 +778,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_bg_color',
             [
-                'label' => esc_html__( 'Arrow Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-prev, {{WRAPPER}} .swiper-button-next' => 'background: {{VALUE}};',
@@ -791,7 +791,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_hover_bg',
             [
-                'label' => esc_html__( 'Arrow Hover Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Hover Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-prev:hover, {{WRAPPER}} .swiper-button-next:hover' => 'background: {{VALUE}};',
@@ -904,7 +904,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
 			'arrow_border_color',
 			[
-				'label' => esc_html__( 'Arrow Border Color', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Arrow Border Color', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -936,7 +936,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
 			'arrow_border_radious_color',
 			[
-				'label' => esc_html__( 'Arrow Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Arrow Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -949,7 +949,7 @@ class TestimonialSlider extends Widget_Base {
         $this->start_controls_section(
 			'navigation_dotts_settings',
 			[
-				'label' => esc_html__( 'Dots Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Dots Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -957,7 +957,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_border_color',
             [
-                'label' => esc_html__( 'Dot Icon Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Dot Icon Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button' => 'border-color: {{VALUE}};',
@@ -969,7 +969,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_icon_background',
             [
-                'label' => esc_html__( 'Dot Icon Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Dot Icon Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button:hover' => 'background: {{VALUE}};',
@@ -983,14 +983,14 @@ class TestimonialSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_content_style',
 			[
-				'label'     => __( 'Global Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Global Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			]
 		);
         $this->add_control(
             'box_bg',
             [
-                'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-testimonial-content' => 'background: {{VALUE}};',
@@ -1031,14 +1031,14 @@ class TestimonialSlider extends Widget_Base {
 			Group_Control_Box_Shadow::get_type(),
 			[
 				'name' => 'box_shadow',
-				'label' => esc_html__( 'Box Shadow', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Box Shadow', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .sc-testimonial-content',
 			]
 		);
         $this->add_responsive_control(
 			'area_border_radius',
 			[
-				'label' => esc_html__( 'Area Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Area Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -1050,14 +1050,14 @@ class TestimonialSlider extends Widget_Base {
         $this->start_controls_section(
             'rating_and_arrow_icon',
             [
-                'label'     => __( 'Rating , Arrow &  Author Image Style', 'CurlWare-header-footer-elementor' ),
+                'label'     => __( 'Rating , Arrow &  Author Image Style', 'curlware-header-footer-elementor' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_responsive_control(
             'rating_image_width',
             [
-                'label' => esc_html__( 'Rating Image Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Rating Image Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
                 'range' => [
@@ -1074,7 +1074,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'rating_margin_img',
             [
-                'label' => esc_html__( 'Rating Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Rating Margin', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -1085,7 +1085,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'rating_padding_img',
             [
-                'label' => esc_html__( 'Rating Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Rating Padding', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -1097,7 +1097,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'arrow_image_width',
             [
-                'label' => esc_html__( 'Arrow Image Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Image Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -1114,7 +1114,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'arrow_margin_img',
             [
-                'label' => esc_html__( 'Arrow Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Margin', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -1125,7 +1125,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'arrow_padding_img',
             [
-                'label' => esc_html__( 'Arrow Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Padding', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -1136,7 +1136,7 @@ class TestimonialSlider extends Widget_Base {
         $this->add_responsive_control(
             'author_image_width',
             [
-                'label' => esc_html__( 'Author Image Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Author Image Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
                 'range' => [

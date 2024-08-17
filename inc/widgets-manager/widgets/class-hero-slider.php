@@ -26,7 +26,7 @@ class HeroSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Hero Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Hero Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -131,7 +131,7 @@ class HeroSlider extends Widget_Base {
         $repeater->add_control(
 			'icon',
 			[
-				'label'       => __( 'Video Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Video Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 			]
@@ -205,14 +205,14 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'hero_slider_style',
 			[
-				'label'   => esc_html__( 'Select Style', 'CurlWare-header-footer-elementor' ),
+				'label'   => esc_html__( 'Select Style', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'style1',				
 				'options' => [
@@ -229,17 +229,17 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
             'sc_pslider_effect',
             [
-                'label' => esc_html__('Slider Effect', 'CurlWare-header-footer-elementor'),
+                'label' => esc_html__('Slider Effect', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'fade',
                 'options' => [
-					'default' => esc_html__('Default', 'CurlWare-header-footer-elementor'),					
-					'fade' => esc_html__('Fade', 'CurlWare-header-footer-elementor'),
-					'flip' => esc_html__('Flip', 'CurlWare-header-footer-elementor'),
-					'cube' => esc_html__('Cube', 'CurlWare-header-footer-elementor'),
-					'coverflow' => esc_html__('Coverflow', 'CurlWare-header-footer-elementor'),
-					'creative' => esc_html__('Creative', 'CurlWare-header-footer-elementor'),
-					'cards' => esc_html__('Cards', 'CurlWare-header-footer-elementor'),
+					'default' => esc_html__('Default', 'curlware-header-footer-elementor'),					
+					'fade' => esc_html__('Fade', 'curlware-header-footer-elementor'),
+					'flip' => esc_html__('Flip', 'curlware-header-footer-elementor'),
+					'cube' => esc_html__('Cube', 'curlware-header-footer-elementor'),
+					'coverflow' => esc_html__('Coverflow', 'curlware-header-footer-elementor'),
+					'creative' => esc_html__('Creative', 'curlware-header-footer-elementor'),
+					'cards' => esc_html__('Cards', 'curlware-header-footer-elementor'),
                 ],
             ]
         );
@@ -247,18 +247,18 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
             'col_xl',
             [
-                'label'   => esc_html__( 'Wide Screen > 1399px', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Wide Screen > 1399px', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 1,
                 'options' => [
-                    '1' => esc_html__( '1 Column', 'CurlWare-header-footer-elementor' ), 
-                    '2' => esc_html__( '2 Column', 'CurlWare-header-footer-elementor' ),
-                    '3' => esc_html__( '3 Column', 'CurlWare-header-footer-elementor' ),
-                    '4' => esc_html__( '4 Column', 'CurlWare-header-footer-elementor' ),
-                    '4.5' => esc_html__( '4.5 Column', 'CurlWare-header-footer-elementor' ),
-                    '5' => esc_html__( '5 Column', 'CurlWare-header-footer-elementor' ),
-                    '5.5' => esc_html__( '5.5 Column', 'CurlWare-header-footer-elementor' ),
-                    '6' => esc_html__( '6 Column', 'CurlWare-header-footer-elementor' ),                 
+                    '1' => esc_html__( '1 Column', 'curlware-header-footer-elementor' ), 
+                    '2' => esc_html__( '2 Column', 'curlware-header-footer-elementor' ),
+                    '3' => esc_html__( '3 Column', 'curlware-header-footer-elementor' ),
+                    '4' => esc_html__( '4 Column', 'curlware-header-footer-elementor' ),
+                    '4.5' => esc_html__( '4.5 Column', 'curlware-header-footer-elementor' ),
+                    '5' => esc_html__( '5 Column', 'curlware-header-footer-elementor' ),
+                    '5.5' => esc_html__( '5.5 Column', 'curlware-header-footer-elementor' ),
+                    '6' => esc_html__( '6 Column', 'curlware-header-footer-elementor' ),                 
                 ],
                 'separator' => 'before',
             ]
@@ -268,15 +268,15 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'col_lg',
             [
-                'label'   => esc_html__( 'Desktops > 1199px', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Desktops > 1199px', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 1,
                 'options' => [
-                    '1' => esc_html__( '1 Column', 'CurlWare-header-footer-elementor' ), 
-                    '2' => esc_html__( '2 Column', 'CurlWare-header-footer-elementor' ),
-                    '3' => esc_html__( '3 Column', 'CurlWare-header-footer-elementor' ),
-                    '4' => esc_html__( '4 Column', 'CurlWare-header-footer-elementor' ),
-                    '6' => esc_html__( '6 Column', 'CurlWare-header-footer-elementor' ),                 
+                    '1' => esc_html__( '1 Column', 'curlware-header-footer-elementor' ), 
+                    '2' => esc_html__( '2 Column', 'curlware-header-footer-elementor' ),
+                    '3' => esc_html__( '3 Column', 'curlware-header-footer-elementor' ),
+                    '4' => esc_html__( '4 Column', 'curlware-header-footer-elementor' ),
+                    '6' => esc_html__( '6 Column', 'curlware-header-footer-elementor' ),                 
                 ],
                 'separator' => 'before',
                             
@@ -287,15 +287,15 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'col_md',
             [
-                'label'   => esc_html__( 'Desktops > 991px', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Desktops > 991px', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 1,         
                 'options' => [
-                    '1' => esc_html__( '1 Column', 'CurlWare-header-footer-elementor' ), 
-                    '2' => esc_html__( '2 Column', 'CurlWare-header-footer-elementor' ),
-                    '3' => esc_html__( '3 Column', 'CurlWare-header-footer-elementor' ),
-                    '4' => esc_html__( '4 Column', 'CurlWare-header-footer-elementor' ),
-                    '6' => esc_html__( '6 Column', 'CurlWare-header-footer-elementor' ),                     
+                    '1' => esc_html__( '1 Column', 'curlware-header-footer-elementor' ), 
+                    '2' => esc_html__( '2 Column', 'curlware-header-footer-elementor' ),
+                    '3' => esc_html__( '3 Column', 'curlware-header-footer-elementor' ),
+                    '4' => esc_html__( '4 Column', 'curlware-header-footer-elementor' ),
+                    '6' => esc_html__( '6 Column', 'curlware-header-footer-elementor' ),                     
                 ],
                 'separator' => 'before',
                             
@@ -306,15 +306,15 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'col_sm',
             [
-                'label'   => esc_html__( 'Tablets > 767px', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Tablets > 767px', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 1,         
                 'options' => [
-                    '1' => esc_html__( '1 Column', 'CurlWare-header-footer-elementor' ), 
-                    '2' => esc_html__( '2 Column', 'CurlWare-header-footer-elementor' ),
-                    '3' => esc_html__( '3 Column', 'CurlWare-header-footer-elementor' ),
-                    '4' => esc_html__( '4 Column', 'CurlWare-header-footer-elementor' ),
-                    '6' => esc_html__( '6 Column', 'CurlWare-header-footer-elementor' ),                 
+                    '1' => esc_html__( '1 Column', 'curlware-header-footer-elementor' ), 
+                    '2' => esc_html__( '2 Column', 'curlware-header-footer-elementor' ),
+                    '3' => esc_html__( '3 Column', 'curlware-header-footer-elementor' ),
+                    '4' => esc_html__( '4 Column', 'curlware-header-footer-elementor' ),
+                    '6' => esc_html__( '6 Column', 'curlware-header-footer-elementor' ),                 
                 ],
                 'separator' => 'before',
                             
@@ -325,15 +325,15 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'col_xs',
             [
-                'label'   => esc_html__( 'Tablets < 768px', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Tablets < 768px', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 1,         
                 'options' => [
-                    '1' => esc_html__( '1 Column', 'CurlWare-header-footer-elementor' ), 
-                    '2' => esc_html__( '2 Column', 'CurlWare-header-footer-elementor' ),
-                    '3' => esc_html__( '3 Column', 'CurlWare-header-footer-elementor' ),
-                    '4' => esc_html__( '4 Column', 'CurlWare-header-footer-elementor' ),
-                    '6' => esc_html__( '6 Column', 'CurlWare-header-footer-elementor' ),                 
+                    '1' => esc_html__( '1 Column', 'curlware-header-footer-elementor' ), 
+                    '2' => esc_html__( '2 Column', 'curlware-header-footer-elementor' ),
+                    '3' => esc_html__( '3 Column', 'curlware-header-footer-elementor' ),
+                    '4' => esc_html__( '4 Column', 'curlware-header-footer-elementor' ),
+                    '6' => esc_html__( '6 Column', 'curlware-header-footer-elementor' ),                 
                 ],
                 'separator' => 'before',
                             
@@ -344,14 +344,14 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slides_ToScroll',
             [
-                'label'   => esc_html__( 'Slide To Scroll', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Slide To Scroll', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 1,         
                 'options' => [
-                    '1' => esc_html__( '1 Item', 'CurlWare-header-footer-elementor' ),
-                    '2' => esc_html__( '2 Item', 'CurlWare-header-footer-elementor' ),
-                    '3' => esc_html__( '3 Item', 'CurlWare-header-footer-elementor' ),
-                    '4' => esc_html__( '4 Item', 'CurlWare-header-footer-elementor' ),                   
+                    '1' => esc_html__( '1 Item', 'curlware-header-footer-elementor' ),
+                    '2' => esc_html__( '2 Item', 'curlware-header-footer-elementor' ),
+                    '3' => esc_html__( '3 Item', 'curlware-header-footer-elementor' ),
+                    '4' => esc_html__( '4 Item', 'curlware-header-footer-elementor' ),                   
                 ],
                 'separator' => 'before',
                             
@@ -362,12 +362,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_dots',
             [
-                'label'   => esc_html__( 'Navigation Dots', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Navigation Dots', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 'false',
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),              
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',
                             
@@ -378,12 +378,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_nav',
             [
-                'label'   => esc_html__( 'Navigation Nav', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Navigation Nav', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 'false',           
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),              
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',            
             ]
@@ -393,12 +393,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_nav_show',
             [
-                'label'   => esc_html__( 'Navigation Visible', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Navigation Visible', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 'hover_visible',           
                 'options' => [
-                    'hover_visible' => esc_html__( 'Hover Visible', 'CurlWare-header-footer-elementor' ),
-                    'hover_always' => esc_html__( 'Always Visible', 'CurlWare-header-footer-elementor' ),              
+                    'hover_visible' => esc_html__( 'Hover Visible', 'curlware-header-footer-elementor' ),
+                    'hover_always' => esc_html__( 'Always Visible', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -414,12 +414,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_autoplay',
             [
-                'label'   => esc_html__( 'Autoplay', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Autoplay', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 'false',           
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),              
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',
                             
@@ -430,15 +430,15 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_autoplay_speed',
             [
-                'label'   => esc_html__( 'Autoplay Slide Speed', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Autoplay Slide Speed', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 3000,          
                 'options' => [
-                    '1000' => esc_html__( '1 Seconds', 'CurlWare-header-footer-elementor' ),
-                    '2000' => esc_html__( '2 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '3000' => esc_html__( '3 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '4000' => esc_html__( '4 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '5000' => esc_html__( '5 Seconds', 'CurlWare-header-footer-elementor' ), 
+                    '1000' => esc_html__( '1 Seconds', 'curlware-header-footer-elementor' ),
+                    '2000' => esc_html__( '2 Seconds', 'curlware-header-footer-elementor' ), 
+                    '3000' => esc_html__( '3 Seconds', 'curlware-header-footer-elementor' ), 
+                    '4000' => esc_html__( '4 Seconds', 'curlware-header-footer-elementor' ), 
+                    '5000' => esc_html__( '5 Seconds', 'curlware-header-footer-elementor' ), 
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -451,15 +451,15 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_interval',
             [
-                'label'   => esc_html__( 'Autoplay Interval', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Autoplay Interval', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 3000,          
                 'options' => [
-                    '5000' => esc_html__( '5 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '4000' => esc_html__( '4 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '3000' => esc_html__( '3 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '2000' => esc_html__( '2 Seconds', 'CurlWare-header-footer-elementor' ), 
-                    '1000' => esc_html__( '1 Seconds', 'CurlWare-header-footer-elementor' ),     
+                    '5000' => esc_html__( '5 Seconds', 'curlware-header-footer-elementor' ), 
+                    '4000' => esc_html__( '4 Seconds', 'curlware-header-footer-elementor' ), 
+                    '3000' => esc_html__( '3 Seconds', 'curlware-header-footer-elementor' ), 
+                    '2000' => esc_html__( '2 Seconds', 'curlware-header-footer-elementor' ), 
+                    '1000' => esc_html__( '1 Seconds', 'curlware-header-footer-elementor' ),     
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -472,12 +472,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_stop_on_interaction',
             [
-                'label'   => esc_html__( 'Stop On Interaction', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Stop On Interaction', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'false',               
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),              
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -490,12 +490,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_stop_on_hover',
             [
-                'label'   => esc_html__( 'Stop on Hover', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Stop on Hover', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'false',               
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),              
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -508,12 +508,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_loop',
             [
-                'label'   => esc_html__( 'Loop', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Loop', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'false',
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),
                 ],
                 'separator' => 'before',
                             
@@ -524,12 +524,12 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_centerMode',
             [
-                'label'   => esc_html__( 'Center Mode', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Center Mode', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'false',
                 'options' => [
-                    'true' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor' ),
-                    'false' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor' ),
+                    'true' => esc_html__( 'Enable', 'curlware-header-footer-elementor' ),
+                    'false' => esc_html__( 'Disable', 'curlware-header-footer-elementor' ),
                 ],
                 'separator' => 'before',
                             
@@ -540,7 +540,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'item_gap_custom',
             [
-                'label' => esc_html__( 'Item Gap', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Item Gap', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'show_label' => true,               
                 'range' => [
@@ -569,7 +569,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'slider_gobel_style',
 			[
-				'label' => esc_html__( 'Global Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Global Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -611,7 +611,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'sec_bg',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .sc-image-layer' => 'background: {{VALUE}};',
@@ -628,7 +628,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'slider_title_style',
 			[
-				'label' => esc_html__( 'Title Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Title Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -636,7 +636,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_title_color',
             [
-                'label' => esc_html__( 'Title Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .slider-title' => 'color: {{VALUE}};',
@@ -674,7 +674,7 @@ class HeroSlider extends Widget_Base {
 		$this->start_controls_section(
 			'slider_subt_title_style',
 			[
-				'label' => esc_html__( 'Subtitle Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Subtitle Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -682,7 +682,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(  
             'sub_title_color',
             [
-                'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-subtitle' => 'color: {{VALUE}};',
@@ -693,7 +693,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(  
             'sub_title_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-subtitle' => 'background: {{VALUE}};',
@@ -737,7 +737,7 @@ class HeroSlider extends Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'header_btn_border',
-				'label' => esc_html__( 'Border', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Border', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .sc-slider-subtitle',
 			]
 		);
@@ -746,7 +746,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'slider_desc_style',
 			[
-				'label' => esc_html__( 'Description Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Description Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -754,7 +754,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'slider_desc_color',
             [
-                'label' => esc_html__( 'Description Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Description Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .slider-desc' => 'color: {{VALUE}};',
@@ -789,7 +789,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'video_icon_style',
 			[
-				'label' => esc_html__( 'Video Icon Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Video Icon Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -797,7 +797,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'video_icon_color',
             [
-                'label' => esc_html__( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .video-area i' => 'color: {{VALUE}};',
@@ -809,7 +809,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'video_icon_hover_color',
             [
-                'label' => esc_html__( 'Icon Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .video-area i:hover' => 'color: {{VALUE}};',
@@ -821,7 +821,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'txt_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .video-area .sc-text' => 'color: {{VALUE}};',
@@ -847,7 +847,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_readmore',
 			[
-				'label' => __( 'Button Style One', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Button Style One', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -855,7 +855,7 @@ class HeroSlider extends Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'btn_border_radius',
-				'label' => esc_html__( 'Border', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Border', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .sc-primary-btn',
 			]
 		);
@@ -873,7 +873,7 @@ class HeroSlider extends Widget_Base {
         $this->add_responsive_control(
 			'btn_border_radious_color',
 			[
-				'label' => esc_html__( 'Shape Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Shape Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -885,14 +885,14 @@ class HeroSlider extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'readmore_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn' => 'color: {{VALUE}};',
@@ -903,7 +903,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_bg_color',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn:after' => 'background: {{VALUE}};',
@@ -914,7 +914,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn' => 'border-color: {{VALUE}};',
@@ -927,14 +927,14 @@ class HeroSlider extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'readmore_hover_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn:hover' => 'color: {{VALUE}};',
@@ -945,7 +945,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_bg_color',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn:before' => 'background: {{VALUE}};',
@@ -956,7 +956,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn:hover' => 'border-color: {{VALUE}};',
@@ -971,7 +971,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_readmore_two',
 			[
-				'label' => __( 'Button Style Two', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Button Style Two', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -979,7 +979,7 @@ class HeroSlider extends Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'btn_border_radius3',
-				'label' => esc_html__( 'Border', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Border', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn',
 			]
 		);
@@ -1008,7 +1008,7 @@ class HeroSlider extends Widget_Base {
         $this->add_responsive_control(
 			'ntn_border_radious_color2',
 			[
-				'label' => esc_html__( 'Shape Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Shape Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -1020,14 +1020,14 @@ class HeroSlider extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_normal_2',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'readmore_color2',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn' => 'color: {{VALUE}};',
@@ -1038,7 +1038,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_bg_color2',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn:after' => 'background: {{VALUE}};',
@@ -1049,7 +1049,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_border_color2',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn' => 'border-color: {{VALUE}};',
@@ -1060,7 +1060,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_border_color3',
 			[
-				'label'     => __( 'Border Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn:hover' => 'border-color: {{VALUE}};',
@@ -1073,14 +1073,14 @@ class HeroSlider extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_hover3',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'readmore_hover_color2',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn:hover' => 'color: {{VALUE}};',
@@ -1091,7 +1091,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_bg_color2',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn:before' => 'background: {{VALUE}};',
@@ -1102,7 +1102,7 @@ class HeroSlider extends Widget_Base {
 		$this->add_control(
 			'readmore_hover_border_color2',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-slider-btn2 .sc-transparent-btn:hover' => 'border-color: {{VALUE}};',
@@ -1117,7 +1117,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'shape_style',
 			[
-				'label' => __( 'Shape Style', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Shape Style', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1125,7 +1125,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'shape_bg_color',
             [
-                'label' => esc_html__( 'Shape Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Shape Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-slider-section .swiper-slide .shape-overly-one' => 'background: {{VALUE}};',
@@ -1137,7 +1137,7 @@ class HeroSlider extends Widget_Base {
         $this->add_responsive_control(
 			'shape_border_radious_color',
 			[
-				'label' => esc_html__( 'Shape Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Shape Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -1217,7 +1217,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_navigation_dots',
 			[
-				'label' => __( 'Navigation Dots Style', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Navigation Dots Style', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'slider_dots' => 'true',
@@ -1228,7 +1228,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'navigation_dots_color',
             [
-                'label' => esc_html__( 'Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-pagination-bullet' => 'border-color: {{VALUE}};',
@@ -1239,7 +1239,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'navigation_dots_active_ecolor',
             [
-                'label' => esc_html__( 'Active Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Active Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-pagination-bullet-active' => 'background: {{VALUE}};',
@@ -1252,13 +1252,13 @@ class HeroSlider extends Widget_Base {
          $this->add_control(
             'dots_position',
             [
-                'label'   => esc_html__( 'Dots Position', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Dots Position', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,  
                 'default' => 'dots_left',         
                 'options' => [
-                    'dots_left' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ), 
-                    'dots_right' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
-                    'dots_bottom' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),              
+                    'dots_left' => esc_html__( 'Left', 'curlware-header-footer-elementor' ), 
+                    'dots_right' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
+                    'dots_bottom' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),              
                 ],
                 'separator' => 'before',
                             
@@ -1270,7 +1270,7 @@ class HeroSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_navigation_arrow',
 			[
-				'label' => __( 'Navigation Arrow Style', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Navigation Arrow Style', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'slider_nav' => 'true',
@@ -1281,7 +1281,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_color',
             [
-                'label' => esc_html__( 'Arrow Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-prev:after' => 'color: {{VALUE}};',
@@ -1295,7 +1295,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_hover_color',
             [
-                'label' => esc_html__( 'Arrow Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:hover:after' => 'color: {{VALUE}};',
@@ -1309,7 +1309,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_bg_color',
             [
-                'label' => esc_html__( 'Arrow Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:after' => 'background: {{VALUE}};',
@@ -1323,7 +1323,7 @@ class HeroSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_hover_bg',
             [
-                'label' => esc_html__( 'Arrow Hover Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Arrow Hover Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:hover:after' => 'background: {{VALUE}};',
@@ -1431,7 +1431,7 @@ class HeroSlider extends Widget_Base {
         $this->add_responsive_control(
 			'arrow_border_radious_color',
 			[
-				'label' => esc_html__( 'Arrow Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Arrow Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [

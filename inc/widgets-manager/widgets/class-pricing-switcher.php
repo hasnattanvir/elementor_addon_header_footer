@@ -42,7 +42,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
      * @return string Widget title.
      */
     public function get_title() {
-        return esc_html__( 'Pricing Switcher', 'CurlWare-header-footer-elementor' );
+        return esc_html__( 'Pricing Switcher', 'curlware-header-footer-elementor' );
     }
 
     /**
@@ -71,7 +71,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_price',
             [
-                'label' => esc_html__( 'Pricing Table', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Pricing Table', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -80,12 +80,12 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'price_showhide',
             [
-                'label' => esc_html__( 'Price Show/Hide', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Price Show/Hide', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'yes',
                 'options' => [
-                    'yes' => esc_html__( 'Yes', 'CurlWare-header-footer-elementor' ),
-                    'no' => esc_html__( 'No', 'CurlWare-header-footer-elementor' ),
+                    'yes' => esc_html__( 'Yes', 'curlware-header-footer-elementor' ),
+                    'no' => esc_html__( 'No', 'curlware-header-footer-elementor' ),
                 ],                
                 'separator' => 'before',
             ]
@@ -94,7 +94,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'monthly_title',
             [
-                'label' => esc_html__( 'Monthly Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Monthly Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
                 'default' => 'Monthly',
                 'condition' => [
@@ -106,7 +106,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'yearly_title',
             [
-                'label' => esc_html__( 'Yearly Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Yearly Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
                 'default' => 'Yearly',
                 'condition' => [
@@ -120,7 +120,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'monthly_options',
             [
-                'label' => esc_html__( 'Monthly Pricing Here', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Monthly Pricing Here', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -129,16 +129,16 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'title',
             [
-                'label' => esc_html__( 'Title', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default' => esc_html__( 'Basic', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Basic', 'curlware-header-footer-elementor' ),
             ]
         );
         $repeater->add_control(
             'first_image',
             [
-                'label' => esc_html__( 'Choose Image', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Choose Image', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'separator' => 'before',
             ]
@@ -147,25 +147,25 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'price',
             [
-                'label' => esc_html__( 'Price', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Price', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( '$29.00', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( '$29.00', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'description',
             [
-                'label' => esc_html__( 'Monthly', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Monthly', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Monthly Text', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Monthly Text', 'curlware-header-footer-elementor' ),
             ]
         );
         
         $repeater->add_control(
             'badge',
             [
-                'label' => esc_html__( 'Badge Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Badge Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
             ]
         );
@@ -173,20 +173,20 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'features',
             [
-                'label'   => esc_html__( 'Features (Use List Style)', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Features (Use List Style)', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::WYSIWYG,
                 'rows'    => 10, 
-                'default' => esc_html__( '1 Users', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( '1 Users', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'button_text',
             [
-                'label' => esc_html__( 'Button Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Button Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Get Started', 'CurlWare-header-footer-elementor' ),
-                'placeholder' => esc_html__( 'Type button text here', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Get Started', 'curlware-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'Type button text here', 'curlware-header-footer-elementor' ),
                 'label_block' => false,
             ]
         );
@@ -194,10 +194,10 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'button_link',
             [
-                'label' => esc_html__( 'Link', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Link', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
-                'placeholder' => esc_html__( 'https://example.com/', 'CurlWare-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'https://example.com/', 'curlware-header-footer-elementor' ),
                 'dynamic' => [
                     'active' => true,
                 ],
@@ -208,7 +208,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'yearly_options',
             [
-                'label' => esc_html__( 'Yearly Pricing Here', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Yearly Pricing Here', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -217,16 +217,16 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'title_yearly',
             [
-                'label' => esc_html__( 'Title', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default' => esc_html__( 'Basic', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Basic', 'curlware-header-footer-elementor' ),
             ]
         );
         $repeater->add_control(
             'second_image',
             [
-                'label' => esc_html__( 'Choose Image', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Choose Image', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'separator' => 'before',
             ]
@@ -235,25 +235,25 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'price_yearly',
             [
-                'label' => esc_html__( 'Price', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Price', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( '$59.00', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( '$59.00', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'description_yearly',
             [
-                'label' => esc_html__( 'Yearly', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Yearly', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Yearly Text', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Yearly Text', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'badge_yearly',
             [
-                'label' => esc_html__( 'Badge Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Badge Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
             ]
         );
@@ -261,20 +261,20 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'features_yearly',
             [
-                'label'   => esc_html__( 'Features (Use List Style)', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Features (Use List Style)', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::WYSIWYG,
                 'rows'    => 10,
-                'default' => esc_html__( '1 Users', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( '1 Users', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'button_text_yearly',
             [
-                'label' => esc_html__( 'Button Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Button Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Get Started', 'CurlWare-header-footer-elementor' ),
-                'placeholder' => esc_html__( 'Type button text here', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Get Started', 'curlware-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'Type button text here', 'curlware-header-footer-elementor' ),
                 'label_block' => false,
             ]
         );
@@ -282,10 +282,10 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $repeater->add_control(
             'button_link_yearly',
             [
-                'label' => esc_html__( 'Link', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Link', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
-                'placeholder' => esc_html__( 'https://example.com/', 'CurlWare-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'https://example.com/', 'curlware-header-footer-elementor' ),
                 'dynamic' => [
                     'active' => true,
                 ],
@@ -305,13 +305,13 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'show_content_icon',
             [
-                'label' => esc_html__( 'Show Content List Icon', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Show Content List Icon', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => esc_html__( 'Default', 'CurlWare-header-footer-elementor' ),
-                    'none' => esc_html__( 'Hide', 'CurlWare-header-footer-elementor' ),
-                    'inline-block' => esc_html__( 'Show', 'CurlWare-header-footer-elementor' ),
+                    '' => esc_html__( 'Default', 'curlware-header-footer-elementor' ),
+                    'none' => esc_html__( 'Hide', 'curlware-header-footer-elementor' ),
+                    'inline-block' => esc_html__( 'Show', 'curlware-header-footer-elementor' ),
 
                 ],
                 'selectors' => [
@@ -322,13 +322,13 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'show_header_image',
             [
-                'label' => esc_html__( 'Show Header Image', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Show Header Image', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SELECT,
                 'default' => 'none',
                 'options' => [
-                    '' => esc_html__( 'Default', 'CurlWare-header-footer-elementor' ),
-                    'none' => esc_html__( 'Hide', 'CurlWare-header-footer-elementor' ),
-                    'flex' => esc_html__( 'Show', 'CurlWare-header-footer-elementor' ),
+                    '' => esc_html__( 'Default', 'curlware-header-footer-elementor' ),
+                    'none' => esc_html__( 'Hide', 'curlware-header-footer-elementor' ),
+                    'flex' => esc_html__( 'Show', 'curlware-header-footer-elementor' ),
 
                 ],
                 'selectors' => [
@@ -342,7 +342,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_style_months',
             [
-                'label' => esc_html__( 'Monthly & Yearly Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Monthly & Yearly Style', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -350,23 +350,23 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'pricing_align_style',
             [
-                'label' => esc_html__( 'Pricing Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Pricing Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justify', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Justify', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-justify',
                     ],
                 ],
@@ -379,7 +379,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'background_colors_fie',
-                'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .pricing-switcher .fieldset',
             ]
@@ -397,7 +397,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 			'pricing_switcher_position_y_top',
 			[
-				'label' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -408,7 +408,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 			'pricing_switcher_position_x_right',
 			[
-				'label' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -419,7 +419,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 			'pricing_switcher_position_y_bottom',
 			[
-				'label' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -430,7 +430,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 			'pricing_switcher_position_x_left',
 			[
-				'label' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -442,7 +442,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'switcher_bg_heading',
             [
-                'label' => esc_html__( 'Switcher Color (Normal)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Switcher Color (Normal)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -452,7 +452,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'switcher_bg_color',
-                'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .pricing-switcher .switch',
             ]
@@ -461,7 +461,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'switcher_normal_color',
             [
-                'label' => esc_html__( 'Switcher Color (Normal)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Switcher Color (Normal)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .pricing-switcher label' => 'color: {{VALUE}};',
@@ -472,7 +472,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'switcher_active_color',
             [
-                'label' => esc_html__( 'Switcher Color (Active)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Switcher Color (Active)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .pricing-switcher .fieldset.mnt-ac .rs-mnt, .pricing-switcher .fieldset.mnt-acs .rs-yrs' => 'color: {{VALUE}} !important;',
@@ -483,7 +483,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'fieldset_max_width',
 			[
-				'label' => esc_html__( 'Fieldset Width', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Fieldset Width', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -502,7 +502,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'yearly_position',
 			[
-				'label' => esc_html__( 'Yearly Left Position', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Yearly Left Position', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -523,7 +523,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name' => 'switcher_typography',
-                'label' => esc_html__( 'Typography', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Typography', 'curlware-header-footer-elementor' ),
                 'selector' => '{{WRAPPER}} .pricing-switcher label',
             ]
         );
@@ -531,7 +531,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'year_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -543,7 +543,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'year_margin',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -570,7 +570,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_style_general',
             [
-                'label' => esc_html__( 'Item Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Item Style', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -578,12 +578,12 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'gradient_color_showhide',
             [
-                'label'   => esc_html__( 'Gradient Color', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Gradient Color', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'gradient_disable',
                 'options' => [                  
-                    'gradient_enable' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor'),
-                    'gradient_disable' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor'),
+                    'gradient_enable' => esc_html__( 'Enable', 'curlware-header-footer-elementor'),
+                    'gradient_disable' => esc_html__( 'Disable', 'curlware-header-footer-elementor'),
                 ],
             ]
         );
@@ -591,23 +591,23 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'align',
             [
-                'label' => esc_html__( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justify', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Justify', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-justify',
                     ],
                 ],
@@ -622,7 +622,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'background_color',
-                'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .pricing-wrapper > li',
             ]
@@ -633,7 +633,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'item_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -645,7 +645,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'title_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -657,7 +657,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'item_style_margin',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -680,7 +680,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'box_shadow_hover_title',
             [
-                'label' => esc_html__( 'Hover Box-show', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Hover Box-show', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
             ]
         );
@@ -702,7 +702,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_style_header',
             [
-                'label' => esc_html__( 'Header Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Header Style', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -710,7 +710,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'headtitle_color',
             [
-                'label' => esc_html__( 'Title Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header h3' => 'color: {{VALUE}};',
@@ -721,7 +721,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [   
-                'label' => esc_html__( 'Title Typography', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Typography', 'curlware-header-footer-elementor' ),
                 'name' => 'title_typography',
                 'selector' => '{{WRAPPER}} .sc-pricing-container .pricing-header h3',
             ]
@@ -729,7 +729,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'title_margin__',
             [
-                'label' => esc_html__( 'Title Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -749,15 +749,15 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'box_horizontal_align',
             [
-                'label' => esc_html__( 'Box Style (Inline / Block)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Box Style (Inline / Block)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex' => [
-                        'title' => esc_html__( 'Inline', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Inline', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-post-list',
                     ],
                     'block' => [
-                        'title' => esc_html__( 'Block', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Block', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-posts-grid',
                     ],
                 ],
@@ -771,19 +771,19 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'box_vertical_align',
             [
-                'label' => esc_html__( 'Vertical Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Vertical Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-v',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Middle', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Middle', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-v',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-v',
                     ],
                 ],
@@ -799,23 +799,23 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'flex_box_h_align',
             [
-                'label' => esc_html__( 'Horizontal Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Horizontal Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Start', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Start', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-h',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-h',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'End', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'End', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-h',
                     ],
                     'space-between' => [
-                        'title' => esc_html__( 'Space Between', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Space Between', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-justify-space-between-h',
                     ],
 
@@ -841,15 +841,15 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'box_p_horizontal_align',
             [
-                'label' => esc_html__( 'Box Style (Inline / Block)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Box Style (Inline / Block)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex' => [
-                        'title' => esc_html__( 'Inline', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Inline', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-post-list',
                     ],
                     'block' => [
-                        'title' => esc_html__( 'Block', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Block', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-posts-grid',
                     ],
                 ],
@@ -863,19 +863,19 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'box_p_vertical_align',
             [
-                'label' => esc_html__( 'Vertical Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Vertical Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-v',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Middle', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Middle', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-v',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-v',
                     ],
                 ],
@@ -891,23 +891,23 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'flex_box_p_h_align',
             [
-                'label' => esc_html__( 'Horizontal Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Horizontal Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Start', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Start', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-h',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-h',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'End', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'End', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-h',
                     ],
                     'space-between' => [
-                        'title' => esc_html__( 'Space Between', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Space Between', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-justify-space-between-h',
                     ],
 
@@ -924,23 +924,23 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'flex_box_p_h_direction',
             [
-                'label' => esc_html__( 'Flex Direction', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Flex Direction', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'column' => [
-                        'title' => esc_html__( 'Column', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Column', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-h',
                     ],
                     'column-reverse' => [
-                        'title' => esc_html__( 'Column Reverse', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Column Reverse', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-h',
                     ],
                     'row' => [
-                        'title' => esc_html__( 'Row', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Row', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-h',
                     ],
                     'row-reverse' => [
-                        'title' => esc_html__( 'Row Reverse', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Row Reverse', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-justify-space-between-h',
                     ],
 
@@ -957,7 +957,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'price_color',
             [
-                'label' => esc_html__( 'Price Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Price Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header .price' => 'color: {{VALUE}};',
@@ -971,7 +971,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'btn_border_gradient_heading_price',
             [
-                'label' => esc_html__( 'Price Gradient Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Price Gradient Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'gradient_color' => 'gradient_enable',
@@ -983,7 +983,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name' => 'price_gradient_color',
-                'label' => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => __( 'Background Color', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .gradient_enable .pricing-header .price',
                 'condition' => [
@@ -995,7 +995,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [   
-                'label' => esc_html__( 'Price Typography', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Price Typography', 'curlware-header-footer-elementor' ),
                 'name' => 'price_typography',
                 'selector' => '{{WRAPPER}} .sc-pricing-container .pricing-header .price',
             ]
@@ -1004,7 +1004,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'title_paddings',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1016,7 +1016,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'des_list_color',
             [
-                'label' => esc_html__( 'Description Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Description Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header .price-item .price span' => 'color: {{VALUE}}; opacity:1;',
@@ -1027,7 +1027,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [   
-                'label' => esc_html__( 'Description Typography', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Description Typography', 'curlware-header-footer-elementor' ),
                 'name' => 'des_typography',
                 'selector' => '{{WRAPPER}} .sc-pricing-container .pricing-header .price-item .price span',
             ]
@@ -1035,7 +1035,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'short_desc_margin',
             [
-                'label' => esc_html__( ' Description Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( ' Description Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header .price-item .price span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -1046,7 +1046,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'content_area_margin',
             [
-                'label' => esc_html__( 'Area Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Area Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -1057,7 +1057,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_border',
             [
-                'label' => esc_html__( 'Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header:after' => 'background: {{VALUE}}; opacity:1;',
@@ -1068,7 +1068,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'header_buttom_bg',
             [
-                'label' => esc_html__( 'Header Bottom Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Header Bottom Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
             ]
         );
@@ -1086,7 +1086,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_icon_img_style',
             [
-                'label' => esc_html__( 'Header Icon Style   ', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Header Icon Style   ', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'condition'=>[
                     'show_header_image'=>'flex'
@@ -1096,7 +1096,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_icon_margin_',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-header .sc-price-image' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -1109,7 +1109,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'heading_icon_bg_color',
             [
-                'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container ul.pricing-list li.exclusive ul.pricing-wrapper li .pricing-header .sc-price-image' => 'background: {{VALUE}}; opacity:1;',
@@ -1122,7 +1122,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'heading_icon_b_r',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1136,7 +1136,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'heading_icon_width_wrapper',
             [
-                'label' => esc_html__( 'Wrapper Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Wrapper Width', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -1150,7 +1150,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'heading_icon_height_wrapper',
             [
-                'label' => esc_html__( 'Wrapper Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Wrapper Height', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -1164,7 +1164,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'heading_icon_width_',
             [
-                'label' => esc_html__( 'Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Width', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -1178,7 +1178,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'heading_icon_height_',
             [
-                'label' => esc_html__( 'Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Height', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -1196,7 +1196,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_style_badge',
             [
-                'label' => esc_html__( 'Badge Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Badge Style', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1204,19 +1204,19 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'badge_align',
             [
-                'label' => esc_html__( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
              
@@ -1232,7 +1232,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
 		    Group_Control_Typography::get_type(),
 		    [
 		        'name' => 'badge_typography',
-		        'label' => esc_html__( 'Typography', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Typography', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .pricebadge',
 		        
 		    ]
@@ -1240,7 +1240,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'badge_color',
             [
-                'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .pricebadge' => 'color: {{VALUE}};',                   
@@ -1250,7 +1250,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 		    'badge_padding',
 		    [
-		        'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [
@@ -1261,7 +1261,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 		    'badge_margin',
 		    [
-		        'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [
@@ -1272,7 +1272,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
 		    'badge_border_radius',
 		    [
-		        'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [
@@ -1284,7 +1284,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'badge_background',
-                'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .pricebadge',
             ]
@@ -1309,7 +1309,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'badge_width',
 			[
-				'label' => esc_html__( 'Width', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Width', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1320,20 +1320,20 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'badge_align_width_base',
             [
-                'label' => esc_html__( 'Alignment (If Given Width)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment (If Given Width)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'default' => '',
                 'options' => [
                     '' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     '0 auto' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     '0 0 0 auto' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
              
@@ -1357,7 +1357,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'badge_position_y_top',
 			[
-				'label' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1368,7 +1368,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'badge_position_x_right',
 			[
-				'label' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1379,7 +1379,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'badge_position_y_bottom',
 			[
-				'label' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1390,7 +1390,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
 			'badge_position_x_left',
 			[
-				'label' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -1405,7 +1405,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_style_body',
             [
-                'label' => esc_html__( 'Pricing Body Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Pricing Body Style', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1413,23 +1413,23 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'align_body',
             [
-                'label' => esc_html__( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justify', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Justify', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-justify',
                     ],
                 ],
@@ -1445,7 +1445,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'des_features_color',
             [
-                'label' => esc_html__( 'Features Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Features Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-body .features ul li' => 'color: {{VALUE}};',
@@ -1455,7 +1455,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'des_close_features_color',
             [
-                'label' => esc_html__( 'Close Features Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Close Features Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-body .features ul li.active' => 'color: {{VALUE}};',
@@ -1467,7 +1467,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_features_color',
             [
-                'label' => esc_html__( 'Check Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Check Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .pricing-body .features ul li:before' => 'color: {{VALUE}};',
@@ -1481,7 +1481,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_gradient',
             [
-                'label' => esc_html__( 'Check Icon Gradient Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Check Icon Gradient Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'gradient_color' => 'gradient_enable',
@@ -1507,7 +1507,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'icon_border_features_color',
             [
-                'label' => esc_html__( 'Close Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Close Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .pricing-body .features ul li.close-icon:before, {{WRAPPER}} .sc-pricing-container .pricing-body .features ul li.active:before' => 'color: {{VALUE}};',
@@ -1518,7 +1518,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_group_control(
             Group_Control_Typography::get_type(),
             [   
-                'label' => esc_html__( 'Features Typography', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Features Typography', 'curlware-header-footer-elementor' ),
                 'name' => 'features_typography',
                 'selector' => '{{WRAPPER}} .sc-pricing-container .pricing-body .features ul li',
             ]
@@ -1526,7 +1526,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'item_fea_desc_margin',
             [
-                'label' => esc_html__( 'Margin (Per Item)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin (Per Item)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-body .features ul li' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -1536,7 +1536,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'item_fea_desc_padding',
             [
-                'label' => esc_html__( 'Padding (Per Item)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding (Per Item)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-body .features ul li' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
@@ -1546,7 +1546,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'body_padding',
             [
-                'label' => esc_html__( 'List Area Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'List Area Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1557,7 +1557,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'body_margin',
             [
-                'label' => esc_html__( 'List Area Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'List Area Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1573,14 +1573,14 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_section(
             '_section_style_button',
             [
-                'label' => esc_html__( 'Button Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Button Style', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_responsive_control(
             'button_area__padding',
             [
-                'label' => esc_html__( ' Area Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( ' Area Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1616,13 +1616,13 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_tab(
             '_tab_button_normal',
             [
-                'label' => esc_html__( 'Normal', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Normal', 'curlware-header-footer-elementor' ),
             ]
         );
         $this->add_control(
             'button_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-footer a, {{WRAPPER}} .sc-pricing-container .pricing-wrapper li footer.pricing-footer a span' => 'color: {{VALUE}};',
@@ -1641,7 +1641,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'btn_border_gradient_heading',
             [
-                'label' => esc_html__( 'Button Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Button Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'gradient_color' => 'gradient_enable',
@@ -1680,7 +1680,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'button_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -1700,7 +1700,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'button_margin',
             [
-                'label' => esc_html__( 'Area Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Area Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1712,7 +1712,7 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_responsive_control(
             'button_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -1726,14 +1726,14 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->start_controls_tab(
             '_tab_button_hover',
             [
-                'label' => esc_html__( 'Hover', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Hover', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $this->add_control(
             'button_hover_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-pricing-container .pricing-wrapper > li:hover .pricing-footer a, {{WRAPPER}} .sc-pricing-container .pricing-wrapper li footer.pricing-footer a:hover span' => 'color: {{VALUE}};',
@@ -1761,12 +1761,12 @@ class Pricing_Switcher extends \Elementor\Widget_Base {
         $this->add_control(
             'gradient_color',
             [
-                'label'   => esc_html__( 'Gradient Color', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Gradient Color', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'gradient_disable',
                 'options' => [                  
-                    'gradient_enable' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor'),
-                    'gradient_disable' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor'),
+                    'gradient_enable' => esc_html__( 'Enable', 'curlware-header-footer-elementor'),
+                    'gradient_disable' => esc_html__( 'Disable', 'curlware-header-footer-elementor'),
                 ],
             ]
         );

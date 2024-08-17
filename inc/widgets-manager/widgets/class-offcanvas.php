@@ -24,7 +24,7 @@ class SCoffcanvas extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Offcanvas Icon', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Offcanvas Icon', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -65,7 +65,7 @@ class SCoffcanvas extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
 		
@@ -81,14 +81,14 @@ class SCoffcanvas extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label'     => __( 'Hambagur Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hambagur Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_control(
 			'hambagur_bg',
 			[
-				'label'     => __( 'Hambagur Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hambagur Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -101,7 +101,7 @@ class SCoffcanvas extends Widget_Base {
 		$this->add_control(
 			'hambagur_hover_bg',
 			[
-				'label'     => __( 'Hambagur Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hambagur Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,

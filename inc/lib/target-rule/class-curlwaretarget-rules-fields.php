@@ -116,30 +116,30 @@ class curlwareelements_Target_Rules_Fields {
 		$post_types = apply_filters( 'astra_location_rule_post_types', array_merge( $post_types, $custom_post_type ) );
 
 		$special_pages = array(
-			'special-404'    => __( '404 Page', 'CurlWare-header-footer-elementor' ),
-			'special-search' => __( 'Search Page', 'CurlWare-header-footer-elementor' ),
-			'special-blog'   => __( 'Blog / Posts Page', 'CurlWare-header-footer-elementor' ),
-			'special-front'  => __( 'Front Page', 'CurlWare-header-footer-elementor' ),
-			'special-date'   => __( 'Date Archive', 'CurlWare-header-footer-elementor' ),
-			'special-author' => __( 'Author Archive', 'CurlWare-header-footer-elementor' ),
+			'special-404'    => __( '404 Page', 'curlware-header-footer-elementor' ),
+			'special-search' => __( 'Search Page', 'curlware-header-footer-elementor' ),
+			'special-blog'   => __( 'Blog / Posts Page', 'curlware-header-footer-elementor' ),
+			'special-front'  => __( 'Front Page', 'curlware-header-footer-elementor' ),
+			'special-date'   => __( 'Date Archive', 'curlware-header-footer-elementor' ),
+			'special-author' => __( 'Author Archive', 'curlware-header-footer-elementor' ),
 		);
 
 		if ( class_exists( 'WooCommerce' ) ) {
-			$special_pages['special-woo-shop'] = __( 'WooCommerce Shop Page', 'CurlWare-header-footer-elementor' );
+			$special_pages['special-woo-shop'] = __( 'WooCommerce Shop Page', 'curlware-header-footer-elementor' );
 		}
 
 		$selection_options = array(
 			'basic'         => array(
-				'label' => __( 'Basic', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Basic', 'curlware-header-footer-elementor' ),
 				'value' => array(
-					'basic-global'    => __( 'Entire Website', 'CurlWare-header-footer-elementor' ),
-					'basic-singulars' => __( 'All Singulars', 'CurlWare-header-footer-elementor' ),
-					'basic-archives'  => __( 'All Archives', 'CurlWare-header-footer-elementor' ),
+					'basic-global'    => __( 'Entire Website', 'curlware-header-footer-elementor' ),
+					'basic-singulars' => __( 'All Singulars', 'curlware-header-footer-elementor' ),
+					'basic-archives'  => __( 'All Archives', 'curlware-header-footer-elementor' ),
 				),
 			),
 
 			'special-pages' => array(
-				'label' => __( 'Special Pages', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Special Pages', 'curlware-header-footer-elementor' ),
 				'value' => $special_pages,
 			),
 		);
@@ -180,9 +180,9 @@ class curlwareelements_Target_Rules_Fields {
 		}
 
 		$selection_options['specific-target'] = array(
-			'label' => __( 'Specific Target', 'CurlWare-header-footer-elementor' ),
+			'label' => __( 'Specific Target', 'curlware-header-footer-elementor' ),
 			'value' => array(
-				'specifics' => __( 'Specific Pages / Posts / Taxonomies, etc.', 'CurlWare-header-footer-elementor' ),
+				'specifics' => __( 'Specific Pages / Posts / Taxonomies, etc.', 'curlware-header-footer-elementor' ),
 			),
 		);
 
@@ -202,16 +202,16 @@ class curlwareelements_Target_Rules_Fields {
 	public static function get_user_selections() {
 		$selection_options = array(
 			'basic'    => array(
-				'label' => __( 'Basic', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Basic', 'curlware-header-footer-elementor' ),
 				'value' => array(
-					'all'        => __( 'All', 'CurlWare-header-footer-elementor' ),
-					'logged-in'  => __( 'Logged In', 'CurlWare-header-footer-elementor' ),
-					'logged-out' => __( 'Logged Out', 'CurlWare-header-footer-elementor' ),
+					'all'        => __( 'All', 'curlware-header-footer-elementor' ),
+					'logged-in'  => __( 'Logged In', 'curlware-header-footer-elementor' ),
+					'logged-out' => __( 'Logged Out', 'curlware-header-footer-elementor' ),
 				),
 			),
 
 			'advanced' => array(
-				'label' => __( 'Advanced', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Advanced', 'curlware-header-footer-elementor' ),
 				'value' => array(),
 			),
 		);
@@ -483,18 +483,18 @@ class curlwareelements_Target_Rules_Fields {
 		 */
 		$localize_vars = array(
 			'ast_lang'      => $ast_lang,
-			'please_enter'  => __( 'Please enter', 'CurlWare-header-footer-elementor' ),
-			'please_delete' => __( 'Please delete', 'CurlWare-header-footer-elementor' ),
-			'more_char'     => __( 'or more characters', 'CurlWare-header-footer-elementor' ),
-			'character'     => __( 'character', 'CurlWare-header-footer-elementor' ),
-			'loading'       => __( 'Loading more results…', 'CurlWare-header-footer-elementor' ),
-			'only_select'   => __( 'You can only select', 'CurlWare-header-footer-elementor' ),
-			'item'          => __( 'item', 'CurlWare-header-footer-elementor' ),
-			'char_s'        => __( 's', 'CurlWare-header-footer-elementor' ),
-			'no_result'     => __( 'No results found', 'CurlWare-header-footer-elementor' ),
-			'searching'     => __( 'Searching…', 'CurlWare-header-footer-elementor' ),
-			'not_loader'    => __( 'The results could not be loaded.', 'CurlWare-header-footer-elementor' ),
-			'search'        => __( 'Search pages / post / categories', 'CurlWare-header-footer-elementor' ),
+			'please_enter'  => __( 'Please enter', 'curlware-header-footer-elementor' ),
+			'please_delete' => __( 'Please delete', 'curlware-header-footer-elementor' ),
+			'more_char'     => __( 'or more characters', 'curlware-header-footer-elementor' ),
+			'character'     => __( 'character', 'curlware-header-footer-elementor' ),
+			'loading'       => __( 'Loading more results…', 'curlware-header-footer-elementor' ),
+			'only_select'   => __( 'You can only select', 'curlware-header-footer-elementor' ),
+			'item'          => __( 'item', 'curlware-header-footer-elementor' ),
+			'char_s'        => __( 's', 'curlware-header-footer-elementor' ),
+			'no_result'     => __( 'No results found', 'curlware-header-footer-elementor' ),
+			'searching'     => __( 'Searching…', 'curlware-header-footer-elementor' ),
+			'not_loader'    => __( 'The results could not be loaded.', 'curlware-header-footer-elementor' ),
+			'search'        => __( 'Search pages / post / categories', 'curlware-header-footer-elementor' ),
 			'ajax_nonce'    => wp_create_nonce( 'sce-get-posts-by-query' ),
 		);
 		wp_localize_script( 'astra-select2', 'astRules', $localize_vars );
@@ -513,7 +513,7 @@ class curlwareelements_Target_Rules_Fields {
 		$type           = isset( $settings['type'] ) ? $settings['type'] : 'target_rule';
 		$class          = isset( $settings['class'] ) ? $settings['class'] : '';
 		$rule_type      = isset( $settings['rule_type'] ) ? $settings['rule_type'] : 'target_rule';
-		$add_rule_label = isset( $settings['add_rule_label'] ) ? $settings['add_rule_label'] : __( 'Add Rule', 'CurlWare-header-footer-elementor' );
+		$add_rule_label = isset( $settings['add_rule_label'] ) ? $settings['add_rule_label'] : __( 'Add Rule', 'curlware-header-footer-elementor' );
 		$saved_values   = $value;
 		$output         = '';
 
@@ -529,7 +529,7 @@ class curlwareelements_Target_Rules_Fields {
 		/* Condition Selection */
 		$output .= '<div class="target_rule-condition-wrap" >';
 		$output .= '<select name="' . esc_attr( $input_name ) . '[rule][{{data.id}}]" class="target_rule-condition form-control ast-input">';
-		$output .= '<option value="">' . __( 'Select', 'CurlWare-header-footer-elementor' ) . '</option>';
+		$output .= '<option value="">' . __( 'Select', 'curlware-header-footer-elementor' ) . '</option>';
 
 		foreach ( $selection_options as $group => $group_data ) {
 			$output .= '<optgroup label="' . $group_data['label'] . '">';
@@ -579,12 +579,12 @@ class curlwareelements_Target_Rules_Fields {
 		$post_option = array();
 
 		/* translators: %s post label */
-		$all_posts                          = sprintf( __( 'All %s', 'CurlWare-header-footer-elementor' ), $post_label );
+		$all_posts                          = sprintf( __( 'All %s', 'curlware-header-footer-elementor' ), $post_label );
 		$post_option[ $post_name . '|all' ] = $all_posts;
 
 		if ( 'pages' != $post_key ) {
 			/* translators: %s post label */
-			$all_archive                                = sprintf( __( 'All %s Archive', 'CurlWare-header-footer-elementor' ), $post_label );
+			$all_archive                                = sprintf( __( 'All %s Archive', 'curlware-header-footer-elementor' ), $post_label );
 			$post_option[ $post_name . '|all|archive' ] = $all_archive;
 		}
 
@@ -593,7 +593,7 @@ class curlwareelements_Target_Rules_Fields {
 			$tax_name  = $taxonomy->name;
 
 			/* translators: %s taxonomy label */
-			$tax_archive = sprintf( __( 'All %s Archive', 'CurlWare-header-footer-elementor' ), $tax_label );
+			$tax_archive = sprintf( __( 'All %s Archive', 'curlware-header-footer-elementor' ), $tax_label );
 
 			$post_option[ $post_name . '|all|taxarchive|' . $tax_name ] = $tax_archive;
 		}
@@ -634,7 +634,7 @@ class curlwareelements_Target_Rules_Fields {
 			$output .= '<span class="target_rule-condition-delete dashicons dashicons-dismiss"></span>';
 			$output .= '<div class="target_rule-condition-wrap" >';
 			$output .= '<select name="' . esc_attr( $input_name ) . '[rule][' . $index . ']" class="target_rule-condition form-control ast-input">';
-			$output .= '<option value="">' . __( 'Select', 'CurlWare-header-footer-elementor' ) . '</option>';
+			$output .= '<option value="">' . __( 'Select', 'curlware-header-footer-elementor' ) . '</option>';
 
 			foreach ( $selection_options as $group => $group_data ) {
 				$output .= '<optgroup label="' . $group_data['label'] . '">';
@@ -705,7 +705,7 @@ class curlwareelements_Target_Rules_Fields {
 		if ( 'display' == $type ) {
 			/* Add new rule */
 			$output .= '<div class="target_rule-add-exclusion-rule">';
-			$output .= '<a href="#" class="button">' . __( 'Add Exclusion Rule', 'CurlWare-header-footer-elementor' ) . '</a>';
+			$output .= '<a href="#" class="button">' . __( 'Add Exclusion Rule', 'curlware-header-footer-elementor' ) . '</a>';
 			$output .= '</div>';
 		}
 
@@ -922,7 +922,7 @@ class curlwareelements_Target_Rules_Fields {
 		$type           = isset( $settings['type'] ) ? $settings['type'] : 'target_rule';
 		$class          = isset( $settings['class'] ) ? $settings['class'] : '';
 		$rule_type      = isset( $settings['rule_type'] ) ? $settings['rule_type'] : 'target_rule';
-		$add_rule_label = isset( $settings['add_rule_label'] ) ? $settings['add_rule_label'] : __( 'Add Rule', 'CurlWare-header-footer-elementor' );
+		$add_rule_label = isset( $settings['add_rule_label'] ) ? $settings['add_rule_label'] : __( 'Add Rule', 'curlware-header-footer-elementor' );
 		$saved_values   = $value;
 		$output         = '';
 
@@ -938,7 +938,7 @@ class curlwareelements_Target_Rules_Fields {
 				/* Condition Selection */
 				$output     .= '<div class="user_role-condition-wrap" >';
 					$output .= '<select name="' . esc_attr( $input_name ) . '[{{data.id}}]" class="user_role-condition form-control ast-input">';
-					$output .= '<option value="">' . __( 'Select', 'CurlWare-header-footer-elementor' ) . '</option>';
+					$output .= '<option value="">' . __( 'Select', 'curlware-header-footer-elementor' ) . '</option>';
 
 		foreach ( $selection_options as $group => $group_data ) {
 			$output .= '<optgroup label="' . $group_data['label'] . '">';
@@ -968,7 +968,7 @@ class curlwareelements_Target_Rules_Fields {
 				/* Condition Selection */
 				$output     .= '<div class="user_role-condition-wrap" >';
 					$output .= '<select name="' . esc_attr( $input_name ) . '[' . $index . ']" class="user_role-condition form-control ast-input">';
-					$output .= '<option value="">' . __( 'Select', 'CurlWare-header-footer-elementor' ) . '</option>';
+					$output .= '<option value="">' . __( 'Select', 'curlware-header-footer-elementor' ) . '</option>';
 
 			foreach ( $selection_options as $group => $group_data ) {
 				$output .= '<optgroup label="' . $group_data['label'] . '">';
@@ -1359,7 +1359,7 @@ class curlwareelements_Target_Rules_Fields {
 					$rule_set_titles = '<strong>' . implode( ',', $already_set_rule ) . '</strong>';
 
 					/* translators: %s post title. */
-					$notice = sprintf( __( 'The same display setting is already exist in %s post/s.', 'CurlWare-header-footer-elementor' ), $rule_set_titles );
+					$notice = sprintf( __( 'The same display setting is already exist in %s post/s.', 'curlware-header-footer-elementor' ), $rule_set_titles );
 
 					echo '<div class="error">';
 					echo '<p>' . $notice . '</p>';
@@ -1418,7 +1418,7 @@ class curlwareelements_Target_Rules_Fields {
 
 		if ( ! empty( $all_headers ) ) {
 			$headers = array(
-				'' => __( 'Select', 'CurlWare-header-footer-elementor' ),
+				'' => __( 'Select', 'curlware-header-footer-elementor' ),
 			);
 
 			foreach ( $all_headers as $i => $data ) {

@@ -22,7 +22,7 @@ class ProjectSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Project Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Project Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -134,7 +134,7 @@ class ProjectSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -486,14 +486,14 @@ class ProjectSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon_style',
 			[
-				'label' => esc_html__( 'Icon Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Icon Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
         $this->add_control(
             'icon_color',
             [
-                'label' => esc_html__( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-project-item .sc-project-content-box .sc-project-icon i' => 'color: {{VALUE}};',
@@ -505,7 +505,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'icon_section_bg',
             [
-                'label' => esc_html__( 'Icon Section Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Section Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-project-item .sc-project-content-box .sc-project-icon i'   => 'background: {{VALUE}};',
@@ -518,7 +518,7 @@ class ProjectSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_title_style',
 			[
-				'label' => esc_html__( 'Title Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Title Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -526,7 +526,7 @@ class ProjectSlider extends Widget_Base {
          $this->add_control(
             'title_color',
             [
-                'label' => esc_html__( 'Title Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-project-item .sc-project-content-box .sc-project-text a' => 'color: {{VALUE}};',
@@ -550,7 +550,7 @@ class ProjectSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_cat_style',
 			[
-				'label' => esc_html__( 'Category Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Category Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -558,7 +558,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'category_color',
             [
-                'label' => esc_html__( 'Category Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Category Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-project-item .sc-project-content-box .sc-project-text .sub-title' => 'color: {{VALUE}};',
@@ -584,7 +584,7 @@ class ProjectSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_global_style',
 			[
-				'label' => esc_html__( 'Global Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Global Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -593,7 +593,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'project_item_bg',
             [
-                'label' => esc_html__( 'Project Overlay', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Project Overlay', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-project-item::before' => 'background: {{VALUE}};',
@@ -604,7 +604,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_responsive_control(
 			'project_border_radious',
 			[
-				'label' => esc_html__( 'Project Border Radious', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Project Border Radious', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -624,7 +624,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'project_img_background',
             [
-                'label' => esc_html__( 'Project Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Project Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-project-item' => 'background: {{VALUE}};',
@@ -648,7 +648,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'image_overlay',
             [
-                'label' => esc_html__( 'Image Hover Overlay', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Hover Overlay', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'project_slider_style' => 'style3',
@@ -662,23 +662,23 @@ class ProjectSlider extends Widget_Base {
         $this->add_responsive_control(
 			'text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -693,7 +693,7 @@ class ProjectSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_nav_style',
 			[
-				'label' => esc_html__( 'Navigation Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Navigation Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -701,7 +701,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_background',
             [
-                'label' => esc_html__( 'Navigation Arrow Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-next, .rs-addon-slider .slick-prev' => 'background: {{VALUE}};',
@@ -714,7 +714,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_icon_color',
             [
-                'label' => esc_html__( 'Navigation Arrow Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-next::before' => 'color: {{VALUE}};',
@@ -727,7 +727,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_border_color',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button' => 'border-color: {{VALUE}};',
@@ -739,7 +739,7 @@ class ProjectSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_icon_background',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button:hover' => 'background: {{VALUE}};',

@@ -51,7 +51,7 @@ class Accordion extends Widget_Base {
      */
 
     public function get_title() {
-        return esc_html__( 'Accordion', 'CurlWare-header-footer-elementor' );
+        return esc_html__( 'Accordion', 'curlware-header-footer-elementor' );
     }
 
     /**
@@ -72,7 +72,7 @@ class Accordion extends Widget_Base {
         $this->start_controls_section(
             '_section_logo',
             [
-                'label' => esc_html__( 'Accordion Item', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Accordion Item', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -83,11 +83,11 @@ class Accordion extends Widget_Base {
         $repeater->add_control(
             'name',
             [
-                'label' => esc_html__('Title', 'CurlWare-header-footer-elementor'),
+                'label' => esc_html__('Title', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('', 'CurlWare-header-footer-elementor'),
+                'default' => esc_html__('', 'curlware-header-footer-elementor'),
                 'label_block' => true,
-                'placeholder' => esc_html__( 'Name', 'CurlWare-header-footer-elementor' ),
+                'placeholder' => esc_html__( 'Name', 'curlware-header-footer-elementor' ),
                 'separator'   => 'before',
             ]
         );       
@@ -104,7 +104,7 @@ class Accordion extends Widget_Base {
         $repeater->add_control(
             'selected_image',
             [
-                'label'       => esc_html__( 'Icon image', 'CurlWare-header-footer-elementor' ),
+                'label'       => esc_html__( 'Icon image', 'curlware-header-footer-elementor' ),
                 'type'        => Controls_Manager::MEDIA,
                 'label_block' => true,
             ]
@@ -112,10 +112,10 @@ class Accordion extends Widget_Base {
         $repeater->add_responsive_control(
             'accordion_open_closed',
             [
-                'label' => esc_html__( 'Accordion Open/Closed?', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Accordion Open/Closed?', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'CurlWare-header-footer-elementor' ),
-                'label_off' => esc_html__( 'Hide', 'CurlWare-header-footer-elementor' ),
+                'label_on' => esc_html__( 'Show', 'curlware-header-footer-elementor' ),
+                'label_off' => esc_html__( 'Hide', 'curlware-header-footer-elementor' ),
                 'return_value' => 'yes',
                 'default' => 'no',
             ]
@@ -134,12 +134,12 @@ class Accordion extends Widget_Base {
         $this->add_control(
             'accord_style',
             [
-                'label'   => esc_html__( 'Select Accordion Style', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Select Accordion Style', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'style1',
                 'options' => [                  
-                    'style1' => esc_html__( 'Style 1', 'CurlWare-header-footer-elementor'),
-                    'style2' => esc_html__( 'Style 2', 'CurlWare-header-footer-elementor'),
+                    'style1' => esc_html__( 'Style 1', 'curlware-header-footer-elementor'),
+                    'style2' => esc_html__( 'Style 2', 'curlware-header-footer-elementor'),
                 ],
             ]
         );
@@ -227,7 +227,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'margin_acc',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -239,7 +239,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'padding_acc',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -266,7 +266,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'item_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -288,7 +288,7 @@ class Accordion extends Widget_Base {
         $this->add_control(
             'active_item_heading',
             [
-                'label' => esc_html__( 'Active Item Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Active Item Style', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -355,7 +355,7 @@ class Accordion extends Widget_Base {
         $this->add_control(
             'title_active_bg',
             [
-                'label' => esc_html__( 'Title Active Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Active Background', 'curlware-header-footer-elementor' ),
                 'type'  => Controls_Manager::HEADING,              
             ]
         );
@@ -403,7 +403,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'title_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -414,7 +414,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'active_title_border_radius',
             [
-                'label' => esc_html__( 'Active Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Active Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -490,7 +490,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'img_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -580,7 +580,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_space',
             [
-                'label' => esc_html__( 'Spacing', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Spacing', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -591,7 +591,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'open_icon_margin',
             [
-                'label' => esc_html__( 'Open Icon Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Open Icon Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -602,7 +602,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_left_position',
             [
-                'label'      => esc_html__( 'Icon Right to Left Position', 'CurlWare-header-footer-elementor' ),
+                'label'      => esc_html__( 'Icon Right to Left Position', 'curlware-header-footer-elementor' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -623,7 +623,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_top_position',
             [
-                'label' => esc_html__( 'Icon Top to Bottom Position', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Top to Bottom Position', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -635,7 +635,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -646,7 +646,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_width',
             [
-                'label' => __( 'Width', 'CurlWare-header-footer-elementor' ),
+                'label' => __( 'Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -662,7 +662,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_height',
             [
-                'label' => __( 'Height', 'CurlWare-header-footer-elementor' ),
+                'label' => __( 'Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -678,7 +678,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'line_height',
             [
-                'label' => __( 'Line Height', 'CurlWare-header-footer-elementor' ),
+                'label' => __( 'Line Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -694,23 +694,23 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'icon_alignment',
             [
-                'label' => esc_html__( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justify', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Justify', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-justify',
                     ],
                 ],
@@ -723,7 +723,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
         	'icon_font_size',
         	[
-        		'label' => __( 'Font Size', 'CurlWare-header-footer-elementor' ),
+        		'label' => __( 'Font Size', 'curlware-header-footer-elementor' ),
         		'type' => Controls_Manager::SLIDER,
         		'range' => [
         			'px' => [
@@ -763,7 +763,7 @@ class Accordion extends Widget_Base {
         $this->add_control(
             'content_active_bg',
             [
-                'label' => esc_html__( 'Content Active Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Active Background', 'curlware-header-footer-elementor' ),
                 'type'  => Controls_Manager::HEADING,              
             ]
         );
@@ -808,7 +808,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'margin_cons',
             [
-                'label' => esc_html__( 'Content Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -819,7 +819,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'margin_cons_active',
             [
-                'label' => esc_html__( 'Active Content Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Active Content Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -831,7 +831,7 @@ class Accordion extends Widget_Base {
         $this->add_responsive_control(
             'content_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [

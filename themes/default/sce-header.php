@@ -19,28 +19,14 @@
 
 <!--Preloader start here-->
 <?php
-	if( is_404() ){
-	return;
-	} else {
-    get_template_part( 'inc/preloader' ); 
-	}
-	require_once curlwareelements_DIR . '/themes/default/class-offcanvas-header.php';
 
-	
+get_template_part( 'inc/preloader' ); 
+
 ?>
 <!--Preloader area end here-->
 
 
-
-
-
-
 <div id="page" class="spria-heary-style hfeed spria_sticky">
-<?php 
-
-if( is_404() ){
-	return;
-} else { ?>
 	<header id="curlware-header" class="single-header">
 		<div class="sticky-wrapper" style="height: auto;">
 			<div class="sc-header-content sc-menu-sticky stuck">
@@ -59,4 +45,3 @@ if(isset($layout_settings['curlware_breadcrumb'])) {
 	endif;
 }
 ?>
-<?php }

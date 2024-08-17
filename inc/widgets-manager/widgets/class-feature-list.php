@@ -27,7 +27,7 @@ class FeatureList extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Feature List', 'CurlWare-header-footer-elementor' );
+		return __( 'Feature List', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -69,7 +69,7 @@ class FeatureList extends Widget_Base {
 		$this->start_controls_section(
 			'_section_header',
 			[
-				'label' => esc_html__( 'Content', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Content', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);  
@@ -78,7 +78,7 @@ class FeatureList extends Widget_Base {
 		$repeater->add_control(
 			'icon',
 			[
-				'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 			]
@@ -87,27 +87,27 @@ class FeatureList extends Widget_Base {
         $repeater->add_control(
             'text',
             [
-                'label' => esc_html__( 'Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( '100GB free space with hosting', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( '100GB free space with hosting', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'title',
             [
-                'label' => esc_html__( 'Title', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Title Here', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( 'Title Here', 'curlware-header-footer-elementor' ),
             ]
         );
 
         $repeater->add_control(
             'title_link',
             [
-                'label' => esc_html__( 'Title Link', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Link', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__( '#', 'CurlWare-header-footer-elementor' ),
+                'default' => esc_html__( '#', 'curlware-header-footer-elementor' ),
             ]
         );
 
@@ -121,11 +121,11 @@ class FeatureList extends Widget_Base {
                 'show_label' => false,
                 'default' => [
                     [
-                        'text' => esc_html__( '80GB Free Space with Hosting', 'CurlWare-header-footer-elementor' ),
+                        'text' => esc_html__( '80GB Free Space with Hosting', 'curlware-header-footer-elementor' ),
                         'icon' => 'fa fa-check',
                     ],
                     [
-                        'text' => esc_html__( 'Responsive Features List', 'CurlWare-header-footer-elementor' ),
+                        'text' => esc_html__( 'Responsive Features List', 'curlware-header-footer-elementor' ),
                         'icon' => 'fa fa-check',
                     ],
                 ],
@@ -136,7 +136,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'list_spacing_between',
             [
-                'label' => esc_html__( 'List Spacing Between', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'List Spacing Between', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -159,22 +159,22 @@ class FeatureList extends Widget_Base {
 		$this->start_controls_section(
             '_section_style_general',
             [
-                'label' => esc_html__( 'General', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'General', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_responsive_control(
             'box_horizontal_align',
             [
-                'label' => esc_html__( 'Box Style (Inline / Block)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Box Style (Inline / Block)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex' => [
-                        'title' => esc_html__( 'Inline', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Inline', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-post-list',
                     ],
                     'block' => [
-                        'title' => esc_html__( 'Block', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Block', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-posts-grid',
                     ],
                 ],
@@ -189,19 +189,19 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'box_vertical_align',
             [
-                'label' => esc_html__( 'Vertical Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Vertical Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-v',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Middle', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Middle', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-v',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-v',
                     ],
                 ],
@@ -218,23 +218,23 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'flex_box_h_align',
             [
-                'label' => esc_html__( 'Horizontal Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Horizontal Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Start', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Start', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-start-h',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-center-h',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'End', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'End', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-align-end-h',
                     ],
                     'space-between' => [
-                        'title' => esc_html__( 'Space Between', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Space Between', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-justify-space-between-h',
                     ],
 
@@ -253,7 +253,7 @@ class FeatureList extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'background_color',
-                'label' => esc_html__( 'List Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'List Background', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .sc-features-list li',
             ]
@@ -271,7 +271,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'general_padding',
             [
-                'label' => esc_html__( 'List Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'List Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'separator' => 'before', 
@@ -283,7 +283,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'general_margin',
             [
-                'label' => esc_html__( 'List Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'List Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -301,7 +301,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'features_title_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -319,15 +319,15 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'content_box_horizontal_align',
             [
-                'label' => esc_html__( 'Content Box Style (Inline / Block)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Box Style (Inline / Block)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex' => [
-                        'title' => esc_html__( 'Inline', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Inline', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-post-list',
                     ],
                     'block' => [
-                        'title' => esc_html__( 'Block', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Block', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-posts-grid',
                     ],
                 ],
@@ -342,19 +342,19 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'content_box_vertical_align',
             [
-                'label' => esc_html__( 'Content Vertical Align', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Vertical Align', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => esc_html__( 'Top', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Top', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Middle', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Middle', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'flex-end' => [
-                        'title' => esc_html__( 'Bottom', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Bottom', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -370,23 +370,23 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'content_box_column_align',
             [
-                'label' => esc_html__( 'Content Box Column', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Box Column', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'column' => [
-                        'title' => esc_html__( 'Column', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Column', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'column-reverse' => [
-                        'title' => esc_html__( 'Column Reverse', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Column Reverse', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-middle',
                     ],
                     'row' => [
-                        'title' => esc_html__( 'Row', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Row', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                     'row-reverse' => [
-                        'title' => esc_html__( 'Row Reverse', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Row Reverse', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -402,7 +402,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'content_box__padding',
             [
-                'label' => esc_html__( 'Content Area Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Area Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -413,7 +413,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'content_box__margin',
             [
-                'label' => esc_html__( 'Content Area Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Area Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -426,14 +426,14 @@ class FeatureList extends Widget_Base {
         $this->start_controls_section(
             '_section_style_text',
             [
-                'label' => esc_html__( 'Text', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
             'text_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-feature-text' => 'color: {{VALUE}};',
@@ -443,7 +443,7 @@ class FeatureList extends Widget_Base {
         $this->add_control(
             'text_hover_color',
             [
-                'label' => esc_html__( 'Text Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-feature-text:hover' => 'color: {{VALUE}};',
@@ -463,7 +463,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'text_padding',
             [
-                'label' => esc_html__( 'Text Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -474,7 +474,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'text_margin',
             [
-                'label' => esc_html__( 'Text Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -488,22 +488,22 @@ class FeatureList extends Widget_Base {
         $this->start_controls_section(
             '_section_style_icon',
             [
-                'label' => esc_html__( 'Icon', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_responsive_control(
             'icon_box__style',
             [
-                'label' => esc_html__( 'Box Style (Inline / Block)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Box Style (Inline / Block)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'inline-block' => [
-                        'title' => esc_html__( 'Inline', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Inline', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-post-list',
                     ],
                     'block' => [
-                        'title' => esc_html__( 'Block', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Block', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-posts-grid',
                     ],
                 ],
@@ -518,7 +518,7 @@ class FeatureList extends Widget_Base {
         $this->add_control(
             'icon_color',
             [
-                'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-features-list-content ul.sc-features-list li .icon-area i' => 'color: {{VALUE}};',
@@ -530,7 +530,7 @@ class FeatureList extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name' => 'icon_bg',
-                'label' => esc_html__( 'Icon Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Background', 'curlware-header-footer-elementor' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .sc-features-list-content ul.sc-features-list li .icon-area',
             ]
@@ -538,7 +538,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'icon_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -549,7 +549,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'icon_margin',
             [
-                'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -560,7 +560,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'last_icon_margin',
             [
-                'label' => esc_html__( 'Last Child Margin', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Last Child Margin', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -578,7 +578,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'features_icon_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -589,23 +589,23 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
 			'text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -624,7 +624,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'icon_width',
             [
-                'label' => esc_html__( 'Icon Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -645,7 +645,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'icon_min_width',
             [
-                'label' => esc_html__( 'Icon Min Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Min Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -666,7 +666,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'icon_height',
             [
-                'label' => esc_html__( 'Icon Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -688,7 +688,7 @@ class FeatureList extends Widget_Base {
         $this->add_responsive_control(
             'icon_line_height',
             [
-                'label' => esc_html__( 'Line Height', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Line Height', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -719,7 +719,7 @@ class FeatureList extends Widget_Base {
 		$this->start_controls_section(
 			'section_heading_typography',
 			[
-				'label' => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Title', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -727,7 +727,7 @@ class FeatureList extends Widget_Base {
 		$this->add_control(
 			'heading_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -741,7 +741,7 @@ class FeatureList extends Widget_Base {
 		$this->add_control(
 			'heading_hover_color',
 			[
-				'label'     => __( 'Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -790,7 +790,7 @@ class FeatureList extends Widget_Base {
 		$this->start_controls_section(
 			'section_desc_typography',
 			[
-				'label' => __( 'Description', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Description', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -798,7 +798,7 @@ class FeatureList extends Widget_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -835,7 +835,7 @@ class FeatureList extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label'     => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'icon[value]!' => '',
@@ -845,7 +845,7 @@ class FeatureList extends Widget_Base {
 		$this->add_control(
 			'icon_bg',
 			[
-				'label'     => __( 'Icon Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -886,7 +886,7 @@ class FeatureList extends Widget_Base {
 		$this->start_controls_section(
 			'section_global_style',
 			[
-				'label'     => __( 'Service Global Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Service Global Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'icon[value]!' => '',
@@ -910,7 +910,7 @@ class FeatureList extends Widget_Base {
 		$this->add_control(
 			'service_bg',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-footer-section .sc-contact-number'   => 'background: {{VALUE}};',

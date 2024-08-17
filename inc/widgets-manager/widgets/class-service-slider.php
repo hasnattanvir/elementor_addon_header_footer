@@ -26,7 +26,7 @@ class ServiceSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Service Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Service Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -67,14 +67,14 @@ class ServiceSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'team_slider_style',
 			[
-				'label'   => esc_html__( 'Select Style', 'CurlWare-header-footer-elementor' ),
+				'label'   => esc_html__( 'Select Style', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'style1',				
 				'options' => [
@@ -435,7 +435,7 @@ class ServiceSlider extends Widget_Base {
          $repeater->add_control(
 			'icon',
 			[
-				'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 			]
@@ -507,7 +507,7 @@ class ServiceSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_slider_style',
 			[
-				'label' => esc_html__( 'Icon Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Icon Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -515,7 +515,7 @@ class ServiceSlider extends Widget_Base {
 		$this->add_control(
             'icon_color',
             [
-                'label' => esc_html__( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-style-four .icomoon path' => 'fill: {{VALUE}};',
@@ -527,7 +527,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'icon_color_hover',
             [
-                'label' => esc_html__( 'Icon Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-style-four:hover .icomoon path' => 'fill: {{VALUE}};',
@@ -541,7 +541,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
 			'icon_bg_color',
 			[
-				'label'     => __( 'Icon Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -554,7 +554,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
 			'icon_hover_bg_color',
 			[
-				'label'     => __( 'Icon Hover Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Hover Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -567,7 +567,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_responsive_control(
 			'icon_border_radius',
 			[
-				'label' => esc_html__( 'Icon Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Icon Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -580,7 +580,7 @@ class ServiceSlider extends Widget_Base {
         $this->start_controls_section(
 			'section_Title_style',
 			[
-				'label' => esc_html__( 'Title Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Title Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -588,7 +588,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'title_color',
             [
-                'label' => esc_html__( 'Title Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-style-four .title' => 'color: {{VALUE}};',
@@ -600,7 +600,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'title_color_hover',
             [
-                'label' => esc_html__( 'Title Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-style-four .title:hover' => 'color: {{VALUE}};',
@@ -611,7 +611,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'designation_color',
             [
-                'label' => esc_html__( 'Designation Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Designation Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-style-four .des' => 'color: {{VALUE}};',
@@ -624,7 +624,7 @@ class ServiceSlider extends Widget_Base {
         $this->start_controls_section(
 			'content_style',
 			[
-				'label' => esc_html__( 'Global Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Global Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -632,7 +632,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'content_item_bg',
             [
-                'label' => esc_html__( 'Content Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-service-style-four' => 'background: {{VALUE}};',
@@ -656,7 +656,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
 			'scrollbar_border_color',
 			[
-				'label'     => __( 'Scrollbar Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Scrollbar Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
                     '{{WRAPPER}} .swiper-pagination-progressbar-fill::after' => 'background: {{VALUE}};',
@@ -671,7 +671,7 @@ class ServiceSlider extends Widget_Base {
         $this->start_controls_section(
 			'arrow_style',
 			[
-				'label' => esc_html__( 'Arrow Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Arrow Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -679,7 +679,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_background',
             [
-                'label' => esc_html__( 'Navigation Arrow Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:after' => 'background: {{VALUE}};',
@@ -691,7 +691,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_hover_background',
             [
-                'label' => esc_html__( 'Navigation Arrow Hover Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Hover Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:hover:after' => 'background: {{VALUE}};',
@@ -703,7 +703,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_icon_color',
             [
-                'label' => esc_html__( 'Navigation Arrow Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:after' => 'color: {{VALUE}};',
@@ -715,7 +715,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_hover_icon_color',
             [
-                'label' => esc_html__( 'Navigation Arrow Hover Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Hover Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:hover:after' => 'color: {{VALUE}};',
@@ -727,7 +727,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_icon_color22',
             [
-                'label' => esc_html__( 'Navigation Arrow Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:hover:after' => 'color: {{VALUE}};',
@@ -739,7 +739,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_border_color',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .swiper-button-next:after' => 'border-color: {{VALUE}};',
@@ -752,7 +752,7 @@ class ServiceSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_icon_background',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button:hover' => 'background: {{VALUE}};',
@@ -766,7 +766,7 @@ class ServiceSlider extends Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'background',
-				'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
 				'types' => [ 'classic', 'gradient', 'video' ],
 				'selector' => '{{WRAPPER}} .team-content',
 				
@@ -790,7 +790,7 @@ class ServiceSlider extends Widget_Base {
 			Group_Control_Box_Shadow::get_type(),
 			[
 				'name' => 'box_shadow',
-				'label' => esc_html__( 'Box Shadow', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Box Shadow', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .sc-team-item',
 			]
 		);
@@ -798,23 +798,23 @@ class ServiceSlider extends Widget_Base {
         $this->add_responsive_control(
 			'text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
