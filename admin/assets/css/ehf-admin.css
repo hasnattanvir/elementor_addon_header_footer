@@ -855,8 +855,8 @@ span.dashicons.dashicons-update.sce-loader {
     width: 15px;
     height: 15px;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 4px;
+    left: 4px;
     transition: all 0.3s;
 }
 .checkbox label:after{
