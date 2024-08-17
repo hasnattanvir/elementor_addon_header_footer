@@ -15,7 +15,6 @@ define( 'curlwareelements_FILE', __FILE__ );
 define( 'curlwareelements_DIR', plugin_dir_path( __FILE__ ) );
 define( 'curlwareelements_URL', plugins_url( '/', __FILE__ ) );
 define( 'curlwareelements_PATH', plugin_basename( __FILE__ ) );
-// define( 'curlwareelements_DOMAIN', trailingslashit( 'https://themeforest.net/user/curlwarees/portfolio' ) );
 define( 'curlwareelements_DIR_URL_ADMIN', plugin_dir_url( __FILE__ ) );
 define( 'curlwareelements_ASSETS_ADMIN', trailingslashit( curlwareelements_DIR_URL_ADMIN ) );
 define( 'curlwareelements_PREFIX', 'curlware' );
