@@ -1,21 +1,24 @@
 <?php
 /**
- * Plugin Name: CurlWare Header Footer Builder
+ * Plugin Name: CurlWare Header Footer Elements
  * Plugin URI:  https://themeforest.net/user/CurlWare/portfolio
- * Description: CurlWare header footer builder
- * Author:      CurlWare The
+ * Description: CurlWare header footer builder & Addons
+ * Author:      CurlWare 
  * Author URI:  https://themeforest.net/user/CurlWare/portfolio
  * Text Domain: curlware-header-footer-elementor
  * Domain Path: /languages
  * Version: 1.0.0
  */
 
+
+ defined( 'ABSPATH' ) || die();
+
+
 define( 'curlwareelements_VER', '1.0.0' );
 define( 'curlwareelements_FILE', __FILE__ );
 define( 'curlwareelements_DIR', plugin_dir_path( __FILE__ ) );
 define( 'curlwareelements_URL', plugins_url( '/', __FILE__ ) );
 define( 'curlwareelements_PATH', plugin_basename( __FILE__ ) );
-// define( 'curlwareelements_DOMAIN', trailingslashit( 'https://themeforest.net/user/curlwarees/portfolio' ) );
 define( 'curlwareelements_DIR_URL_ADMIN', plugin_dir_url( __FILE__ ) );
 define( 'curlwareelements_ASSETS_ADMIN', trailingslashit( curlwareelements_DIR_URL_ADMIN ) );
 define( 'curlwareelements_PREFIX', 'curlware' );
@@ -25,6 +28,7 @@ define( 'curlwareelements_PREFIX', 'curlware' );
  */
 require_once curlwareelements_DIR . '/inc/class-header-footer-elementor.php';
 require_once curlwareelements_DIR . '/inc/meta/curlware-postmeta.php';
+require_once curlwareelements_DIR . '/inc/activitions-methods/cw-active-methods.php';
 require_once curlwareelements_DIR . '/inc/meta/post-meta.php'; // Post Meta
 
 require_once curlwareelements_DIR . 'widgets/init.php';
@@ -82,5 +86,3 @@ function socoders_elements_footer_widget_function() {
 	];
 	return $array;
 }
-
-
