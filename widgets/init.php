@@ -42,7 +42,7 @@ class Custom_Widgets_Init {
 			$instance['classes'] = null;   
 			$row .= "<p><label>Custom Class:</label>\t<input type='text' name='widget-{$widget->id_base}[{$widget->number}][classes]' id='widget-{$widget->id_base}-{$widget->number}-classes' class='widefat' value='{$instance['classes']}'/>\n";
 			$row .= "</p>\n";
-			echo $row;
+			echo wp_kses_post($row);
 			return $instance;
 	}
 

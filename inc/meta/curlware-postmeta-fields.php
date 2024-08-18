@@ -41,7 +41,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			}
 			$count = count($meta);
 			echo !empty( $field['label'] ) ? '<tr><th colspan="2">'. esc_html( $field['label'] ) .':</th></tr>' : '';
-			echo '<tr><td colspan="2" class="rt-postmeta-repeater-wrap" data-num="'.$count.'" data-fieldname="'. esc_attr( $key ) .'">';
+			echo '<tr><td colspan="2" class="rt-postmeta-repeater-wrap" data-num="'.esc_attr( $count ).'" data-fieldname="'. esc_attr( $key ) .'">';
 			// First Hidden Item
 			echo '<table class="rt-postmeta-repeater repeater-init">';
 			foreach ( $field['value'] as $key2 => $field2 ) {
@@ -62,7 +62,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 				}
 			}
 			$buttontext = empty( $field['button'] ) ? esc_html__( 'Add More', 'rt-framework' ) : $field['button'];
-			echo '<div class="rt-postmeta-repeater-addmore"><button>'. $buttontext .'</button></div></td></tr>';
+			echo '<div class="rt-postmeta-repeater-addmore"><button>'. esc_html($buttontext) .'</button></div></td></tr>';
 		}
 
 		private function display_single_field( $key, $field, $post_id, $default = false ){
@@ -79,13 +79,13 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			// Display Title
 			if( $field['type'] == 'header' ){
 				$default = empty( $field['default'] ) ? 'h1' : $field['default'];
-				echo '<tr'.$container_attr.'><td colspan="2"><' . esc_html( $default ) . '>' . esc_html( $field['label'] ) . '</' . esc_html( $default ) . '>' . $desc;
+				echo '<tr'. esc_attr($container_attr) .'><td colspan="2"><' . esc_html( $default ) . '>' . esc_html( $field['label'] ) . '</' . esc_html( $default ) . '>' . wp_kses_post($desc);
 			}
 			elseif( empty( $field['label'] ) ){
-				echo '<tr'.$container_attr.'><td colspan="2">';
+				echo '<tr'. esc_attr($container_attr) .'><td colspan="2">';
 			}
 			else{
-				echo '<tr'.$container_attr.'><th><label for="' . esc_attr( $key ) . '">' . esc_html( $field['label'] ) . '</label></th><td>';
+				echo '<tr'. esc_attr($container_attr) .'><th><label for="' . esc_attr( $key ) . '">' . esc_html( $field['label'] ) . '</label></th><td>';
 			}
 			// Set default value
 			if ( !$default ) {
@@ -104,20 +104,20 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			// Display input
 			if ( method_exists( $this, $field['type'] ) ) {
 				$this->{$field['type']}( $key, $field, $default, $class );
-				echo $desc;
+				echo wp_kses_post($desc);
 			}
 			echo '</td></tr>';
 		}
 
 		public function text( $key, $field, $default, $class ){
-			echo '<input type="text"'. $class .
+			echo '<input type="text"'. esc_attr($class) .
 			' name="' . esc_attr( $key ) . '"'.
 			' id="' . esc_attr( $key ) . '"'.
 			' value="' . esc_attr( $default ) . ''.
 			'" />';
 		}
 		public function number( $key, $field, $default, $class ){
-			echo '<input type="number"'. $class .
+			echo '<input type="number"'. esc_attr($class) .
 			' name="' . esc_attr( $key ) . '"'.
 			' id="' . esc_attr( $key ) . '"'.
 			' value="' . esc_attr( $default ) . '"'.
@@ -125,7 +125,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			' />';
 		}
 		public function textarea( $key, $field, $default, $class ){
-			echo '<textarea '. $class .
+			echo '<textarea '. esc_attr($class) .
 			'name="' . esc_attr( $key ) . '"'.
 			' id="' . esc_attr( $key ) . '"'.
 			'>'.
@@ -133,7 +133,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			'</textarea>';
 		}
 		public function textarea_html( $key, $field, $default, $class ){
-			echo '<textarea '. $class .
+			echo '<textarea '. esc_attr($class) .
 			'name="' . esc_attr( $key ) . '"'.
 			' id="' . esc_attr( $key ) . '"'.
 			'>'.
@@ -141,7 +141,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			'</textarea>';
 		}
 		public function select( $key, $field, $default, $class ){
-			echo '<select name="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '"'. $class.'>';
+			echo '<select name="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '"'. esc_attr($class) .'>';
 			foreach ( $field['options'] as $key => $value ) {
 				echo '<option',
 				$default == $key ? ' selected="selected"' : '',
@@ -264,7 +264,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 			echo '
 			<div class="curlware_metabox_gallery">
 				<input name="'. esc_attr( $key ) .'" type="hidden" class="custom_upload_image" value="'. esc_attr( $default ) .'" />
-				<div class="custom_preview_images">' . $img_html . '</div>
+				<div class="custom_preview_images">' . wp_kses_post($img_html) . '</div>
 				<div class="curlware_metabox_gallery_buttons">
 					<input class="curlware_upload_gallery upload_button_'. esc_attr( $key ) .' button-primary" type="button" value="' . esc_attr__( 'Add/Edit Gallery Images', 'rt-framework' ). '" />
 					<a href="#" style="'. esc_attr( $disstyle ) .'" class="curlware_remove_gallery button" >' . esc_html__( 'Remove All Images', 'rt-framework' ). '</a>
@@ -299,7 +299,7 @@ if( !class_exists( 'curlware_Postmeta_Fields' ) ){
 		}
 		public function date_picker( $key, $field, $default, $class ){
 			$format = isset( $field['format'] ) ? $field['format'] : 'MM dd, yy';
-			echo '<input type="text" data-format="' . $format . '" class="rt-metabox-picker rt-metabox-datepicker" name="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" value="' . esc_attr( $default ) . '" />';
+			echo '<input type="text" data-format="' . esc_attr($format) . '" class="rt-metabox-picker rt-metabox-datepicker" name="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" value="' . esc_attr( $default ) . '" />';
 		}
 		public function time_picker( $key, $field, $default, $class ){
 			echo '<input type="text" class="rt-metabox-picker rt-metabox-timepicker" name="' . esc_attr( $key ) . '" id="' . esc_attr( $key ) . '" value="' . esc_attr( $default ) . '" />';

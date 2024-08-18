@@ -79,7 +79,7 @@ class SC_Accordion extends Widget_Base {
             [
                 'label' => esc_html__('Item Title', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('', 'curlware-header-footer-elementor'),
+                'default' => esc_html__('Title', 'curlware-header-footer-elementor'),
                 'label_block' => true,
                 'placeholder' => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
                 'separator'   => 'before',
@@ -91,7 +91,7 @@ class SC_Accordion extends Widget_Base {
             [
                 'label' => esc_html__('Item Description', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::TEXTAREA,
-                'default' => esc_html__('', 'curlware-header-footer-elementor'),
+                'default' => esc_html__('Item Description', 'curlware-header-footer-elementor'),
                 'label_block' => true,
                 'placeholder' => esc_html__( 'Description', 'curlware-header-footer-elementor' ),
                 'separator'   => 'before',
@@ -208,7 +208,7 @@ class SC_Accordion extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings();
-		$unique = rand(2012,35120); ?>
+		$unique = wp_rand(2012,35120); ?>
         <div class="accordion <?php echo $settings['accordion_style'];?>" id="accordionExample<?php echo $unique;?>">
             <?php $x =0; 
             foreach ( $settings['logo_list'] as $index => $item ) :

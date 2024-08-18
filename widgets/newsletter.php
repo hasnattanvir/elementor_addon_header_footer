@@ -28,9 +28,9 @@ class Newsletter_Widget extends \WP_Widget {
 	    echo wp_kses_post( $args['before_widget'] );
 	    ?>
 
-        <?php echo wp_kses_stripslashes( $html ); ?>
+        <?php echo wp_kses_post( $html ); ?>
         <?php if (!empty( $desc )) { ?>
-        	<div class="desc"><?php echo $desc; ?></div>
+        	<div class="desc"><?php echo esc_html($desc); ?></div>
     	<?php } ?>
         <div class="newsletter-wrapper">
             <?php echo do_shortcode( $form ); ?>

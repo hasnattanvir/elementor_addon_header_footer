@@ -28,14 +28,15 @@ class About_Widget extends \WP_Widget {
 		
 		<?php if (!empty($logo)) { ?>
 			<a href="<?php echo esc_url( home_url('/') ); ?>" class="footer-logo img-logo">
-				<?php echo $logo; ?>
+				<?php echo wp_kses_post( $logo ) ; ?>
+
 			</a>
 		<?php } elseif (!empty($title)) { ?>
 			<a href="<?php echo esc_url( home_url('/') ); ?>" class="footer-logo text-logo">
-				<?php echo $title; ?>
+				<?php echo esc_html($title); ?>
 			</a>
 		<?php } if (!empty($desc)) { ?>
-			<div class="description"><?php echo $desc; ?></div>
+			<div class="description"><?php echo wp_kses_post($desc); ?></div>
 		<?php } ?>
 
 		<?php 

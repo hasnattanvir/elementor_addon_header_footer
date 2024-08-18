@@ -64,18 +64,21 @@ function cw_check_and_handle_theme_for_plugin() {
     }
 }
 
-function notify_admin_to_switch_theme() {
-    ?>
-    <div class="notice notice-warning is-dismissible">
-        <p><?php _e('The "Curlware Header Footer Elementor Addon" plugin is only active when the "Curlware" theme is active. Please switch back to the "Curlware" theme to use this plugin.', 'curlware-header-footer-elementor'); ?></p>
-    </div> 
-    <?php
+if(!function_exists('notify_admin_to_switch_theme')){
+    function notify_admin_to_switch_theme() {
+        ?>
+        <div class="notice notice-warning is-dismissible">
+            <p><?php echo esc_html('The "Curlware Header Footer Elementor Addon" plugin is only active when the "Curlware" theme is active. Please switch back to the "Curlware" theme to use this plugin.', 'curlware-header-footer-elementor'); ?></p>
+        </div> 
+        <?php
+    }
 }
+
 
 function notify_admin_to_activate_elementor() {
     ?>
     <div class="notice notice-error is-dismissible"> 
-        <p><?php _e('The "Curlware Header Footer Elementor Addon" plugin requires the Elementor plugin to be active. Please activate Elementor to use this plugin.', 'curlware-header-footer-elementor'); ?></p> 
+        <p><?php echo esc_html('The "Curlware Header Footer Elementor Addon" plugin requires the Elementor plugin to be active. Please activate Elementor to use this plugin.', 'curlware-header-footer-elementor'); ?></p> 
     </div> 
     <?php
 }

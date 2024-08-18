@@ -24,7 +24,7 @@ if( !class_exists( 'spria_Widget_Fields' ) ){
 						call_user_func( array( __CLASS__, $field['type'] ), $id, $name, $value, $label, $options, $field );
 					}
 					if ( $desc ) {
-						echo '<div class="desc">' . $desc . '</div>';
+						echo '<div class="desc">' . wp_kses_post($desc) . '</div>';
 					}
 					echo '</div>';
 				}
@@ -74,7 +74,7 @@ if( !class_exists( 'spria_Widget_Fields' ) ){
 			<select name="<?php echo esc_attr( $name );?>" id="<?php echo esc_attr( $id );?>">
 				<?php foreach ( $options as $key => $option ): ?>
 					<?php $selected = ( $key == $value ) ? ' selected="selected"' : ''; ?>
-					<option value="<?php echo esc_attr( $key );?>"<?php echo $selected; ?>><?php echo esc_html( $option )?></option>
+					<option value="<?php echo esc_attr( $key );?>"<?php echo esc_attr($selected); ?>><?php echo esc_html( $option )?></option>
 				<?php endforeach; ?>
 			</select>
 			<?php
