@@ -123,7 +123,7 @@ if ( ! class_exists( 'socoders_elements_Addons_Actions' ) ) {
 
 					// Check for permissions.
 					if ( ! current_user_can( 'activate_plugins' ) ) {
-						wp_send_json_error( esc_html__( 'Plugin activation is disabled for you on this site.', 'CurlWare-header-footer-elementor' ) );
+						wp_send_json_error( esc_html__( 'Plugin activation is disabled for you on this site.', 'curlware-header-footer-elementor' ) );
 					}
 
 					$activate = activate_plugins( $plugin );
@@ -132,7 +132,7 @@ if ( ! class_exists( 'socoders_elements_Addons_Actions' ) ) {
 
 						do_action( 'socoders_elements_plugin_activated', $plugin );
 
-						wp_send_json_success( esc_html__( 'Plugin Activated.', 'CurlWare-header-footer-elementor' ) );
+						wp_send_json_success( esc_html__( 'Plugin Activated.', 'curlware-header-footer-elementor' ) );
 					}
 				}
 
@@ -142,7 +142,7 @@ if ( ! class_exists( 'socoders_elements_Addons_Actions' ) ) {
 
 					// Check for permissions.
 					if ( ! ( current_user_can( 'switch_themes' ) ) ) {
-						wp_send_json_error( esc_html__( 'Theme activation is disabled for you on this site.', 'CurlWare-header-footer-elementor' ) );
+						wp_send_json_error( esc_html__( 'Theme activation is disabled for you on this site.', 'curlware-header-footer-elementor' ) );
 					}
 
 					$activate = switch_theme( $slug );
@@ -151,15 +151,15 @@ if ( ! class_exists( 'socoders_elements_Addons_Actions' ) ) {
 
 						do_action( 'socoders_elements_theme_activated', $plugin );
 
-						wp_send_json_success( esc_html__( 'Theme Activated.', 'CurlWare-header-footer-elementor' ) );
+						wp_send_json_success( esc_html__( 'Theme Activated.', 'curlware-header-footer-elementor' ) );
 					}
 				}
 			}
 
 			if ( 'plugin' === $type ) {
-				wp_send_json_error( esc_html__( 'Could not activate plugin. Please activate from the Plugins page.', 'CurlWare-header-footer-elementor' ) );
+				wp_send_json_error( esc_html__( 'Could not activate plugin. Please activate from the Plugins page.', 'curlware-header-footer-elementor' ) );
 			} elseif ( 'theme' === $type ) {
-				wp_send_json_error( esc_html__( 'Could not activate theme. Please activate from the Themes page.', 'CurlWare-header-footer-elementor' ) );
+				wp_send_json_error( esc_html__( 'Could not activate theme. Please activate from the Themes page.', 'curlware-header-footer-elementor' ) );
 			}
 		}
 

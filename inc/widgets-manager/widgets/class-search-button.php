@@ -31,7 +31,7 @@ class Search_Button extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Search', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Search', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -72,20 +72,20 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'Search Box', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Search Box', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'layout',
 			[
-				'label'        => __( 'Layout', 'CurlWare-header-footer-elementor' ),
+				'label'        => __( 'Layout', 'curlware-header-footer-elementor' ),
 				'type'         => Controls_Manager::SELECT,
 				'default'      => 'text',
 				'options'      => [
-					'text'      => __( 'Input Box', 'CurlWare-header-footer-elementor' ),
-					'icon'      => __( 'Icon', 'CurlWare-header-footer-elementor' ),
-					'icon_text' => __( 'Input Box With Button', 'CurlWare-header-footer-elementor' ),
+					'text'      => __( 'Input Box', 'curlware-header-footer-elementor' ),
+					'icon'      => __( 'Icon', 'curlware-header-footer-elementor' ),
+					'icon_text' => __( 'Input Box With Button', 'curlware-header-footer-elementor' ),
 				],
 				'prefix_class' => 'sce-search-layout-',
 				'render_type'  => 'template',
@@ -95,9 +95,9 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'placeholder',
 			[
-				'label'     => __( 'Placeholder', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Placeholder', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::TEXT,
-				'default'   => __( 'Type & Hit Enter', 'CurlWare-header-footer-elementor' ) . '...',
+				'default'   => __( 'Type & Hit Enter', 'curlware-header-footer-elementor' ) . '...',
 				'condition' => [
 					'layout!' => 'icon',
 				],
@@ -107,7 +107,7 @@ class Search_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'size',
 			[
-				'label'              => __( 'Size', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Size', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'size' => 50,
@@ -137,7 +137,7 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_input_style',
 			[
-				'label' => __( 'Input', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Input', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -156,7 +156,7 @@ class Search_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'input_icon_size',
 			[
-				'label'              => __( 'Width', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Width', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'size' => 250,
@@ -182,7 +182,7 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_input_normal',
 			[
-				'label'     => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Normal', 'curlware-header-footer-elementor' ),
 				'condition' => [
 					'layout!' => 'icon',
 				],
@@ -192,7 +192,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_text_color',
 			[
-				'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,
@@ -209,7 +209,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_placeholder_color',
 			[
-				'label'     => __( 'Placeholder Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Placeholder Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,
@@ -227,7 +227,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_background_color',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '#ededed',
 				'selectors' => [
@@ -253,16 +253,16 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'border_style',
 			[
-				'label'       => __( 'Border Style', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Border Style', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'default'     => 'none',
 				'label_block' => false,
 				'options'     => [
-					'none'   => __( 'None', 'CurlWare-header-footer-elementor' ),
-					'solid'  => __( 'Solid', 'CurlWare-header-footer-elementor' ),
-					'double' => __( 'Double', 'CurlWare-header-footer-elementor' ),
-					'dotted' => __( 'Dotted', 'CurlWare-header-footer-elementor' ),
-					'dashed' => __( 'Dashed', 'CurlWare-header-footer-elementor' ),
+					'none'   => __( 'None', 'curlware-header-footer-elementor' ),
+					'solid'  => __( 'Solid', 'curlware-header-footer-elementor' ),
+					'double' => __( 'Double', 'curlware-header-footer-elementor' ),
+					'dotted' => __( 'Dotted', 'curlware-header-footer-elementor' ),
+					'dashed' => __( 'Dashed', 'curlware-header-footer-elementor' ),
 				],
 				'selectors'   => [
 					'{{WRAPPER}} .sce-search-form__container ,{{WRAPPER}} .sce-search-icon-toggle .sce-search-form__input,{{WRAPPER}} .sce-input-focus .sce-search-icon-toggle .sce-search-form__input' => 'border-style: {{VALUE}};',
@@ -276,7 +276,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'border_color',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -297,7 +297,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'border_width',
 			[
-				'label'      => __( 'Border Width', 'CurlWare-header-footer-elementor' ),
+				'label'      => __( 'Border Width', 'curlware-header-footer-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'default'    => [
@@ -322,7 +322,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'border_radius',
 			[
-				'label'     => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -379,7 +379,7 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_input_focus',
 			[
-				'label'     => __( 'Focus', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Focus', 'curlware-header-footer-elementor' ),
 				'condition' => [
 					'layout!' => 'icon',
 				],
@@ -389,7 +389,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_text_color_focus',
 			[
-				'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-input-focus .sce-search-form__input:focus,
@@ -404,7 +404,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_placeholder_hover_color',
 			[
-				'label'     => __( 'Placeholder Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Placeholder Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,
@@ -421,7 +421,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_background_color_focus',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-input-focus .sce-search-form__input:focus,
@@ -454,7 +454,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'input_border_color_focus',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-input-focus .sce-search-form__container,
@@ -473,7 +473,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'icon_text_color_focus',
 			[
-				'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-input-focus .sce-search-form__input:focus' => 'color: {{VALUE}}',
@@ -488,7 +488,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'icon_text_background_color_focus',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '#ededed',
 				'selectors' => [
@@ -521,16 +521,16 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border_style',
 			[
-				'label'       => __( 'Border Style', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Border Style', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'default'     => 'none',
 				'label_block' => false,
 				'options'     => [
-					'none'   => __( 'None', 'CurlWare-header-footer-elementor' ),
-					'solid'  => __( 'Solid', 'CurlWare-header-footer-elementor' ),
-					'double' => __( 'Double', 'CurlWare-header-footer-elementor' ),
-					'dotted' => __( 'Dotted', 'CurlWare-header-footer-elementor' ),
-					'dashed' => __( 'Dashed', 'CurlWare-header-footer-elementor' ),
+					'none'   => __( 'None', 'curlware-header-footer-elementor' ),
+					'solid'  => __( 'Solid', 'curlware-header-footer-elementor' ),
+					'double' => __( 'Double', 'curlware-header-footer-elementor' ),
+					'dotted' => __( 'Dotted', 'curlware-header-footer-elementor' ),
+					'dashed' => __( 'Dashed', 'curlware-header-footer-elementor' ),
 				],
 				'selectors'   => [
 					'{{WRAPPER}} .sce-input-focus .sce-search-icon-toggle .sce-search-form__input' => 'border-style: {{VALUE}};',
@@ -544,7 +544,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border_color_focus',
 			[
-				'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-input-focus .sce-search-form__container,
@@ -560,7 +560,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'icon_border_width',
 			[
-				'label'      => __( 'Border Width', 'CurlWare-header-footer-elementor' ),
+				'label'      => __( 'Border Width', 'curlware-header-footer-elementor' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'default'    => [
@@ -583,7 +583,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'icon_focus_border_radius',
 			[
-				'label'     => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SLIDER,
 				'range'     => [
 					'px' => [
@@ -609,7 +609,7 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_button_style',
 			[
-				'label'     => __( 'Button', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Button', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'layout' => 'icon_text',
@@ -622,14 +622,14 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'button_icon_color',
 			[
-				'label'     => __( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '#fff',
 				'selectors' => [
@@ -642,7 +642,7 @@ class Search_Button extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name'           => 'button_background',
-				'label'          => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'          => __( 'Background', 'curlware-header-footer-elementor' ),
 				'types'          => [ 'classic', 'gradient' ],
 				'exclude'        => [ 'image' ],
 				'selector'       => '{{WRAPPER}} .sce-search-submit',
@@ -697,14 +697,14 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text_color_hover',
 			[
-				'label'     => __( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-search-submit:hover' => 'color: {{VALUE}}',
@@ -715,7 +715,7 @@ class Search_Button extends Widget_Base {
 		$this->add_control(
 			'button_background_color_hover',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-search-submit:hover' => 'background-color: {{VALUE}}',
@@ -730,7 +730,7 @@ class Search_Button extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name'      => 'button_background_hover',
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'types'     => [ 'classic', 'gradient' ],
 				'exclude'   => [ 'image' ],
 				'selector'  => '{{WRAPPER}} .sce-search-submit:hover',
@@ -747,7 +747,7 @@ class Search_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label'              => __( 'Icon Size', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Icon Size', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -774,7 +774,7 @@ class Search_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'button_width',
 			[
-				'label'              => __( 'Width', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Width', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -799,7 +799,7 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_toggle_style',
 			[
-				'label'     => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'layout' => 'icon',
@@ -812,14 +812,14 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'toggle_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-search-icon-toggle i' => 'color: {{VALUE}}; border-color: {{VALUE}}; fill: {{VALUE}};',
@@ -832,14 +832,14 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_toggle_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'toggle_color_hover',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-search-icon-toggle i:hover' => 'color: {{VALUE}}; border-color: {{VALUE}}',
@@ -854,7 +854,7 @@ class Search_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'toggle_icon_size',
 			[
-				'label'              => __( 'Icon Size', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Icon Size', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'default'            => [
 					'size' => 15,
@@ -879,7 +879,7 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_section(
 			'section_close_icon',
 			[
-				'label'     => __( 'Close Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Close Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'layout!' => 'icon',
@@ -890,7 +890,7 @@ class Search_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'close_icon_size',
 			[
-				'label'              => __( 'Size', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Size', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -917,13 +917,13 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'normal_close_button',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
 			'text_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,
@@ -941,14 +941,14 @@ class Search_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'hover_close_icon',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'hover_close_icon_text',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-search-form__container button#clear-with-button:hover,
@@ -978,7 +978,7 @@ class Search_Button extends Widget_Base {
 				'class'       => 'sce-search-form__input',
 				'type'        => 'search',
 				'name'        => 's',
-				'title'       => __( 'Search', 'CurlWare-header-footer-elementor' ),
+				'title'       => __( 'Search', 'curlware-header-footer-elementor' ),
 				'value'       => get_search_query(),
 
 			]

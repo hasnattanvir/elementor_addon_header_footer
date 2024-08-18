@@ -22,7 +22,7 @@ class BrandSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Brand Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Brand Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -108,7 +108,7 @@ class BrandSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -463,7 +463,7 @@ class BrandSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_slider_style',
 			[
-				'label' => esc_html__( 'Brand Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Brand Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -471,7 +471,7 @@ class BrandSlider extends Widget_Base {
         $this->add_control(
             'project_item_bg',
             [
-                'label' => esc_html__( 'Project Overlay', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Project Overlay', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-brand-image-box' => 'background: {{VALUE}};',
@@ -496,23 +496,23 @@ class BrandSlider extends Widget_Base {
         $this->add_responsive_control(
 			'text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -529,7 +529,7 @@ class BrandSlider extends Widget_Base {
         $this->start_controls_section(
 			'navigation_slider_style',
 			[
-				'label' => esc_html__( 'Navigation Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Navigation Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -537,7 +537,7 @@ class BrandSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_background',
             [
-                'label' => esc_html__( 'Navigation Arrow Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-next, .rs-addon-slider .slick-prev' => 'background: {{VALUE}};',
@@ -550,7 +550,7 @@ class BrandSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_icon_color',
             [
-                'label' => esc_html__( 'Navigation Arrow Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-next::before' => 'color: {{VALUE}};',
@@ -563,7 +563,7 @@ class BrandSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_border_color',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button' => 'border-color: {{VALUE}};',
@@ -575,7 +575,7 @@ class BrandSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_icon_background',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button:hover' => 'background: {{VALUE}};',

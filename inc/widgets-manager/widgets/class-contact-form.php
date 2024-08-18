@@ -25,7 +25,7 @@ class scContacForm extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Contact Form', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Contact Form', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -66,16 +66,16 @@ class scContacForm extends Widget_Base {
 		$this->start_controls_section(
 			'section_general',
 			[
-				'label' => __( 'General', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
             'selected_form_id',
             [
-                'label' => esc_html__( 'Chosse Your Form', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Chosse Your Form', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SELECT,
                 'label_block' => true,
-                'options' => ['' => esc_html__( '', 'CurlWare-header-footer-elementor' ) ] + \rt_get_cf7_forms(),
+                'options' => ['' => esc_html__( '', 'curlware-header-footer-elementor' ) ] + \rt_get_cf7_forms(),
             ]
         );
 		$this->end_controls_section();
@@ -95,7 +95,7 @@ class scContacForm extends Widget_Base {
 		$this->start_controls_section(
             '_section_fields_style',
             [
-                'label' => esc_html__( 'Form Fields', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Form Fields', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -103,7 +103,7 @@ class scContacForm extends Widget_Base {
         $this->add_responsive_control(
             'field_width',
             [
-                'label' => esc_html__( 'Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'unit' => '%',
@@ -136,7 +136,7 @@ class scContacForm extends Widget_Base {
         $this->add_responsive_control(
             'field_margin',
             [
-                'label' => esc_html__( 'Spacing Bottom', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Spacing Bottom', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -154,7 +154,7 @@ class scContacForm extends Widget_Base {
         $this->add_responsive_control(
             'field_padding',
             [
-                'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -166,7 +166,7 @@ class scContacForm extends Widget_Base {
         $this->add_responsive_control(
             'field_border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -199,7 +199,7 @@ class scContacForm extends Widget_Base {
         $this->add_control(
             'field_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .wpcf7-form-control:not(.wpcf7-submit)' => 'color: {{VALUE}}',
@@ -210,7 +210,7 @@ class scContacForm extends Widget_Base {
         $this->add_control(
             'field_placeholder_color',
             [
-                'label' => esc_html__( 'Placeholder Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Placeholder Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} ::-webkit-input-placeholder' => 'color: {{VALUE}} !important;',
@@ -225,7 +225,7 @@ class scContacForm extends Widget_Base {
         $this->start_controls_tab(
             'tab_field_normal',
             [
-                'label' => esc_html__( 'Normal', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Normal', 'curlware-header-footer-elementor' ),
             ]
 		);
 		$this->add_group_control(
@@ -245,7 +245,7 @@ class scContacForm extends Widget_Base {
         $this->add_control(
             'field_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .wpcf7-form-control:not(.wpcf7-submit)' => 'background-color: {{VALUE}}',
@@ -257,7 +257,7 @@ class scContacForm extends Widget_Base {
 		$this->start_controls_tab(
             'tab_field_focus',
             [
-                'label' => esc_html__( 'Focus', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Focus', 'curlware-header-footer-elementor' ),
             ]
 		);
 
@@ -283,7 +283,7 @@ class scContacForm extends Widget_Base {
 		$this->add_control(
             'field_focus_bg_color',
             [
-                'label' => esc_html__( 'Background Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Background Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .wpcf7-form-control:not(.wpcf7-submit):focus' => 'background-color: {{VALUE}}',
@@ -300,7 +300,7 @@ class scContacForm extends Widget_Base {
         $this->start_controls_section(
             'cf7-form-label',
             [
-                'label' => esc_html__( 'Form Fields Label', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Form Fields Label', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -308,7 +308,7 @@ class scContacForm extends Widget_Base {
         $this->add_responsive_control(
             'label_margin',
             [
-                'label' => esc_html__( 'Spacing Bottom', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Spacing Bottom', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px' ],
                 'range' => [
@@ -346,7 +346,7 @@ class scContacForm extends Widget_Base {
         $this->add_control(
             'label_color',
             [
-                'label' => esc_html__( 'Text Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} label' => 'color: {{VALUE}}',

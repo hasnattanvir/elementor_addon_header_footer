@@ -24,7 +24,7 @@ class SC_Breadcrumb extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Breadcrumb', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Breadcrumb', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -65,30 +65,30 @@ class SC_Breadcrumb extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'Breadcrumb', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Breadcrumb', 'curlware-header-footer-elementor' ),
 			]
 		);
 
         $this->add_responsive_control(
             'align',
             [
-                'label' => esc_html__( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justify', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Justify', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-justify',
                     ],
                 ],
@@ -112,7 +112,7 @@ class SC_Breadcrumb extends Widget_Base {
         $this->start_controls_section(
 			'breadcrumb_style_area',
 			[
-				'label' => __( 'Breadcrumb Style', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Breadcrumb Style', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);

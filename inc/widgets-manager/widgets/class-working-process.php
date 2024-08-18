@@ -24,7 +24,7 @@ class WorkingProcess extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Working Process', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Working Process', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -65,7 +65,7 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
         
@@ -101,7 +101,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'icon',
 			[
-				'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::ICONS,
 				'label_block' => 'true',
 			]
@@ -110,41 +110,41 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'title',
 			[
-				'label'   => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Title', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => __( 'Process Title', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Process Title', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'process_desc',
 			[
-				'label'   => __( 'Description', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Description', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXTAREA,
-				'default' => __( 'Busto auctor lectus better best conbia euismot rhoncus dolora gorgeous system nicest does had blessed face winged female', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Busto auctor lectus better best conbia euismot rhoncus dolora gorgeous system nicest does had blessed face winged female', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'heading_text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],
@@ -165,7 +165,7 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_section(
 			'section_heading_typography',
 			[
-				'label' => __( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Title', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -173,7 +173,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'heading_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -188,7 +188,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'heading_hover_color',
 			[
-				'label'     => __( 'Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -229,7 +229,7 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_section(
 			'section_desc_typography',
 			[
-				'label' => __( 'Description', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Description', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -237,7 +237,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'desc_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -251,7 +251,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'desc_hover_color',
 			[
-				'label'     => __( 'Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -291,7 +291,7 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_section(
 			'section_icon',
 			[
-				'label'     => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'icon[value]!' => '',
@@ -302,7 +302,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control( 
 			'icon_color',
 			[
-				'label'     => __( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -321,7 +321,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'icon_bg',
 			[
-				'label'     => __( 'Icon Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -347,7 +347,7 @@ class WorkingProcess extends Widget_Base {
 		$this->add_control(
 			'icon_bg_shape',
 			[
-				'label'     => __( 'Icon Shape Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Icon Shape Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -365,7 +365,7 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_section(
 			'section_global_style',
 			[
-				'label'     => __( 'Global Style', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Global Style', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -409,14 +409,14 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_globa_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'service_bg',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-business-item .sc-business-text'   => 'background: {{VALUE}};',
@@ -430,13 +430,13 @@ class WorkingProcess extends Widget_Base {
 		$this->start_controls_tab(
 			'tab_globa_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
 			'service_hover_bg',
 			[
-				'label'     => __( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-business-item:hover .sc-business-text'   => 'background: {{VALUE}};',

@@ -26,7 +26,7 @@ class TeamSlider extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'Curlware Team Slider', 'CurlWare-header-footer-elementor' );
+		return __( 'Curlware Team Slider', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -67,7 +67,7 @@ class TeamSlider extends Widget_Base {
 		$this->start_controls_section(
 			'section_general_fields',
 			[
-				'label' => __( 'General Settings', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'General Settings', 'curlware-header-footer-elementor' ),
 			]
 		);
         
@@ -75,7 +75,7 @@ class TeamSlider extends Widget_Base {
 		$this->add_control(
 			'team_slider_style',
 			[
-				'label'   => esc_html__( 'Select Style', 'CurlWare-header-footer-elementor' ),
+				'label'   => esc_html__( 'Select Style', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'style1',				
 				'options' => [
@@ -548,7 +548,7 @@ class TeamSlider extends Widget_Base {
 		$this->start_controls_section(
 			'team_title_style',
 			[
-				'label' => esc_html__( 'Title', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -556,7 +556,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'title_color',
             [
-                'label' => esc_html__( 'Title Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-slider .sc-slider-item .sc-slider-text .title, {{WRAPPER}} .sc-team-content a' => 'color: {{VALUE}};',
@@ -567,7 +567,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'title_color_hover',
             [
-                'label' => esc_html__( 'Title Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Title Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .team-slider-style1 .team-item .team-content h3.team-name a:hover' => 'color: {{VALUE}};',
@@ -596,14 +596,14 @@ class TeamSlider extends Widget_Base {
         $this->start_controls_section(
 			'team_designation__style',
 			[
-				'label' => esc_html__( 'Designation', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Designation', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
         $this->add_control(
             'span_color',
             [
-                'label' => esc_html__( 'Span Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Span Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-content span' => 'color: {{VALUE}};',
@@ -615,7 +615,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'designation_color',
             [
-                'label' => esc_html__( 'Designation Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Designation Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .team-content .team-title' => 'color: {{VALUE}};',
@@ -628,7 +628,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'designation_hover_color',
             [
-                'label' => esc_html__( 'Designation Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Designation Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-slider .sc-slider-item:hover .sc-slider-text .sub-title' => 'color: {{VALUE}};',
@@ -640,14 +640,14 @@ class TeamSlider extends Widget_Base {
         $this->start_controls_section(
 			'team_icon__style',
 			[
-				'label' => esc_html__( 'Team Icon Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Team Icon Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
         $this->add_control(
             'icon_section_bg',
             [
-                'label' => esc_html__( 'Icon Section Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Section Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .team-social-dropdown .social-item .social-link i'   => 'background: {{VALUE}};',
@@ -659,7 +659,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'icon_section_hover',
             [
-                'label' => esc_html__( 'Icon Section Hover', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Section Hover', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .team-social-dropdown .social-item .social-link i:hover'   => 'background: {{VALUE}};',
@@ -671,7 +671,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
 			'icon_font_size',
 			[
-				'label' => esc_html__( 'Icon Font Size', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Icon Font Size', 'curlware-header-footer-elementor' ),
 				'type' => Controls_Manager::SLIDER,
 				'show_label' => true,
 				'range' => [
@@ -694,7 +694,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'icon_color',
             [
-                'label' => esc_html__( 'Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-item .team-social-1 .social-item .team-social-dropdown .social-item .social-link i' => 'color: {{VALUE}};',
@@ -706,7 +706,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'icon_color_hover',
             [
-                'label' => esc_html__( 'Icon Hover Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-item .team-social-1 .social-item .team-social-dropdown .social-item .social-link i:hover' => 'color: {{VALUE}};',
@@ -719,14 +719,14 @@ class TeamSlider extends Widget_Base {
         $this->start_controls_section(
 			'team_email__style',
 			[
-				'label' => esc_html__( 'Team E-mail', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Team E-mail', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
          $this->add_control(
 			'email_color',
 			[
-				'label'     => __( 'Email Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Email Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-white-btn-two' => 'color: {{VALUE}};',
@@ -737,7 +737,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
 			'email_hover_color',
 			[
-				'label'     => __( 'Email Hover Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Email Hover Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-team-slider:hover .sc-slider-item .sc-white-btn-two' => 'color: {{VALUE}};',
@@ -748,7 +748,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
 			'email_bg_color',
 			[
-				'label'     => __( 'Email Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Email Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-team-slider .sc-slider-item .sc-white-btn-two:before' => 'background-color: {{VALUE}};',
@@ -759,7 +759,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
 			'email_hover_bg_color',
 			[
-				'label'     => __( 'Email Hover Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Email Hover Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-team-slider:hover .sc-slider-item .sc-white-btn-two:before' => 'background-color: {{VALUE}};',
@@ -771,14 +771,14 @@ class TeamSlider extends Widget_Base {
         $this->start_controls_section(
 			'team_arrow__style',
 			[
-				'label' => esc_html__( 'Team Arrow Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Team Arrow Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
         $this->add_control(
             'navigation_arrow_background',
             [
-                'label' => esc_html__( 'Navigation Arrow Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-next, .rs-addon-slider .slick-prev' => 'background: {{VALUE}};',
@@ -791,7 +791,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'navigation_arrow_icon_color',
             [
-                'label' => esc_html__( 'Navigation Arrow Icon Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Arrow Icon Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-next::before' => 'color: {{VALUE}};',
@@ -804,7 +804,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control( 
             'navigation_dot_border_color',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button' => 'border-color: {{VALUE}};',
@@ -816,7 +816,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'navigation_dot_icon_background',
             [
-                'label' => esc_html__( 'Navigation Dot Icon Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Navigation Dot Icon Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .rs-addon-slider .slick-dots li button:hover' => 'background: {{VALUE}};',
@@ -830,14 +830,14 @@ class TeamSlider extends Widget_Base {
         $this->start_controls_section(
 			'team_content__style',
 			[
-				'label' => esc_html__( 'Team Content Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Team Content Style', 'curlware-header-footer-elementor' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
         $this->add_control(
             'content_hover_bg',
             [
-                'label' => esc_html__( 'Content Hover Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Hover Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'team_slider_style' => 'style5',
@@ -852,7 +852,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'content_item_bg',
             [
-                'label' => esc_html__( 'Content Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-item' => 'background: {{VALUE}};',
@@ -864,7 +864,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'content_item_hover_bg',
             [
-                'label' => esc_html__( 'Content Hover Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Hover Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .sc-team-content-area .sc-slider-item:hover' => 'background: {{VALUE}};',
@@ -910,7 +910,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'content_top_border_color',
             [
-                'label' => esc_html__( 'Content Top Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Top Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'team_slider_style' => 'style4',
@@ -925,7 +925,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'content_bottom_border_color',
             [
-                'label' => esc_html__( 'Content Bottom Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Content Bottom Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'team_slider_style' => 'style5',
@@ -940,7 +940,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'image_overlay',
             [
-                'label' => esc_html__( 'Image Overlay', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Overlay', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'team_slider_style' => 'style3',
@@ -955,7 +955,7 @@ class TeamSlider extends Widget_Base {
         $this->add_control(
             'image_corner_border_color',
             [
-                'label' => esc_html__( 'Image Corner Border Color', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Corner Border Color', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                 	'team_slider_style' => 'style3',
@@ -972,7 +972,7 @@ class TeamSlider extends Widget_Base {
 			Group_Control_Box_Shadow::get_type(),
 			[
 				'name' => 'box_shadow',
-				'label' => esc_html__( 'Box Shadow', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Box Shadow', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .sc-team-item',
 			]
 		);
@@ -981,7 +981,7 @@ class TeamSlider extends Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'background',
-				'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
 				'types' => [ 'classic', 'gradient', 'video' ],
 				'selector' => '{{WRAPPER}} .team-content',
 				
@@ -1004,23 +1004,23 @@ class TeamSlider extends Widget_Base {
         $this->add_responsive_control(
 			'text_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'    => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'  => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'   => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-justify',
 					],
 				],

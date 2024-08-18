@@ -20,7 +20,7 @@ class Header_Button extends Widget_Base {
 	}
 
 	public function get_title() {
-		return __( 'CurlWare Button', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Button', 'curlware-header-footer-elementor' );
 	}
 
 	public function get_icon() {
@@ -46,17 +46,17 @@ class Header_Button extends Widget_Base {
 		$this->start_controls_section(
 			'header_btn_section',
 			[
-				'label' => __( 'Header Button', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Header Button', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'header_btn_text',
 			[
-				'label'   => __( 'Button Text', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Button Text', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Simple', 'CurlWare-header-footer-elementor' ),
-				'placeholder' => __( 'Button', 'CurlWare-header-footer-elementor' ),
+				'default' => esc_html__( 'Simple', 'curlware-header-footer-elementor' ),
+				'placeholder' => __( 'Button', 'curlware-header-footer-elementor' ),
 				'separator'   => 'before',
 				'label_block' => true,
 			]
@@ -65,12 +65,12 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'button_width',
 			[
-				'label'       => __( 'Button Width', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Button Width', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'default'     => 'inline',
 				'options'     => [
-					'inline' => __( 'Inline', 'CurlWare-header-footer-elementor' ),
-					'fullwidth'   => __( 'Full width (100%)', 'CurlWare-header-footer-elementor' ),
+					'inline' => __( 'Inline', 'curlware-header-footer-elementor' ),
+					'fullwidth'   => __( 'Full width (100%)', 'curlware-header-footer-elementor' ),
 				],
 			]
 		);
@@ -78,12 +78,12 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'icon_postion',
 			[
-				'label'       => __( 'Icon Position', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Icon Position', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::SELECT,
 				'default'     => 'right_icon',
 				'options'     => [
-					'left_icon' => __( 'Left Icon', 'CurlWare-header-footer-elementor' ),
-					'right_icon'   => __( 'Right Icon', 'CurlWare-header-footer-elementor' ),
+					'left_icon' => __( 'Left Icon', 'curlware-header-footer-elementor' ),
+					'right_icon'   => __( 'Right Icon', 'curlware-header-footer-elementor' ),
 				],
 			]
 		);
@@ -149,9 +149,9 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'header_btn_link',
 			[
-				'label' => esc_html__( 'Link', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Link', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::URL,
-				'placeholder' => esc_html__( 'https://your-link.com', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => esc_html__( 'https://your-link.com', 'curlware-header-footer-elementor' ),
 				'options' => [ 'url', 'is_external', 'nofollow' ],
 				'default' => [
 					'url' => '',
@@ -165,19 +165,19 @@ class Header_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'header_btn_align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'   => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -192,7 +192,7 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'header_btn_icon',
 			[
-				'label' => esc_html__( 'Icon', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Icon', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::ICONS,
 				'default' => [
 					'value' => 'fas fa-circle',
@@ -214,7 +214,7 @@ class Header_Button extends Widget_Base {
 			'header_btn_icon_spacing',
 			[
 				'type' => \Elementor\Controls_Manager::SLIDER,
-				'label' => esc_html__( 'Icon Spacing', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Icon Spacing', 'curlware-header-footer-elementor' ),
 				'separator'   => 'before',
 				'range' => [
 					'px' => [
@@ -232,7 +232,7 @@ class Header_Button extends Widget_Base {
 		$this->add_responsive_control(
 		    'svg__width',
 		    [
-		        'label' => esc_html__( 'Width', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Width', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::SLIDER,
 		        'separator'   => 'before',
 		        'size_units' => [ 'px' ],
@@ -245,7 +245,7 @@ class Header_Button extends Widget_Base {
 		$this->add_responsive_control(
 		    'svg__height',
 		    [
-		        'label' => esc_html__( 'Height', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Height', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::SLIDER,
 		        'size_units' => [ 'px' ],
 		        'separator'   => 'before',
@@ -262,7 +262,7 @@ class Header_Button extends Widget_Base {
 		$this->start_controls_section(
 			'style_section',
 			[
-				'label' => esc_html__( 'Style', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Style', 'curlware-header-footer-elementor' ),
 				'tab' => \Elementor\Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -277,14 +277,14 @@ class Header_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'style_normal_tab',
 			[
-				'label' => esc_html__( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'header_btn_text_color',
 			[
-				'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .primary-btn2 span' => 'color: {{VALUE}}',
@@ -297,7 +297,7 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'header_btn_text_bg_color',
 			[
-				'label' => esc_html__( 'After Background Color', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'After Background Color', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sc-primary-btn:before' => 'background-color: {{VALUE}}',
@@ -310,7 +310,7 @@ class Header_Button extends Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'header_btn_background',
-				'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .primary-btn2',
 			]
@@ -323,14 +323,14 @@ class Header_Button extends Widget_Base {
 		$this->start_controls_tab(
 			'style_hover_tab',
 			[
-				'label' => esc_html__( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'header_btn_text_hover_color',
 			[
-				'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .primary-btn2:hover span' => 'color: {{VALUE}}',
@@ -342,7 +342,7 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'header_btn_hover_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Border Color', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .primary-btn2:hover' => 'border-color: {{VALUE}}',
@@ -354,7 +354,7 @@ class Header_Button extends Widget_Base {
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'header_btn_hover_background',
-				'label' => esc_html__( 'Background', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Background', 'curlware-header-footer-elementor' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .primary-btn2::before, {{WRAPPER}} .primary-btn2::after',
 			]
@@ -363,7 +363,7 @@ class Header_Button extends Widget_Base {
 		$this->add_control(
 			'header_btn_hover_animation',
 			[
-				'label' => esc_html__( 'Hover Animation', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Hover Animation', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 			]
 		);
@@ -374,7 +374,7 @@ class Header_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'header_btn_padding',
 			[
-				'label' => esc_html__( 'Padding', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Padding', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -386,7 +386,7 @@ class Header_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'header_btn_margin',
 			[
-				'label' => esc_html__( 'Margin', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Margin', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -407,7 +407,7 @@ class Header_Button extends Widget_Base {
 			\Elementor\Group_Control_Border::get_type(),
 			[
 				'name' => 'header_btn_border',
-				'label' => esc_html__( 'Border', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Border', 'curlware-header-footer-elementor' ),
 				'selector' => '{{WRAPPER}} .primary-btn2',
 			]
 		);
@@ -415,7 +415,7 @@ class Header_Button extends Widget_Base {
 		$this->add_responsive_control(
 			'btn_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type' => \Elementor\Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [

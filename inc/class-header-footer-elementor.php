@@ -130,19 +130,19 @@ class Header_Footer_Elementor {
 			/* TO DO */
 			$class = 'notice notice-error';
 			/* translators: %s: html tags */
-			$message = sprintf( __( 'The %1$sElementor Header & Footer Builder%2$s plugin requires %1$sElementor%2$s plugin installed & activated.', 'CurlWare-header-footer-elementor' ), '<strong>', '</strong>' );
+			$message = sprintf( __( 'The %1$sElementor Header & Footer Builder%2$s plugin requires %1$sElementor%2$s plugin installed & activated.', 'curlware-header-footer-elementor' ), '<strong>', '</strong>' );
 
 			$plugin = 'elementor/elementor.php';
 
 			if ( _is_elementor_installed() ) {
 
 				$action_url   = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $plugin . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $plugin );
-				$button_label = __( 'Activate Elementor', 'CurlWare-header-footer-elementor' );
+				$button_label = __( 'Activate Elementor', 'curlware-header-footer-elementor' );
 
 			} else {
 
 				$action_url   = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=elementor' ), 'install-plugin_elementor' );
-				$button_label = __( 'Install Elementor', 'CurlWare-header-footer-elementor' );
+				$button_label = __( 'Install Elementor', 'curlware-header-footer-elementor' );
 			}
 
 			$button = '<p><a href="' . esc_url( $action_url ) . '" class="button-primary">' . esc_html( $button_label ) . '</a></p><p></p>';
@@ -164,19 +164,19 @@ class Header_Footer_Elementor {
 		/* TO DO */
 		$class = 'notice notice-error';
 		/* translators: %s: html tags */
-		$message = sprintf( __( 'The %1$sElementor Header & Footer Builder%2$s plugin has stopped working because you are using an older version of %1$sElementor%2$s plugin.', 'CurlWare-header-footer-elementor' ), '<strong>', '</strong>' );
+		$message = sprintf( __( 'The %1$sElementor Header & Footer Builder%2$s plugin has stopped working because you are using an older version of %1$sElementor%2$s plugin.', 'curlware-header-footer-elementor' ), '<strong>', '</strong>' );
 
 		$plugin = 'elementor/elementor.php';
 
 		if ( file_exists( WP_PLUGIN_DIR . '/elementor/elementor.php' ) ) {
 
 			$action_url   = wp_nonce_url( self_admin_url( 'update.php?action=upgrade-plugin&amp;plugin=' ) . $plugin . '&amp;', 'upgrade-plugin_' . $plugin );
-			$button_label = __( 'Update Elementor', 'CurlWare-header-footer-elementor' );
+			$button_label = __( 'Update Elementor', 'curlware-header-footer-elementor' );
 
 		} else {
 
 			$action_url   = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=elementor' ), 'install-plugin_elementor' );
-			$button_label = __( 'Install Elementor', 'CurlWare-header-footer-elementor' );
+			$button_label = __( 'Install Elementor', 'curlware-header-footer-elementor' );
 		}
 
 		$button = '<p><a href="' . esc_url( $action_url ) . '" class="button-primary">' . esc_html( $button_label ) . '</a></p><p></p>';
@@ -201,7 +201,7 @@ class Header_Footer_Elementor {
 		$setting_url = admin_url( 'edit.php?post_type=elementor-hf' );
 
 		/* translators: %s: html tags */
-		$notice_message = sprintf( __( 'Thank you for installing %1$s Elementor Header & Footer Builder %2$s Plugin! Click here to %3$sget started. %4$s', 'CurlWare-header-footer-elementor' ), '<strong>', '</strong>', '<a href="' . $setting_url . '">', '</a>' );
+		$notice_message = sprintf( __( 'Thank you for installing %1$s Elementor Header & Footer Builder %2$s Plugin! Click here to %3$sget started. %4$s', 'curlware-header-footer-elementor' ), '<strong>', '</strong>', '<a href="' . $setting_url . '">', '</a>' );
 	}
 
 	/**
@@ -228,7 +228,7 @@ class Header_Footer_Elementor {
 	 * Loads textdomain for the plugin.
 	 */
 	public function load_textdomain() {
-		load_plugin_textdomain( 'CurlWare-header-footer-elementor' );
+		load_plugin_textdomain( 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -336,9 +336,9 @@ class Header_Footer_Elementor {
 	 * @param array $socoders_elements_settings_tabs settings array tabs.
 	 */
 	public function setup_unsupported_theme( $socoders_elements_settings_tabs = [] ) {
-		if ( ! current_theme_supports( 'CurlWare-header-footer-elementor' ) ) {
+		if ( ! current_theme_supports( 'curlware-header-footer-elementor' ) ) {
 			$socoders_elements_settings_tabs['socoders_elements_settings'] = [
-				'name' => __( 'Theme Support', 'CurlWare-header-footer-elementor' ),
+				'name' => __( 'Theme Support', 'curlware-header-footer-elementor' ),
 				'url'  => admin_url( 'themes.php?page=sce-settings' ),
 			];
 		}
@@ -350,7 +350,7 @@ class Header_Footer_Elementor {
 	 */
 	public function setup_fallback_support() {
 
-		if ( ! current_theme_supports( 'CurlWare-header-footer-elementor' ) ) {
+		if ( ! current_theme_supports( 'curlware-header-footer-elementor' ) ) {
 			$socoders_elements_compatibility_option = get_option( 'socoders_elements_compatibility_option', '1' );
 
 			if ( '1' === $socoders_elements_compatibility_option ) {

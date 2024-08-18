@@ -27,7 +27,7 @@ class Copyright extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Copyright', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Copyright', 'curlware-header-footer-elementor' );
 	}
 	/**
 	 * Retrieve the widget icon.
@@ -78,47 +78,47 @@ class Copyright extends Widget_Base {
 		$this->start_controls_section(
 			'section_title',
 			[
-				'label' => __( 'Copyright', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Copyright', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'shortcode',
 			[
-				'label'   => __( 'Copyright Text', 'CurlWare-header-footer-elementor' ),
+				'label'   => __( 'Copyright Text', 'curlware-header-footer-elementor' ),
 				'type'    => Controls_Manager::TEXTAREA,
 				'dynamic' => [
 					'active' => true,
 				],
-				'default' => __( 'Copyright © [socoders_elements_current_year] [socoders_elements_site_title] | Powered by [socoders_elements_site_title]', 'CurlWare-header-footer-elementor' ),
+				'default' => __( 'Copyright © [socoders_elements_current_year] [socoders_elements_site_title] | Powered by [socoders_elements_site_title]', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'link',
 			[
-				'label'       => __( 'Link', 'CurlWare-header-footer-elementor' ),
+				'label'       => __( 'Link', 'curlware-header-footer-elementor' ),
 				'type'        => Controls_Manager::URL,
-				'placeholder' => __( 'https://your-link.com', 'CurlWare-header-footer-elementor' ),
+				'placeholder' => __( 'https://your-link.com', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'align',
 			[
-				'label'              => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::CHOOSE,
 				'options'            => [
 					'left'   => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -132,7 +132,7 @@ class Copyright extends Widget_Base {
 		$this->add_control(
 			'title_color',
 			[
-				'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_TEXT,

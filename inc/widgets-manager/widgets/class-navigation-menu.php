@@ -47,7 +47,7 @@ class Navigation_Menu extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Navigation Menu', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Navigation Menu', 'curlware-header-footer-elementor' );
 	}
 
 	/**
@@ -125,7 +125,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_menu',
 			[
-				'label' => __( 'Menu', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Menu', 'curlware-header-footer-elementor' ),
 			]
 		);
 
@@ -135,13 +135,13 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'menu',
 				[
-					'label'        => __( 'Menu', 'CurlWare-header-footer-elementor' ),
+					'label'        => __( 'Menu', 'curlware-header-footer-elementor' ),
 					'type'         => Controls_Manager::SELECT,
 					'options'      => $menus,
 					'default'      => array_keys( $menus )[0],
 					'save_default' => true,
 					/* translators: %s Nav menu URL */
-					'description'  => sprintf( __( 'Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'CurlWare-header-footer-elementor' ), admin_url( 'nav-menus.php' ) ),
+					'description'  => sprintf( __( 'Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'curlware-header-footer-elementor' ), admin_url( 'nav-menus.php' ) ),
 				]
 			);
 		} else {
@@ -150,7 +150,7 @@ class Navigation_Menu extends Widget_Base {
 				[
 					'type'            => Controls_Manager::RAW_HTML,
 					/* translators: %s Nav menu URL */
-					'raw'             => sprintf( __( '<strong>There are no menus in your site.</strong><br>Go to the <a href="%s" target="_blank">Menus screen</a> to create one.', 'CurlWare-header-footer-elementor' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
+					'raw'             => sprintf( __( '<strong>There are no menus in your site.</strong><br>Go to the <a href="%s" target="_blank">Menus screen</a> to create one.', 'curlware-header-footer-elementor' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
 					'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				]
 			);
@@ -159,11 +159,11 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'menu_last_item',
 			[
-				'label'     => __( 'Last Menu Item', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Last Menu Item', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => [
-					'none' => __( 'Default', 'CurlWare-header-footer-elementor' ),
-					'cta'  => __( 'Button', 'CurlWare-header-footer-elementor' ),
+					'none' => __( 'Default', 'curlware-header-footer-elementor' ),
+					'cta'  => __( 'Button', 'curlware-header-footer-elementor' ),
 				],
 				'default'   => 'none',
 				'condition' => [
@@ -175,11 +175,11 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'separator_dots',
 			[
-				'label'     => __( 'Select Separator', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Select Separator', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => [
-					'no-separator' 		=> __( 'Default', 'CurlWare-header-footer-elementor' ),
-					'separator-dots'  	=> __( 'Separator Dots', 'CurlWare-header-footer-elementor' ),
+					'no-separator' 		=> __( 'Default', 'curlware-header-footer-elementor' ),
+					'separator-dots'  	=> __( 'Separator Dots', 'curlware-header-footer-elementor' ),
 				],
 				'default'   => 'no-separator',
 			]
@@ -188,11 +188,11 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'position_header',
 			[
-				'label'     => __( 'Select Position', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Select Position', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'options'   => [
-					'no-position' 		=> __( 'Default', 'CurlWare-header-footer-elementor' ),
-					'absolute-position'  	=> __( 'Transparent', 'CurlWare-header-footer-elementor' ),
+					'no-position' 		=> __( 'Default', 'curlware-header-footer-elementor' ),
+					'absolute-position'  	=> __( 'Transparent', 'curlware-header-footer-elementor' ),
 				],
 				'default'   => 'no-position',
 			]
@@ -201,7 +201,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'separator_dots_color',
 			[
-				'label'     => __( 'Separator Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Separator Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '#FFFFFF82',
 				'selectors' => [
@@ -219,22 +219,22 @@ class Navigation_Menu extends Widget_Base {
 			$this->start_controls_section(
 				'section_layout',
 				[
-					'label' => __( 'Layout', 'CurlWare-header-footer-elementor' ),
+					'label' => __( 'Layout', 'curlware-header-footer-elementor' ),
 				]
 			);
 
 			$this->add_control(
 				'layout',
 				[
-					'label'   => __( 'Layout', 'CurlWare-header-footer-elementor' ),
+					'label'   => __( 'Layout', 'curlware-header-footer-elementor' ),
 					'type'    => Controls_Manager::SELECT,
 					'default' => 'horizontal',
 					'options' => [
-						'horizontal'       => __( 'Horizontal', 'CurlWare-header-footer-elementor' ),
-						'horizontal_col_2' => __( 'Horizontal Col 2', 'CurlWare-header-footer-elementor' ),
-						'vertical'         => __( 'Vertical', 'CurlWare-header-footer-elementor' ),
-						'expandible'       => __( 'Expanded', 'CurlWare-header-footer-elementor' ),
-						'flyout'           => __( 'Flyout', 'CurlWare-header-footer-elementor' ),
+						'horizontal'       => __( 'Horizontal', 'curlware-header-footer-elementor' ),
+						'horizontal_col_2' => __( 'Horizontal Col 2', 'curlware-header-footer-elementor' ),
+						'vertical'         => __( 'Vertical', 'curlware-header-footer-elementor' ),
+						'expandible'       => __( 'Expanded', 'curlware-header-footer-elementor' ),
+						'flyout'           => __( 'Flyout', 'curlware-header-footer-elementor' ),
 					],
 				]
 			);
@@ -242,23 +242,23 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'navmenu_align',
 				[
-					'label'        => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+					'label'        => __( 'Alignment', 'curlware-header-footer-elementor' ),
 					'type'         => Controls_Manager::CHOOSE,
 					'options'      => [
 						'flex-start'    => [
-							'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-left',
 						],
 						'center'  => [
-							'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-center',
 						],
 						'flex-end'   => [
-							'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-right',
 						],
 						'justify' => [
-							'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-stretch',
 						],
 					],
@@ -275,12 +275,12 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'flyout_layout',
 				[
-					'label'     => __( 'Flyout Orientation', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Flyout Orientation', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::SELECT,
 					'default'   => 'left',
 					'options'   => [
-						'left'  => __( 'Left', 'CurlWare-header-footer-elementor' ),
-						'right' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'left'  => __( 'Left', 'curlware-header-footer-elementor' ),
+						'right' => __( 'Right', 'curlware-header-footer-elementor' ),
 					],
 					'condition' => [
 						'layout' => 'flyout',
@@ -291,13 +291,13 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'flyout_type',
 				[
-					'label'       => __( 'Appear Effect', 'CurlWare-header-footer-elementor' ),
+					'label'       => __( 'Appear Effect', 'curlware-header-footer-elementor' ),
 					'type'        => Controls_Manager::SELECT,
 					'default'     => 'normal',
 					'label_block' => false,
 					'options'     => [
-						'normal' => __( 'Slide', 'CurlWare-header-footer-elementor' ),
-						'push'   => __( 'Push', 'CurlWare-header-footer-elementor' ),
+						'normal' => __( 'Slide', 'curlware-header-footer-elementor' ),
+						'push'   => __( 'Push', 'curlware-header-footer-elementor' ),
 					],
 					'render_type' => 'template',
 					'condition'   => [
@@ -309,20 +309,20 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'hamburger_align',
 				[
-					'label'                => __( 'Hamburger Align', 'CurlWare-header-footer-elementor' ),
+					'label'                => __( 'Hamburger Align', 'curlware-header-footer-elementor' ),
 					'type'                 => Controls_Manager::CHOOSE,
 					'default'              => 'center',
 					'options'              => [
 						'left'   => [
-							'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-left',
 						],
 						'center' => [
-							'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-center',
 						],
 						'right'  => [
-							'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-right',
 						],
 					],
@@ -346,23 +346,23 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'hamburger_menu_align',
 				[
-					'label'              => __( 'Menu Items Align', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Menu Items Align', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::CHOOSE,
 					'options'            => [
 						'flex-start'    => [
-							'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-left',
 						],
 						'center'        => [
-							'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-center',
 						],
 						'flex-end'      => [
-							'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-right',
 						],
 						'space-between' => [
-							'title' => __( 'Justify', 'CurlWare-header-footer-elementor' ),
+							'title' => __( 'Justify', 'curlware-header-footer-elementor' ),
 							'icon'  => 'eicon-h-align-stretch',
 						],
 					],
@@ -383,13 +383,13 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'submenu_icon',
 				[
-					'label'        => __( 'Submenu Icon', 'CurlWare-header-footer-elementor' ),
+					'label'        => __( 'Submenu Icon', 'curlware-header-footer-elementor' ),
 					'type'         => Controls_Manager::SELECT,
 					'default'      => 'arrow',
 					'options'      => [
-						'arrow'   => __( 'Arrows', 'CurlWare-header-footer-elementor' ),
-						'plus'    => __( 'Plus Sign', 'CurlWare-header-footer-elementor' ),
-						'classic' => __( 'Classic', 'CurlWare-header-footer-elementor' ),
+						'arrow'   => __( 'Arrows', 'curlware-header-footer-elementor' ),
+						'plus'    => __( 'Plus Sign', 'curlware-header-footer-elementor' ),
+						'classic' => __( 'Classic', 'curlware-header-footer-elementor' ),
 					],
 					'prefix_class' => 'sce-submenu-icon-',
 				]
@@ -398,12 +398,12 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'submenu_animation',
 				[
-					'label'        => __( 'Submenu Animation', 'CurlWare-header-footer-elementor' ),
+					'label'        => __( 'Submenu Animation', 'curlware-header-footer-elementor' ),
 					'type'         => Controls_Manager::SELECT,
 					'default'      => 'none',
 					'options'      => [
-						'none'     => __( 'Default', 'CurlWare-header-footer-elementor' ),
-						'slide_up' => __( 'Slide Up', 'CurlWare-header-footer-elementor' ),
+						'none'     => __( 'Default', 'curlware-header-footer-elementor' ),
+						'slide_up' => __( 'Slide Up', 'curlware-header-footer-elementor' ),
 					],
 					'prefix_class' => 'sce-submenu-animation-',
 					'condition'    => [
@@ -415,13 +415,13 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'link_redirect',
 				[
-					'label'        => __( 'Action On Menu Click', 'CurlWare-header-footer-elementor' ),
+					'label'        => __( 'Action On Menu Click', 'curlware-header-footer-elementor' ),
 					'type'         => Controls_Manager::SELECT,
 					'default'      => 'child',
-					'description'  => __( 'For Horizontal layout, this will affect on the selected breakpoint', 'CurlWare-header-footer-elementor' ),
+					'description'  => __( 'For Horizontal layout, this will affect on the selected breakpoint', 'curlware-header-footer-elementor' ),
 					'options'      => [
-						'child'     => __( 'Open Submenu', 'CurlWare-header-footer-elementor' ),
-						'self_link' => __( 'Redirect To Self Link', 'CurlWare-header-footer-elementor' ),
+						'child'     => __( 'Open Submenu', 'curlware-header-footer-elementor' ),
+						'self_link' => __( 'Redirect To Self Link', 'curlware-header-footer-elementor' ),
 					],
 					'prefix_class' => 'sce-link-redirect-',
 				]
@@ -431,7 +431,7 @@ class Navigation_Menu extends Widget_Base {
 			'heading_responsive',
 			[
 				'type'      => Controls_Manager::HEADING,
-				'label'     => __( 'Responsive', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Responsive', 'curlware-header-footer-elementor' ),
 				'separator' => 'before',
 				'condition' => [
 					'layout' => [ 'horizontal', 'vertical' ],
@@ -442,14 +442,14 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'dropdown',
 			[
-				'label'        => __( 'Breakpoint', 'CurlWare-header-footer-elementor' ),
+				'label'        => __( 'Breakpoint', 'curlware-header-footer-elementor' ),
 				'type'         => Controls_Manager::SELECT,
 				'default'      => 'tablet',
 				'options'      => [
-					'mobile' => __( 'Mobile (768px >)', 'CurlWare-header-footer-elementor' ),
-					'landscape' => __( 'Mobile landscape (991px >)', 'CurlWare-header-footer-elementor' ),
-					'tablet' => __( 'Tablet (1025px >)', 'CurlWare-header-footer-elementor' ),
-					'none'   => __( 'None', 'CurlWare-header-footer-elementor' ),
+					'mobile' => __( 'Mobile (768px >)', 'curlware-header-footer-elementor' ),
+					'landscape' => __( 'Mobile landscape (991px >)', 'curlware-header-footer-elementor' ),
+					'tablet' => __( 'Tablet (1025px >)', 'curlware-header-footer-elementor' ),
+					'none'   => __( 'None', 'curlware-header-footer-elementor' ),
 				],
 				'prefix_class' => 'sce-nav-menu__breakpoint-',
 				'condition'    => [
@@ -462,24 +462,24 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'resp_align',
 			[
-				'label'                => __( 'Alignment', 'CurlWare-header-footer-elementor' ),
+				'label'                => __( 'Alignment', 'curlware-header-footer-elementor' ),
 				'type'                 => Controls_Manager::CHOOSE,
 				'options'              => [
 					'left'   => [
-						'title' => __( 'Left', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Left', 'curlware-header-footer-elementor' ),
 						'icon'  => 'eicon-h-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Center', 'curlware-header-footer-elementor' ),
 						'icon'  => 'eicon-h-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'CurlWare-header-footer-elementor' ),
+						'title' => __( 'Right', 'curlware-header-footer-elementor' ),
 						'icon'  => 'eicon-h-align-right',
 					],
 				],
 				'default'              => 'center',
-				'description'          => __( 'This is the alignement of menu icon on selected responsive breakpoints.', 'CurlWare-header-footer-elementor' ),
+				'description'          => __( 'This is the alignement of menu icon on selected responsive breakpoints.', 'curlware-header-footer-elementor' ),
 				'condition'            => [
 					'layout'    => [ 'horizontal', 'vertical' ],
 					'dropdown!' => 'none',
@@ -499,7 +499,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 		    'responsive_background_menu',
 		    [
-		        'label' => esc_html__( 'Background Color (Menu Area)', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Background Color (Menu Area)', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::COLOR,
 		        'selectors' => [
 		            '{{WRAPPER}} .sce-nav-menu nav' => 'background-color: {{VALUE}}',
@@ -510,7 +510,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 		    'responsive_color_menu',
 		    [
-		        'label' => esc_html__( 'Color', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Color', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::COLOR,
 		        'selectors' => [
 		            '{{WRAPPER}} .sce-nav-menu nav ul li a' => 'color: {{VALUE}} !important',
@@ -521,7 +521,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 		    'responsive_color_menu_hover',
 		    [
-		        'label' => esc_html__( 'Color (Hover)', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Color (Hover)', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::COLOR,
 		        'selectors' => [
 		            '{{WRAPPER}} .sce-nav-menu nav ul li a:hover, {{WRAPPER}} .sce-nav-menu nav > ul > li.current_page_item > a, {{WRAPPER}} .sce-nav-menu nav > ul > li.current-menu-ancestor > a' => 'color: {{VALUE}} !important',
@@ -532,7 +532,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 		    'responsive_padding_menu',
 		    [
-		        'label' => esc_html__( 'Padding (Menu Area)', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Padding (Menu Area)', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::DIMENSIONS,
 		        'size_units' => [ 'px', 'em', '%' ],
 		        'selectors' => [
@@ -543,7 +543,7 @@ class Navigation_Menu extends Widget_Base {
         $this->add_responsive_control(
             'responsive_padding_menu_item',
             [
-                'label' => esc_html__( 'Margin (Menu Item)', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Margin (Menu Item)', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', 'em', '%' ],
                 'selectors' => [
@@ -555,7 +555,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 		    'responsive_top_menu',
 		    [
-		        'label' => esc_html__( 'Dropdown Top Position', 'CurlWare-header-footer-elementor' ),
+		        'label' => esc_html__( 'Dropdown Top Position', 'curlware-header-footer-elementor' ),
 		        'type' => Controls_Manager::SLIDER,
 		        'size_units' => [ 'px', '%' ],
 		        'selectors' => [
@@ -567,11 +567,11 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'full_width_dropdown',
 			[
-				'label'        => __( 'Full Width', 'CurlWare-header-footer-elementor' ),
-				'description'  => __( 'Enable this option to stretch the Sub Menu to Full Width.', 'CurlWare-header-footer-elementor' ),
+				'label'        => __( 'Full Width', 'curlware-header-footer-elementor' ),
+				'description'  => __( 'Enable this option to stretch the Sub Menu to Full Width.', 'curlware-header-footer-elementor' ),
 				'type'         => Controls_Manager::SWITCHER,
-				'label_on'     => __( 'Yes', 'CurlWare-header-footer-elementor' ),
-				'label_off'    => __( 'No', 'CurlWare-header-footer-elementor' ),
+				'label_on'     => __( 'Yes', 'curlware-header-footer-elementor' ),
+				'label_off'    => __( 'No', 'curlware-header-footer-elementor' ),
 				'return_value' => 'yes',
 				'default'      => 'yes',
 				'condition'    => [
@@ -586,7 +586,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_icon',
 				[
-					'label'       => __( 'Menu Icon', 'CurlWare-header-footer-elementor' ),
+					'label'       => __( 'Menu Icon', 'curlware-header-footer-elementor' ),
 					'type'        => Controls_Manager::ICONS,
 					'label_block' => 'true',
 					'default'     => [
@@ -602,7 +602,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_icon',
 				[
-					'label'       => __( 'Icon', 'CurlWare-header-footer-elementor' ),
+					'label'       => __( 'Icon', 'curlware-header-footer-elementor' ),
 					'type'        => Controls_Manager::ICON,
 					'label_block' => 'true',
 					'default'     => 'fa fa-align-justify',
@@ -617,7 +617,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_close_icon',
 				[
-					'label'       => __( 'Close Icon', 'CurlWare-header-footer-elementor' ),
+					'label'       => __( 'Close Icon', 'curlware-header-footer-elementor' ),
 					'type'        => Controls_Manager::ICONS,
 					'label_block' => 'true',
 					'default'     => [
@@ -633,7 +633,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_close_icon',
 				[
-					'label'       => __( 'Close Icon', 'CurlWare-header-footer-elementor' ),
+					'label'       => __( 'Close Icon', 'curlware-header-footer-elementor' ),
 					'type'        => Controls_Manager::ICON,
 					'label_block' => 'true',
 					'default'     => 'fa fa-close',
@@ -695,7 +695,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_main-menu',
 			[
-				'label'     => __( 'Main Menu', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Main Menu', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'layout!' => 'expandible',
@@ -706,7 +706,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'width_flyout_menu_item',
 			[
-				'label'              => __( 'Flyout Box Width', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Flyout Box Width', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -734,7 +734,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'padding_flyout_menu_item',
 				[
-					'label'              => __( 'Flyout Box Padding', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Flyout Box Padding', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'range'              => [
 						'px' => [
@@ -758,7 +758,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'padding_horizontal_menu_item',
 				[
-					'label'              => __( 'Padding', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Padding', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em', '%' ],
 					'selectors' => [
@@ -770,7 +770,7 @@ class Navigation_Menu extends Widget_Base {
             $this->add_responsive_control(
                 'margin_horizontal_menu_item',
                 [
-                    'label'              => __( 'Margin', 'CurlWare-header-footer-elementor' ),
+                    'label'              => __( 'Margin', 'curlware-header-footer-elementor' ),
                     'type'               => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', 'em', '%' ],
                     'selectors' => [
@@ -783,7 +783,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'menu_row_space',
 				[
-					'label'              => __( 'Row Spacing', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Row Spacing', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'size_units'         => [ 'px' ],
 					'range'              => [
@@ -804,7 +804,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_group_control(
 				Group_Control_Typography::get_type(),
 				[
-					'label'              => __( 'Menu Typography', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Menu Typography', 'curlware-header-footer-elementor' ),
 					'name'      => 'icon_typography',
 					'global'    => [
 						'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
@@ -817,7 +817,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'menu_top_space',
 				[
-					'label'              => __( 'Menu Item Top Spacing', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Menu Item Top Spacing', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'size_units'         => [ 'px', '%' ],
 					'range'              => [
@@ -838,7 +838,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'bg_color_flyout',
 				[
-					'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'default'   => '#FFFFFF',
 					'selectors' => [
@@ -853,16 +853,16 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'pointer',
 				[
-					'label'     => __( 'Link Hover Effect', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Link Hover Effect', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::SELECT,
 					'default'   => 'none',
 					'options'   => [
-						'none'        => __( 'None', 'CurlWare-header-footer-elementor' ),
-						'underline'   => __( 'Underline', 'CurlWare-header-footer-elementor' ),
-						'overline'    => __( 'Overline', 'CurlWare-header-footer-elementor' ),
-						'double-line' => __( 'Double Line', 'CurlWare-header-footer-elementor' ),
-						'framed'      => __( 'Framed', 'CurlWare-header-footer-elementor' ),
-						'text'        => __( 'Text', 'CurlWare-header-footer-elementor' ),
+						'none'        => __( 'None', 'curlware-header-footer-elementor' ),
+						'underline'   => __( 'Underline', 'curlware-header-footer-elementor' ),
+						'overline'    => __( 'Overline', 'curlware-header-footer-elementor' ),
+						'double-line' => __( 'Double Line', 'curlware-header-footer-elementor' ),
+						'framed'      => __( 'Framed', 'curlware-header-footer-elementor' ),
+						'text'        => __( 'Text', 'curlware-header-footer-elementor' ),
 					],
 					'condition' => [
 						'layout' => [ 'horizontal' ],
@@ -873,16 +873,16 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'animation_line',
 			[
-				'label'     => __( 'Animation', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Animation', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'fade',
 				'options'   => [
-					'fade'     => __('Fade', 'CurlWare-header-footer-elementor'),
-					'slide'    => __('Slide', 'CurlWare-header-footer-elementor'),
-					'grow'     => __('Grow', 'CurlWare-header-footer-elementor'),
-					'drop-in'  => __('Drop In', 'CurlWare-header-footer-elementor'),
-					'drop-out' => __('Drop Out', 'CurlWare-header-footer-elementor'),
-					'none'     => __('None', 'CurlWare-header-footer-elementor'),
+					'fade'     => __('Fade', 'curlware-header-footer-elementor'),
+					'slide'    => __('Slide', 'curlware-header-footer-elementor'),
+					'grow'     => __('Grow', 'curlware-header-footer-elementor'),
+					'drop-in'  => __('Drop In', 'curlware-header-footer-elementor'),
+					'drop-out' => __('Drop Out', 'curlware-header-footer-elementor'),
+					'none'     => __('None', 'curlware-header-footer-elementor'),
 				],
 				'condition' => [
 					'layout'  => [ 'horizontal' ],
@@ -894,16 +894,16 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'animation_framed',
 			[
-				'label'     => __( 'Frame Animation', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Frame Animation', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'fade',
 				'options'   => [
-					'fade'     => __('Fade', 'CurlWare-header-footer-elementor'),
-					'grow'    => __('Grow', 'CurlWare-header-footer-elementor'),
-					'shrink'  => __('Shrink', 'CurlWare-header-footer-elementor'),
-					'draw'    => __('Draw', 'CurlWare-header-footer-elementor'),
-					'corners' => __('Corners', 'CurlWare-header-footer-elementor'),
-					'none'    => __('None', 'CurlWare-header-footer-elementor'),
+					'fade'     => __('Fade', 'curlware-header-footer-elementor'),
+					'grow'    => __('Grow', 'curlware-header-footer-elementor'),
+					'shrink'  => __('Shrink', 'curlware-header-footer-elementor'),
+					'draw'    => __('Draw', 'curlware-header-footer-elementor'),
+					'corners' => __('Corners', 'curlware-header-footer-elementor'),
+					'none'    => __('None', 'curlware-header-footer-elementor'),
 				],
 				'condition' => [
 					'layout'  => [ 'horizontal' ],
@@ -915,17 +915,17 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'animation_text',
 			[
-				'label'     => __( 'Animation', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Animation', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::SELECT,
 				'default'   => 'grow',
 				'options'   => [
-					'grow'   => __('Grow', 'CurlWare-header-footer-elementor'),
-					'shrink' => __('Shrink', 'CurlWare-header-footer-elementor'),
-					'sink'   => __('Sink', 'CurlWare-header-footer-elementor'),
-					'float'  => __('Float', 'CurlWare-header-footer-elementor'),
-					'skew'   => __('Skew', 'CurlWare-header-footer-elementor'),
-					'rotate' => __('Rotate', 'CurlWare-header-footer-elementor'),
-					'none'   => __('None', 'CurlWare-header-footer-elementor'),
+					'grow'   => __('Grow', 'curlware-header-footer-elementor'),
+					'shrink' => __('Shrink', 'curlware-header-footer-elementor'),
+					'sink'   => __('Sink', 'curlware-header-footer-elementor'),
+					'float'  => __('Float', 'curlware-header-footer-elementor'),
+					'skew'   => __('Skew', 'curlware-header-footer-elementor'),
+					'rotate' => __('Rotate', 'curlware-header-footer-elementor'),
+					'none'   => __('None', 'curlware-header-footer-elementor'),
 				],
 				'condition' => [
 					'layout'  => [ 'horizontal' ],
@@ -977,14 +977,14 @@ class Navigation_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'tab_menu_item_normal',
 					[
-						'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+						'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 					]
 				);
 
 				$this->add_control(
 					'color_menu_item',
 					[
-						'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+						'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 						'type'      => Controls_Manager::COLOR,
 						'global'    => [
 							'default' => Global_Colors::COLOR_TEXT,
@@ -999,7 +999,7 @@ class Navigation_Menu extends Widget_Base {
 				$this->add_control(
 					'bg_color_menu_item',
 					[
-						'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+						'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 						'type'      => Controls_Manager::COLOR,
 						'default'   => '',
 						'selectors' => [
@@ -1014,7 +1014,7 @@ class Navigation_Menu extends Widget_Base {
 				$this->add_control(
 					'color_menu_item_sticky',
 					[
-						'label'     => __( 'Text Sticky Color', 'CurlWare-header-footer-elementor' ),
+						'label'     => __( 'Text Sticky Color', 'curlware-header-footer-elementor' ),
 						'type'      => Controls_Manager::COLOR,
 						'global'    => [
 							'default' => Global_Colors::COLOR_TEXT,
@@ -1032,14 +1032,14 @@ class Navigation_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'tab_menu_item_hover',
 					[
-						'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+						'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 					]
 				);
 
 					$this->add_control(
 						'color_menu_item_hover',
 						[
-							'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'global'    => [
 								'default' => Global_Colors::COLOR_ACCENT,
@@ -1058,7 +1058,7 @@ class Navigation_Menu extends Widget_Base {
 					$this->add_control(
 						'bg_color_menu_item_hover',
 						[
-							'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'selectors' => [
 								'{{WRAPPER}} .menu-item a.sce-menu-item:hover,
@@ -1075,7 +1075,7 @@ class Navigation_Menu extends Widget_Base {
 					$this->add_control(
 						'pointer_color_menu_item_hover',
 						[
-							'label'     => __( 'Link Hover Effect Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Link Hover Effect Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'global'    => [
 								'default' => Global_Colors::COLOR_ACCENT,
@@ -1100,14 +1100,14 @@ class Navigation_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'tab_menu_item_active',
 					[
-						'label' => __( 'Active', 'CurlWare-header-footer-elementor' ),
+						'label' => __( 'Active', 'curlware-header-footer-elementor' ),
 					]
 				);
 
 					$this->add_control(
 						'color_menu_item_active',
 						[
-							'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '',
 							'selectors' => [
@@ -1121,7 +1121,7 @@ class Navigation_Menu extends Widget_Base {
 					$this->add_control(
 						'bg_color_menu_item_active',
 						[
-							'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '',
 							'selectors' => [
@@ -1137,7 +1137,7 @@ class Navigation_Menu extends Widget_Base {
 					$this->add_control(
 						'pointer_color_menu_item_active',
 						[
-							'label'     => __( 'Link Hover Effect Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Link Hover Effect Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '',
 							'selectors' => [
@@ -1172,7 +1172,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'section_style_dropdown',
 			[
-				'label' => __( 'Dropdown', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Dropdown', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1180,7 +1180,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_description',
 				[
-					'raw'             => __( '<b>Note:</b> On desktop, below style options will apply to the submenu. On mobile, this will apply to the entire menu.', 'CurlWare-header-footer-elementor' ),
+					'raw'             => __( '<b>Note:</b> On desktop, below style options will apply to the submenu. On mobile, this will apply to the entire menu.', 'curlware-header-footer-elementor' ),
 					'type'            => Controls_Manager::RAW_HTML,
 					'content_classes' => 'elementor-descriptor',
 					'condition'       => [
@@ -1195,7 +1195,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 			'padding_vertical_dropdown_item_padding',
 				[
-					'label'              => __( 'Area Padding', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Area Padding', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::DIMENSIONS,
 					'size_units'         => [ 'px', 'em', '%' ],
 					'selectors'          => [
@@ -1207,7 +1207,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 			'margin_vertical_dropdown_item_padding',
 				[
-					'label'              => __( 'Area Margin', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Area Margin', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::DIMENSIONS,
 					'size_units'         => [ 'px', 'em', '%' ],
 					'selectors'          => [
@@ -1222,14 +1222,14 @@ class Navigation_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'tab_dropdown_item_normal',
 					[
-						'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+						'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 					]
 				);
 
 					$this->add_control(
 						'color_dropdown_item',
 						[
-							'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '',
 							'selectors' => [
@@ -1246,7 +1246,7 @@ class Navigation_Menu extends Widget_Base {
 					$this->add_control(
 						'background_color_dropdown_item',
 						[
-							'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '#fff',
 							'selectors' => [
@@ -1265,14 +1265,14 @@ class Navigation_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'tab_dropdown_item_hover',
 					[
-						'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+						'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 					]
 				);
 
 					$this->add_control(
 						'color_dropdown_item_hover',
 						[
-							'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '',
 							'selectors' => [
@@ -1289,7 +1289,7 @@ class Navigation_Menu extends Widget_Base {
 					$this->add_control(
 						'background_color_dropdown_item_hover',
 						[
-							'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+							'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 							'type'      => Controls_Manager::COLOR,
 							'default'   => '',
 							'selectors' => [
@@ -1308,14 +1308,14 @@ class Navigation_Menu extends Widget_Base {
 				$this->start_controls_tab(
 					'tab_dropdown_item_active',
 					[
-						'label' => __( 'Active', 'CurlWare-header-footer-elementor' ),
+						'label' => __( 'Active', 'curlware-header-footer-elementor' ),
 					]
 				);
 
 				$this->add_control(
 					'color_dropdown_item_active',
 					[
-						'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+						'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 						'type'      => Controls_Manager::COLOR,
 						'default'   => '',
 						'selectors' => [
@@ -1332,7 +1332,7 @@ class Navigation_Menu extends Widget_Base {
 				$this->add_control(
 					'background_color_dropdown_item_active',
 					[
-						'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+						'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 						'type'      => Controls_Manager::COLOR,
 						'default'   => '',
 						'selectors' => [
@@ -1380,7 +1380,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'dropdown_border_radius',
 				[
-					'label'              => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::DIMENSIONS,
 					'size_units'         => [ 'px', '%' ],
 					'selectors'          => [
@@ -1415,7 +1415,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'width_dropdown_item',
 				[
-					'label'              => __( 'Dropdown Width (px)', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Dropdown Width (px)', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'range'              => [
 						'px' => [
@@ -1440,7 +1440,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'padding_horizontal_dropdown_item',
 				[
-					'label'              => __( 'Horizontal Padding', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Horizontal Padding', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'size_units'         => [ 'px' ],
 					'selectors'          => [
@@ -1463,7 +1463,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'padding_vertical_dropdown_item',
 				[
-					'label'              => __( 'Vertical Padding', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Vertical Padding', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'size_units'         => [ 'px' ],
 					'default'            => [
@@ -1489,7 +1489,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'distance_from_menu',
 				[
-					'label'              => __( 'Top Distance', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Top Distance', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'range'              => [
 						'px' => [
@@ -1511,7 +1511,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_responsive_control(
 				'distance_from_third_menu',
 				[
-					'label'              => __( 'Top Distance Third Menu', 'CurlWare-header-footer-elementor' ),
+					'label'              => __( 'Top Distance Third Menu', 'curlware-header-footer-elementor' ),
 					'type'               => Controls_Manager::SLIDER,
 					'range'              => [
 						'px' => [
@@ -1533,7 +1533,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'heading_dropdown_divider',
 				[
-					'label'     => __( 'Divider', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Divider', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::HEADING,
 					'separator' => 'before',
 				]
@@ -1542,16 +1542,16 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_divider_border',
 				[
-					'label'       => __( 'Border Style', 'CurlWare-header-footer-elementor' ),
+					'label'       => __( 'Border Style', 'curlware-header-footer-elementor' ),
 					'type'        => Controls_Manager::SELECT,
 					'default'     => 'solid',
 					'label_block' => false,
 					'options'     => [
-						'none'   => __( 'None', 'CurlWare-header-footer-elementor' ),
-						'solid'  => __( 'Solid', 'CurlWare-header-footer-elementor' ),
-						'double' => __( 'Double', 'CurlWare-header-footer-elementor' ),
-						'dotted' => __( 'Dotted', 'CurlWare-header-footer-elementor' ),
-						'dashed' => __( 'Dashed', 'CurlWare-header-footer-elementor' ),
+						'none'   => __( 'None', 'curlware-header-footer-elementor' ),
+						'solid'  => __( 'Solid', 'curlware-header-footer-elementor' ),
+						'double' => __( 'Double', 'curlware-header-footer-elementor' ),
+						'dotted' => __( 'Dotted', 'curlware-header-footer-elementor' ),
+						'dashed' => __( 'Dashed', 'curlware-header-footer-elementor' ),
 					],
 					'selectors'   => [
 						'{{WRAPPER}} .sub-menu li.menu-item:not(:last-child), 
@@ -1563,7 +1563,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'divider_border_color',
 				[
-					'label'     => __( 'Border Color', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Border Color', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'default'   => '#c4c4c4',
 					'selectors' => [
@@ -1580,7 +1580,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'dropdown_divider_width',
 				[
-					'label'     => __( 'Border Width', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Border Width', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::SLIDER,
 					'range'     => [
 						'px' => [
@@ -1607,7 +1607,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'style_toggle',
 			[
-				'label' => __( 'Menu Trigger & Close Icon', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Menu Trigger & Close Icon', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1617,14 +1617,14 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'toggle_style_normal',
 			[
-				'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'toggle_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} div.sce-nav-menu-icon' => 'color: {{VALUE}}',
@@ -1637,7 +1637,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'toggle_background_color',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-nav-menu-icon' => 'background-color: {{VALUE}}; padding: 0.35em;',
@@ -1650,14 +1650,14 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_tab(
 			'toggle_hover',
 			[
-				'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 			]
 		);
 
 		$this->add_control(
 			'toggle_hover_color',
 			[
-				'label'     => __( 'Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} div.sce-nav-menu-icon:hover' => 'color: {{VALUE}}',
@@ -1670,7 +1670,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'toggle_hover_background_color',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .sce-nav-menu-icon:hover' => 'background-color: {{VALUE}}; padding: 0.35em;',
@@ -1685,7 +1685,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'toggle_size',
 			[
-				'label'              => __( 'Icon Size', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Icon Size', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -1704,7 +1704,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'toggle_border_width',
 			[
-				'label'              => __( 'Border Width', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Border Width', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -1721,7 +1721,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'toggle_border_radius',
 			[
-				'label'              => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'size_units'         => [ 'px', '%' ],
 				'selectors'          => [
@@ -1734,7 +1734,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'close_color_flyout',
 			[
-				'label'     => __( 'Close Icon Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Close Icon Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '#7A7A7A',
 				'selectors' => [
@@ -1752,7 +1752,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'close_flyout_size',
 			[
-				'label'              => __( 'Close Icon Size', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Close Icon Size', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::SLIDER,
 				'range'              => [
 					'px' => [
@@ -1775,7 +1775,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'style_button',
 			[
-				'label'     => __( 'Button', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Button', 'curlware-header-footer-elementor' ),
 				'tab'       => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'menu_last_item' => 'cta',
@@ -1786,7 +1786,7 @@ class Navigation_Menu extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name'     => 'all_typography',
-				'label'    => __( 'Typography', 'CurlWare-header-footer-elementor' ),
+				'label'    => __( 'Typography', 'curlware-header-footer-elementor' ),
 				'global'   => [
 					'default' => Global_Typography::TYPOGRAPHY_ACCENT,
 				],
@@ -1797,7 +1797,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_responsive_control(
 			'padding',
 			[
-				'label'              => __( 'Padding', 'CurlWare-header-footer-elementor' ),
+				'label'              => __( 'Padding', 'curlware-header-footer-elementor' ),
 				'type'               => Controls_Manager::DIMENSIONS,
 				'size_units'         => [ 'px', 'em', '%' ],
 				'selectors'          => [
@@ -1811,13 +1811,13 @@ class Navigation_Menu extends Widget_Base {
 			$this->start_controls_tab(
 				'_button_normal',
 				[
-					'label' => __( 'Normal', 'CurlWare-header-footer-elementor' ),
+					'label' => __( 'Normal', 'curlware-header-footer-elementor' ),
 				]
 			);
 			$this->add_control(
 				'all_text_color',
 				[
-					'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'default'   => '',
 					'selectors' => [
@@ -1829,7 +1829,7 @@ class Navigation_Menu extends Widget_Base {
 				Group_Control_Background::get_type(),
 				[
 					'name'           => 'all_background_color',
-					'label'          => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+					'label'          => __( 'Background Color', 'curlware-header-footer-elementor' ),
 					'types'          => [ 'classic', 'gradient' ],
 					'selector'       => '{{WRAPPER}} .menu-item a.sce-menu-item.elementor-button',
 					'fields_options' => [
@@ -1846,14 +1846,14 @@ class Navigation_Menu extends Widget_Base {
 				Group_Control_Border::get_type(),
 				[
 					'name'     => 'all_border',
-					'label'    => __( 'Border', 'CurlWare-header-footer-elementor' ),
+					'label'    => __( 'Border', 'curlware-header-footer-elementor' ),
 					'selector' => '{{WRAPPER}} .menu-item a.sce-menu-item.elementor-button',
 				]
 			);
 			$this->add_control(
 				'all_border_radius',
 				[
-					'label'      => __( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+					'label'      => __( 'Border Radius', 'curlware-header-footer-elementor' ),
 					'type'       => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', '%' ],
 					'selectors'  => [
@@ -1873,13 +1873,13 @@ class Navigation_Menu extends Widget_Base {
 			$this->start_controls_tab(
 				'all_button_hover',
 				[
-					'label' => __( 'Hover', 'CurlWare-header-footer-elementor' ),
+					'label' => __( 'Hover', 'curlware-header-footer-elementor' ),
 				]
 			);
 			$this->add_control(
 				'all_hover_color',
 				[
-					'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'selectors' => [
 						'{{WRAPPER}} .menu-item a.sce-menu-item.elementor-button:hover' => 'color: {{VALUE}};',
@@ -1890,7 +1890,7 @@ class Navigation_Menu extends Widget_Base {
 				Group_Control_Background::get_type(),
 				[
 					'name'           => 'all_background_hover_color',
-					'label'          => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+					'label'          => __( 'Background Color', 'curlware-header-footer-elementor' ),
 					'types'          => [ 'classic', 'gradient' ],
 					'selector'       => '{{WRAPPER}} .menu-item a.sce-menu-item.elementor-button:hover',
 					'fields_options' => [
@@ -1905,7 +1905,7 @@ class Navigation_Menu extends Widget_Base {
 			$this->add_control(
 				'all_border_hover_color',
 				[
-					'label'     => __( 'Border Hover Color', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Border Hover Color', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'default'   => '',
 					'selectors' => [
@@ -1929,7 +1929,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->start_controls_section(
 			'mobile_menu_style',
 			[
-				'label' => __( 'Mobile Dropdown Style', 'CurlWare-header-footer-elementor' ),
+				'label' => __( 'Mobile Dropdown Style', 'curlware-header-footer-elementor' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1937,7 +1937,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 				'mobile_text_color',
 				[
-					'label'     => __( 'Text Color', 'CurlWare-header-footer-elementor' ),
+					'label'     => __( 'Text Color', 'curlware-header-footer-elementor' ),
 					'type'      => Controls_Manager::COLOR,
 					'default'   => '',
 					'selectors' => [
@@ -1948,7 +1948,7 @@ class Navigation_Menu extends Widget_Base {
 		$this->add_control(
 			'mobile_text_color_bg',
 			[
-				'label'     => __( 'Background Color', 'CurlWare-header-footer-elementor' ),
+				'label'     => __( 'Background Color', 'curlware-header-footer-elementor' ),
 				'type'      => Controls_Manager::COLOR,
 				'default'   => '',
 				'selectors' => [

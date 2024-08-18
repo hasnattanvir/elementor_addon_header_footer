@@ -32,7 +32,7 @@ class Image extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __( 'CurlWare Image', 'CurlWare-header-footer-elementor' );
+		return __( 'CurlWare Image', 'curlware-header-footer-elementor' );
 	}
 	/**
 	 * Retrieve the widget icon.
@@ -83,7 +83,7 @@ class Image extends Widget_Base {
         $this->start_controls_section(
             '_section_logo',
             [
-                'label' => esc_html__( 'Image Settings', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Settings', 'curlware-header-footer-elementor' ),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -91,7 +91,7 @@ class Image extends Widget_Base {
         $this->add_control(
             'first_image',
             [
-                'label' => esc_html__( 'Choose Image', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Choose Image', 'curlware-header-footer-elementor' ),
                 'type' => \Elementor\Controls_Manager::MEDIA,
                 'separator' => 'before',
             ]
@@ -100,23 +100,23 @@ class Image extends Widget_Base {
         $this->add_responsive_control(
             'align',
             [
-                'label' => esc_html__( 'Alignment', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Alignment', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Left', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Center', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Right', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justify', 'CurlWare-header-footer-elementor' ),
+                        'title' => esc_html__( 'Justify', 'curlware-header-footer-elementor' ),
                         'icon' => 'eicon-text-align-justify',
                     ],
                 ],
@@ -132,10 +132,10 @@ class Image extends Widget_Base {
         $this->add_control(
             'popup_animation',
             [
-                'label' => esc_html__( 'Popup Effect', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Popup Effect', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'CurlWare-header-footer-elementor' ),
-                'label_off' => esc_html__( 'Hide', 'CurlWare-header-footer-elementor' ),
+                'label_on' => esc_html__( 'Show', 'curlware-header-footer-elementor' ),
+                'label_off' => esc_html__( 'Hide', 'curlware-header-footer-elementor' ),
                 'return_value' => 'yes',
                 'default' => 'no',
             ]
@@ -144,10 +144,10 @@ class Image extends Widget_Base {
         $this->add_control(
             'image_animation',
             [
-                'label' => esc_html__( 'Animation', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Animation', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => esc_html__( 'Show', 'CurlWare-header-footer-elementor' ),
-                'label_off' => esc_html__( 'Hide', 'CurlWare-header-footer-elementor' ),
+                'label_on' => esc_html__( 'Show', 'curlware-header-footer-elementor' ),
+                'label_off' => esc_html__( 'Hide', 'curlware-header-footer-elementor' ),
                 'return_value' => 'yes',
                 'default' => 'no',
             ]
@@ -156,19 +156,19 @@ class Image extends Widget_Base {
         $this->add_control(
             'images_translate',
             [
-                'label'   => esc_html__( 'Translate Position', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Translate Position', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'veritcal',
                 'options' => [
-                    'veritcal' => esc_html__( 'Veritcal', 'CurlWare-header-footer-elementor'),
-                    'veritcal2' => esc_html__( 'Veritcal 2', 'CurlWare-header-footer-elementor'),
-                    'horizontal' => esc_html__( 'Horizontal', 'CurlWare-header-footer-elementor'),
-                    'horizontal2' => esc_html__( 'Horizontal 2', 'CurlWare-header-footer-elementor'),
-                    'rotated_style' => esc_html__( 'Rotated', 'CurlWare-header-footer-elementor'),
-                    'spin_style' => esc_html__( 'Spin', 'CurlWare-header-footer-elementor'),
-                    'scale_style' => esc_html__( 'Scale', 'CurlWare-header-footer-elementor'),
-                    'scale_style2' => esc_html__( 'Scale2', 'CurlWare-header-footer-elementor'),
-                    'move_leftright' => esc_html__( 'Move Left & Right', 'CurlWare-header-footer-elementor'),
+                    'veritcal' => esc_html__( 'Veritcal', 'curlware-header-footer-elementor'),
+                    'veritcal2' => esc_html__( 'Veritcal 2', 'curlware-header-footer-elementor'),
+                    'horizontal' => esc_html__( 'Horizontal', 'curlware-header-footer-elementor'),
+                    'horizontal2' => esc_html__( 'Horizontal 2', 'curlware-header-footer-elementor'),
+                    'rotated_style' => esc_html__( 'Rotated', 'curlware-header-footer-elementor'),
+                    'spin_style' => esc_html__( 'Spin', 'curlware-header-footer-elementor'),
+                    'scale_style' => esc_html__( 'Scale', 'curlware-header-footer-elementor'),
+                    'scale_style2' => esc_html__( 'Scale2', 'curlware-header-footer-elementor'),
+                    'move_leftright' => esc_html__( 'Move Left & Right', 'curlware-header-footer-elementor'),
                 ],
                 'condition' => [
                     'image_animation' => 'yes',
@@ -179,12 +179,12 @@ class Image extends Widget_Base {
         $this->add_control(
             'animation_start_from',
             [
-                'label'   => esc_html__( 'Start From Reverse', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Start From Reverse', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'disable',
                 'options' => [
-                    'enable' => esc_html__( 'Enable', 'CurlWare-header-footer-elementor'),
-                    'disable' => esc_html__( 'Disable', 'CurlWare-header-footer-elementor'),
+                    'enable' => esc_html__( 'Enable', 'curlware-header-footer-elementor'),
+                    'disable' => esc_html__( 'Disable', 'curlware-header-footer-elementor'),
                 ],
                 'condition' => [
                     'image_animation' => 'yes',
@@ -198,7 +198,7 @@ class Image extends Widget_Base {
             'rs_image_duration',
             [
 
-                'label' => esc_html__( 'Animation Duration', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Animation Duration', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'selectors' => [
                     '{{WRAPPER}} .sc-image .sc-multi-image' => 'animation-duration: {{SIZE}}s;',
@@ -213,7 +213,7 @@ class Image extends Widget_Base {
             'rs_image_delay',
             [
 
-                'label' => esc_html__( 'Animation Delay', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Animation Delay', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'selectors' => [
                     '{{WRAPPER}} .sc-image .sc-multi-image' => 'animation-delay: {{SIZE}}s;',
@@ -228,7 +228,7 @@ class Image extends Widget_Base {
         $this->add_control(
             'popup_animation_bg_heading',
             [
-                'label' => esc_html__( 'Popup Effect Background', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Popup Effect Background', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::COLOR,
                 'condition' => [
                     'popup_animation' => 'yes',
@@ -243,7 +243,7 @@ class Image extends Widget_Base {
         $this->start_controls_section(
             '_section_title_style',
             [
-                'label' => esc_html__( 'Gobal Style', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Gobal Style', 'curlware-header-footer-elementor' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -251,7 +251,7 @@ class Image extends Widget_Base {
         $this->add_responsive_control(
             'image_width',
             [
-                'label' => esc_html__( 'Image Width', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Image Width', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -272,7 +272,7 @@ class Image extends Widget_Base {
         $this->add_responsive_control(
             'border_radius',
             [
-                'label' => esc_html__( 'Border Radius', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Border Radius', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -283,7 +283,7 @@ class Image extends Widget_Base {
         $this->add_control(
             'opacity',
             [
-                'label' => esc_html__( 'Opacity', 'CurlWare-header-footer-elementor' ),
+                'label' => esc_html__( 'Opacity', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SLIDER,
                 'selectors' => [
                     '{{WRAPPER}} .sc-image img' => 'opacity: {{SIZE}};',
@@ -309,25 +309,25 @@ class Image extends Widget_Base {
         $this->add_control(
             'mix_blend_mode',
             [
-                'label'   => esc_html__( 'Blend Mode', 'CurlWare-header-footer-elementor' ),
+                'label'   => esc_html__( 'Blend Mode', 'curlware-header-footer-elementor' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'unset',
                 'options' => [
-                    'unset'         => esc_html__( 'Unset', 'CurlWare-header-footer-elementor'),
-                    'multiply'      => esc_html__( 'Multiply', 'CurlWare-header-footer-elementor'),
-                    'screen'        => esc_html__( 'Screen', 'CurlWare-header-footer-elementor'),
-                    'overlay'       => esc_html__( 'Overlay', 'CurlWare-header-footer-elementor'),
-                    'darken'        => esc_html__( 'Darken', 'CurlWare-header-footer-elementor'),
-                    'lighten'       => esc_html__( 'Lighten', 'CurlWare-header-footer-elementor'),
-                    'color_dodge'   => esc_html__( 'Color Dodge', 'CurlWare-header-footer-elementor'),
-                    'color_burn'    => esc_html__( 'Color Burn', 'CurlWare-header-footer-elementor'),
-                    'difference'    => esc_html__( 'Difference', 'CurlWare-header-footer-elementor'),
-                    'exclusion'     => esc_html__( 'Exclusion', 'CurlWare-header-footer-elementor'),
-                    'hue'           => esc_html__( 'Hue', 'CurlWare-header-footer-elementor'),
-                    'saturation'    => esc_html__( 'Saturation', 'CurlWare-header-footer-elementor'),
-                    'color'         => esc_html__( 'Color', 'CurlWare-header-footer-elementor'),
-                    'luminosity'    => esc_html__( 'Luminosity', 'CurlWare-header-footer-elementor'),
-                    'normal'        => esc_html__( 'Normal', 'CurlWare-header-footer-elementor'),
+                    'unset'         => esc_html__( 'Unset', 'curlware-header-footer-elementor'),
+                    'multiply'      => esc_html__( 'Multiply', 'curlware-header-footer-elementor'),
+                    'screen'        => esc_html__( 'Screen', 'curlware-header-footer-elementor'),
+                    'overlay'       => esc_html__( 'Overlay', 'curlware-header-footer-elementor'),
+                    'darken'        => esc_html__( 'Darken', 'curlware-header-footer-elementor'),
+                    'lighten'       => esc_html__( 'Lighten', 'curlware-header-footer-elementor'),
+                    'color_dodge'   => esc_html__( 'Color Dodge', 'curlware-header-footer-elementor'),
+                    'color_burn'    => esc_html__( 'Color Burn', 'curlware-header-footer-elementor'),
+                    'difference'    => esc_html__( 'Difference', 'curlware-header-footer-elementor'),
+                    'exclusion'     => esc_html__( 'Exclusion', 'curlware-header-footer-elementor'),
+                    'hue'           => esc_html__( 'Hue', 'curlware-header-footer-elementor'),
+                    'saturation'    => esc_html__( 'Saturation', 'curlware-header-footer-elementor'),
+                    'color'         => esc_html__( 'Color', 'curlware-header-footer-elementor'),
+                    'luminosity'    => esc_html__( 'Luminosity', 'curlware-header-footer-elementor'),
+                    'normal'        => esc_html__( 'Normal', 'curlware-header-footer-elementor'),
                 ],
             ]
         );

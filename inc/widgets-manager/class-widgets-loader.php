@@ -181,7 +181,7 @@ class Widgets_Loader {
 	 * @param object $this_cat class.
 	 */
 	public function register_widget_category( $this_cat ) {
-		$category = __( 'CurlWare Addons', 'CurlWare-header-footer-elementor' );
+		$category = __( 'CurlWare Addons', 'curlware-header-footer-elementor' );
 
 		$this_cat->add_category(
 			'sce-widgets',
@@ -337,7 +337,7 @@ class Widgets_Loader {
 			$fragments['span.elementor-button-text.sce-subtotal'] = '<span class="elementor-button-text sce-subtotal">' . WC()->cart->get_cart_subtotal() . '</span>';
 		}
 
-		$fragments['span.elementor-button-icon[data-counter]'] = '<span class="elementor-button-icon" data-counter="' . $cart_badge_count . '"><i class="eicon" aria-hidden="true"></i><span class="elementor-screen-only">' . __( 'Cart', 'CurlWare-header-footer-elementor' ) . '</span></span>';
+		$fragments['span.elementor-button-icon[data-counter]'] = '<span class="elementor-button-icon" data-counter="' . $cart_badge_count . '"><i class="eicon" aria-hidden="true"></i><span class="elementor-screen-only">' . __( 'Cart', 'curlware-header-footer-elementor' ) . '</span></span>';
 
 		return $fragments;
 	}
