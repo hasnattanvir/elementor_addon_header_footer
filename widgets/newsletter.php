@@ -73,6 +73,6 @@ class Newsletter_Widget extends \WP_Widget {
 			),
 		);
 
-		spria_Widget_Fields::display( $fields, $instance, $this );
+		Curlware_Widget_Fields::display( $fields, $instance, $this );
 	}
 }

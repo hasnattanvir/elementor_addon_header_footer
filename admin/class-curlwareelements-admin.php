@@ -221,7 +221,7 @@ class socoders_elements_Admin {
 		$parent_slug = 'elementor-hf';
         add_menu_page( 
             __( 'Custom Menu Title', 'curlware-elements' ),
-            'CurlWare Header-Footer',
+            'CW Header Footer',
             'manage_options',
             $parent_slug,
             [$this, 'curlwareelements_addon_switcher'],

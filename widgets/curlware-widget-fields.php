@@ -2,9 +2,9 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-if( !class_exists( 'spria_Widget_Fields' ) ){
+if( !class_exists( 'Curlware_Widget_Fields' ) ){
 
-	class spria_Widget_Fields {
+	class Curlware_Widget_Fields {
 		
 		public static function display( $fields, $instance, $object ){
 			foreach ( $fields as $key => $field ) {
@@ -80,7 +80,7 @@ if( !class_exists( 'spria_Widget_Fields' ) ){
 			<?php
 		}
 
-		// Using components of spria_Postmeta_Fields
+		// Using components of curlware_Postmeta_Fields
 		public static function image( $id, $name, $value, $label, $options, $field ){
 			$image = '';
 			$disstyle = '';
@@ -95,11 +95,11 @@ if( !class_exists( 'spria_Widget_Fields' ) ){
 
 			echo '
 			<label for="' . esc_attr( $id ) . '">' . esc_html( $label ) . ':</label>
-			<div class="spria_metabox_image">
+			<div class="curlware_metabox_image">
 			<input name="'. esc_attr( $name ) .'" type="hidden" class="custom_upload_image" value="'. esc_attr( $value ) .'" />
 			<img src="'. esc_url( $image ) .'" class="custom_preview_image" style="'. esc_attr( $disstyle ) .'" alt="" />
-			<input class="spria_upload_image upload_button_'. esc_attr( $id ) .' button-primary" type="button" value="' . esc_attr__( 'Choose Image', 'rt-framework' ). '" />
-			<div class="spria_remove_image_wrap" style="'. esc_attr( $disstyle ) .'"><a href="#" class="spria_remove_image button" >' . esc_html__( 'Remove Image', 'rt-framework' ). '</a></div>
+			<input class="curlware_upload_image upload_button_'. esc_attr( $id ) .' button-primary" type="button" value="' . esc_attr__( 'Choose Image', 'rt-framework' ). '" />
+			<div class="curlware_remove_image_wrap" style="'. esc_attr( $disstyle ) .'"><a href="#" class="curlware_remove_image button" >' . esc_html__( 'Remove Image', 'rt-framework' ). '</a></div>
 			</div>
 			';
 		}

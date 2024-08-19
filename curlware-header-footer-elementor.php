@@ -31,8 +31,8 @@ require_once curlwareelements_DIR . '/inc/meta/curlware-postmeta.php';
 require_once curlwareelements_DIR . '/inc/activitions-methods/cw-active-methods.php';
 require_once curlwareelements_DIR . '/inc/meta/post-meta.php'; // Post Meta
 
-require_once curlwareelements_DIR . 'widgets/init.php';
-require_once curlwareelements_DIR . 'widgets/curlware-widget-fields.php';
+// require_once curlwareelements_DIR . 'widgets/init.php';
+// require_once curlwareelements_DIR . 'widgets/curlware-widget-fields.php';
 
 /**
  * Active Plugin Class Lade.
