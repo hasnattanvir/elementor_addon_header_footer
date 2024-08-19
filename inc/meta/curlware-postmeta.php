@@ -110,6 +110,11 @@ if( !class_exists( 'curlware_Postmeta' ) ){
 			}
 		}
 		public function save_single_meta( $field, $data, $post_id ){
+			// Verify nonce
+			if ( ! isset( $_POST['save_post_meta_nonce'] ) || ! wp_verify_nonce( $_POST['save_post_meta_nonce'], 'save_post_meta' ) ) {
+				return; // Nonce verification failed, exit the function
+			}
+		
 			if( isset( $_POST[ $field ] ) ){
 				$old = get_post_meta( $post_id, $field, true );
 				$new = $_POST[ $field ];

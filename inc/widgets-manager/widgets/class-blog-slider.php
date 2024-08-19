@@ -1138,7 +1138,7 @@ class BlogSlider extends Widget_Base {
         $posts_per_page = $settings['number'];
         $order_by = $settings['order_by'];
         $order = $settings['order'];
-        $unique = rand(2023,98748);
+        $unique = wp_rand(2023,98748);
         $read_more = $settings['read_more_text'];
         if( $slider_autoplay =='true' ){
             $slider_autoplay = 'autoplay: { ' ;

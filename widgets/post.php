@@ -50,7 +50,7 @@ class Post_Widget extends \WP_Widget {
 		<?php if ( $query->have_posts() ) 
 		:?>
             <div class="post-item sc-mb-35">
-                <?php echo wp_kses_stripslashes( $html ); ?>
+                <?php echo wp_kses_post( $html ); ?>
 					<?php while ( $query->have_posts() ) : $query->the_post();
     					$post_date = get_the_date( 'd M Y' );
     					?>
@@ -68,7 +68,7 @@ class Post_Widget extends \WP_Widget {
 
                                 <div class="calender-item">
                                     <i class="ri-calendar-fill"></i>
-                                    <span><?php echo $post_date; ?></span>
+                                    <span><?php echo esc_html($post_date); ?></span>
                                 </div>
                             </div>
                         </div>

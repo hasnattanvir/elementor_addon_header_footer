@@ -153,199 +153,21 @@ class Author_Bio extends Widget_Base {
 	 */
 	protected function register_page_title_style_controls() {
 		$this->start_controls_section(
-			'section_title_typography',
+			'section____general',
 			[
-				'label' => __( 'Title', 'curlware-header-footer-elementor' ),
-				'tab'   => Controls_Manager::TAB_STYLE,
-			]
-		);
-
-			$this->add_group_control(
-				Group_Control_Typography::get_type(),
-				[
-					'name'     => 'title_typography',
-					'global'   => [
-						'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
-					],
-					'selector' => '{{WRAPPER}} .elementor-heading-title, {{WRAPPER}} .sce-page-title a',
-				]
-			);
-
-			$this->add_control(
-				'title_color',
-				[
-					'label'     => __( 'Color', 'curlware-header-footer-elementor' ),
-					'type'      => Controls_Manager::COLOR,
-					'global'    => [
-						'default' => Global_Colors::COLOR_PRIMARY,
-					],
-					'selectors' => [
-						'{{WRAPPER}} .elementor-heading-title, {{WRAPPER}} .sce-page-title a' => 'color: {{VALUE}};',
-						'{{WRAPPER}} .sce-page-title-icon i'   => 'color: {{VALUE}};',
-						'{{WRAPPER}} .sce-page-title-icon svg' => 'fill: {{VALUE}};',
-					],
-				]
-			);
-
-			$this->add_group_control(
-				Group_Control_Text_Shadow::get_type(),
-				[
-					'name'     => 'title_shadow',
-					'selector' => '{{WRAPPER}} .elementor-heading-title',
-				]
-			);
-
-			$this->add_control(
-				'blend_mode',
-				[
-					'label'     => __( 'Blend Mode', 'curlware-header-footer-elementor' ),
-					'type'      => Controls_Manager::SELECT,
-					'options'   => [
-						''            => __( 'Normal', 'curlware-header-footer-elementor' ),
-						'multiply'    => __('Multiply', 'curlware-header-footer-elementor'),
-						'screen'      => __('Screen', 'curlware-header-footer-elementor'),
-						'overlay'     => __('Overlay', 'curlware-header-footer-elementor'),
-						'darken'      => __('Darken', 'curlware-header-footer-elementor'),
-						'lighten'     => __('Lighten', 'curlware-header-footer-elementor'),
-						'color-dodge' => __('Color Dodge', 'curlware-header-footer-elementor'),
-						'saturation'  => __('Saturation', 'curlware-header-footer-elementor'),
-						'color'       => __('Color', 'curlware-header-footer-elementor'),
-						'difference'  => __('Difference', 'curlware-header-footer-elementor'),
-						'exclusion'   => __('Exclusion', 'curlware-header-footer-elementor'),
-						'hue'         => __('Hue', 'curlware-header-footer-elementor'),
-						'luminosity'  => __('Luminosity', 'curlware-header-footer-elementor'),
-					],
-					'selectors' => [
-						'{{WRAPPER}} .elementor-heading-title' => 'mix-blend-mode: {{VALUE}}',
-					],
-				]
-			);
-			$this->add_control(
-			'highlight_color',
-			[
-				'type'      => Controls_Manager::COLOR,
-				'label'     => esc_html__( 'Highlight Title Color', 'staco-core' ),
-				'selectors' => [
-					'{{WRAPPER}} .section-title span, {{WRAPPER}} .sc-about-content-style .sc-auother-text span' => 'color: {{VALUE}}',  
-				],
-			]
-		);
-
-		$this->add_control(
-			'highlight_color_bg',
-			[
-				'type'      => Controls_Manager::COLOR,
-				'label'     => esc_html__( 'Highlight Title Background', 'staco-core' ),
-				'selectors' => [
-					'{{WRAPPER}} .section-title span' => 'background: {{VALUE}}',
-				],
-			]
-		);
-
-		$this->add_group_control(
-			Group_Control_Typography::get_type(),
-			[
-				'name'     => 'highlight_title_typo',
-				'label'    => esc_html__( 'Highlight Typography', 'staco-core' ),
-				'selector' => '{{WRAPPER}} .section-title span',
-			]
-		);
-
-		$this->add_control(
-			'highlight_border_radius',
-			[
-				'label' => esc_html__('Highlight Border Radius', 'scaddon'),
-				'type' => Controls_Manager::DIMENSIONS,
-				'size_units' => ['px', '%'],
-				'selectors' => [
-					'{{WRAPPER}} .section-title  span' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
-				],
-			]
-		);
-		$this->add_responsive_control(
-			'highlight_title_margin',
-			[
-				'label'              => __( 'Highlight Padding', 'staco-core' ),
-				'type'               => Controls_Manager::DIMENSIONS,
-				'size_units'         => [ 'px' ],
-				'default'            => [
-					'top'      => '',
-					'right'    => '',
-					'bottom'   => '',
-					'left'     => '',
-					'isLinked' => false,
-				],
-				'selectors'          => [
-					'{{WRAPPER}} .section-title  span' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
-				],
-			]
-		);
-		$this->add_responsive_control(
-			'highlight_title_pading',
-			[
-				'label'              => __( 'Highlight Margin', 'staco-core' ),
-				'type'               => Controls_Manager::DIMENSIONS,
-				'size_units'         => [ 'px' ],
-				'default'            => [
-					'top'      => '',
-					'right'    => '',
-					'bottom'   => '',
-					'left'     => '',
-					'isLinked' => false,
-				],
-				'selectors'          => [
-					'{{WRAPPER}} .section-title  span' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}}',
-				],
-			]
-		);
-
-		$this->end_controls_section();
-
-		$this->start_controls_section(
-			'section_icon',
-			[
-				'label'     => __( 'Icon', 'curlware-header-footer-elementor' ),
-				'tab'       => Controls_Manager::TAB_STYLE,
-				'condition' => [
-					'new_page_title_select_icon[value]!' => '',
-				],
-			]
-		);
-
-		$this->add_control(
-			'page_title_icon_color',
-			[
-				'label'     => __( 'Icon Color', 'curlware-header-footer-elementor' ),
-				'type'      => Controls_Manager::COLOR,
-				'global'    => [
-					'default' => Global_Colors::COLOR_PRIMARY,
-				],
-				'condition' => [
-					'new_page_title_select_icon[value]!' => '',
-				],
-				'default'   => '',
-				'selectors' => [
-					'{{WRAPPER}} .sce-page-title-icon i'   => 'color: {{VALUE}};',
-					'{{WRAPPER}} .sce-page-title-icon svg' => 'fill: {{VALUE}};',
-				],
+				'label' => __( 'General', 'curlware-header-footer-elementor' ),
 			]
 		);
 		$this->add_control(
-			'page_title_icons_hover_color',
-			[
-				'label'     => __( 'Icon Hover Color', 'curlware-header-footer-elementor' ),
-				'type'      => Controls_Manager::COLOR,
-				'condition' => [
-					'new_page_title_select_icon[value]!' => '',
-				],
-				'default'   => '',
-				'selectors' => [
-					'{{WRAPPER}} .sce-page-title-icon:hover i'   => 'color: {{VALUE}};',
-					'{{WRAPPER}} .sce-page-title-icon:hover svg' => 'fill: {{VALUE}};',
-				],
-			]
-		);
-		
+            'field____color',
+            [
+                'label' => esc_html__( 'Text Color', 'curlware-header-footer-elementor' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} ' => 'color: {{VALUE}}',
+                ],
+            ]
+        );
 
 		$this->end_controls_section();
 	}
@@ -358,30 +180,8 @@ class Author_Bio extends Widget_Base {
 	protected function render() {
 
 		$settings = $this->get_settings_for_display();
-		$this->add_inline_editing_attributes( 'page_title', 'basic' );
-		$heading_size_tag = Widgets_Loader::validate_html_tag( $settings['heading_tag'] );
-		?>		
-		<div class="section-title sce-page-title sce-page-title-wrapper elementor-widget-heading">
-			
-			<<?php echo $heading_size_tag; ?> class="elementor-heading-title elementor-size">
-				<?php
-				if( 'yes' != $settings['custom_page'] ){
-					if ( is_archive() ) {
-						echo wp_kses_post( get_the_archive_title() );
-					} elseif(is_search() ){
-						printf( __( 'Search Results for: %s', 'spria' ), '<span>' . get_search_query() . '</span>' );
-					} elseif( !is_front_page() && is_home() ){
-						printf( __( 'Blog ', 'spria' ));
-					}
-					else {
-						echo wp_kses_post( get_the_title() );
-					}
-				} else {
-					echo wp_kses_post( $settings['custom_page_title'] );
-				}
-				?>			 
-			</<?php echo $heading_size_tag; ?> > 
-		</div>
+		?>
+		<h1>Hello World</h1>
 		<?php
 
 	}

@@ -75,7 +75,7 @@ class scContacForm extends Widget_Base {
                 'label' => esc_html__( 'Chosse Your Form', 'curlware-header-footer-elementor' ),
                 'type' => Controls_Manager::SELECT,
                 'label_block' => true,
-                'options' => ['' => esc_html__( '', 'curlware-header-footer-elementor' ) ] + \rt_get_cf7_forms(),
+                'options' => ['' => esc_html__( 'Default', 'curlware-header-footer-elementor' ) ] + \rt_get_cf7_forms(),
             ]
         );
 		$this->end_controls_section();

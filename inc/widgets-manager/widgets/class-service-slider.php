@@ -856,7 +856,7 @@ class ServiceSlider extends Widget_Base {
         $prev_text = !empty($prev_text) ? $prev_text : '';
         $next_text = $settings['pcat_next_text'];
         $next_text = !empty($next_text) ? $next_text : '';
-        $unique = rand(2012,35120);
+        $unique = wp_rand(2012,35120);
         if( $slider_autoplay =='true' ){
             $slider_autoplay = 'autoplay: { ' ;
             $slider_autoplay .= 'delay: '.$interval;

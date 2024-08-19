@@ -85,7 +85,7 @@ class Accordion extends Widget_Base {
             [
                 'label' => esc_html__('Title', 'curlware-header-footer-elementor'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('', 'curlware-header-footer-elementor'),
+                'default' => esc_html__('Jhon Dev', 'curlware-header-footer-elementor'),
                 'label_block' => true,
                 'placeholder' => esc_html__( 'Name', 'curlware-header-footer-elementor' ),
                 'separator'   => 'before',
@@ -862,7 +862,7 @@ class Accordion extends Widget_Base {
     protected function render() {
         
         $settings = $this->get_settings_for_display();
-        $unique = rand(2012,35120);
+        $unique = wp_rand(2012,35120);
         if ( ! isset( $settings['icon'] ) && ! Icons_Manager::is_migration_allowed() ) {
             // @todo: remove when deprecated
             // added as bc in 2.6
@@ -903,8 +903,8 @@ class Accordion extends Widget_Base {
                 $selected_image    = !empty($item['selected_image']['url']) ? '<div class="icon_image"><img class="icon_img" src="'. $item['selected_image']['url']. '" alt="icon-image" /></div>' : '';
             ?>  
                 <div class="sc-accordion-item <?php echo esc_attr( $current); ?>">
-                    <div class="sc-accordion-header" id="heading<?php echo $i;?>">
-                        <div class="accordion-button <?php echo esc_attr($collapsed);?>" data-bs-toggle="collapse" data-bs-target="#collapse_<?php echo $i;?>" aria-controls="collapse_<?php echo $i;?>">
+                    <div class="sc-accordion-header" id="heading<?php echo esc_attr($i);?>">
+                        <div class="accordion-button <?php echo esc_attr($collapsed);?>" data-bs-toggle="collapse" data-bs-target="#collapse_<?php echo esc_attr($i);?>" aria-controls="collapse_<?php echo esc_attr($i);?>">
                             <?php if ( $has_icon ) : ?>
                                 <span class="elementor-accordion-icon elementor-accordion-icon-<?php echo esc_attr( $settings['icon_align'] ); ?>" aria-hidden="true">
                                     <?php

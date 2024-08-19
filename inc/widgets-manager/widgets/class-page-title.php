@@ -365,20 +365,21 @@ class Page_Title extends Widget_Base {
 			
 			<<?php echo $heading_size_tag; ?> class="elementor-heading-title elementor-size">
 				<?php
-				if( 'yes' != $settings['custom_page'] ){
-					if ( is_archive() ) {
-						echo wp_kses_post( get_the_archive_title() );
-					} elseif(is_search() ){
-						printf( __( 'Search Results for: %s', 'spria' ), '<span>' . get_search_query() . '</span>' );
-					} elseif( !is_front_page() && is_home() ){
-						printf( __( 'Blog ', 'spria' ));
-					}
-					else {
-						echo wp_kses_post( get_the_title() );
+				if ('yes' != $settings['custom_page']) {
+					if (is_archive()) {
+						echo wp_kses_post(get_the_archive_title());
+					} elseif (is_search()) {
+						// Translators: %s is the search query.
+						printf( __( 'Search Results for: %s', 'curlware-header-footer-elementor' ), '<span>' . get_search_query() . '</span>' );
+					} elseif (!is_front_page() && is_home()) {
+						printf( __( 'Blog ', 'curlware-header-footer-elementor' ));
+					} else {
+						echo wp_kses_post(get_the_title());
 					}
 				} else {
-					echo wp_kses_post( $settings['custom_page_title'] );
+					echo wp_kses_post($settings['custom_page_title']);
 				}
+				
 				?>			 
 			</<?php echo $heading_size_tag; ?> > 
 		</div>

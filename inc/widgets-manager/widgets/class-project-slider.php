@@ -784,7 +784,7 @@ class ProjectSlider extends Widget_Base {
         $next_text = $settings['pcat_next_text'];
         $next_text = !empty($next_text) ? $next_text : '';
         $icon_onoff = $settings["icon_onoff"];
-        $unique = rand(2023,78963);
+        $unique = wp_rand(2023,78963);
 
 
 
