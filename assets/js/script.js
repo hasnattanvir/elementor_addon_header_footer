@@ -2,7 +2,6 @@
 (function ($) {
 	jQuery(document).ready(function($){
 		
-
 		// ColorPicker, Datepicker, Timepicker
 		$(".rt-metabox-picker").each(function() {
 			// Exclude first hidden repeater field
@@ -111,70 +110,70 @@
 		});
 
 		// Image upload field
-		$("body").on('click', '.curlware_upload_image', function(event) {
-			var btnClicked = $(this);
-			alert("hello");
-			var custom_uploader = wp.media({
-				multiple: false
-			}).on("select", function () {
-				var attachment = custom_uploader.state().get("selection").first().toJSON();
-				btnClicked.closest(".curlware_metabox_image").find(".custom_upload_image").val(attachment.id).trigger('change');
-				btnClicked.closest(".curlware_metabox_image").find(".custom_preview_image").attr("src", attachment.url).show();
-				btnClicked.closest(".curlware_metabox_image").find(".curlware_remove_image_wrap").show();
+		// $("body").on('click', '.curlware_upload_image', function(event) {
+		// 	var btnClicked = $(this);
+		// 	alert("hello");
+		// 	var custom_uploader = wp.media({
+		// 		multiple: false
+		// 	}).on("select", function () {
+		// 		var attachment = custom_uploader.state().get("selection").first().toJSON();
+		// 		btnClicked.closest(".curlware_metabox_image").find(".custom_upload_image").val(attachment.id).trigger('change');
+		// 		btnClicked.closest(".curlware_metabox_image").find(".custom_preview_image").attr("src", attachment.url).show();
+		// 		btnClicked.closest(".curlware_metabox_image").find(".curlware_remove_image_wrap").show();
 
-			}).open();
-		});
-		$("body").on('click', '.spria_remove_image', function(event) {
-			event.preventDefault();
-			remove_uploaded_image($(this).closest(".spria_metabox_image"));
-			return false;
-		});
+		// 	}).open();
+		// });
+		// $("body").on('click', '.spria_remove_image', function(event) {
+		// 	event.preventDefault();
+		// 	remove_uploaded_image($(this).closest(".spria_metabox_image"));
+		// 	return false;
+		// });
 
 		// Gallery upload field
-		var rtMetaGalleryFrame = wp.media({multiple: true});
-		var rtMetaGalleryBtn;
+		// var rtMetaGalleryFrame = wp.media({multiple: true});
+		// var rtMetaGalleryBtn;
 
-		$("body").on('click', '.spria_upload_gallery', function(event) {
-			rtMetaGalleryBtn = $(this);
-			rtMetaGalleryFrame.open();
-		});
-		$("body").on('click', '.spria_remove_gallery', function(event) {
-			event.preventDefault();
-			$(this).closest(".spria_metabox_gallery").find(".custom_upload_image").val("");
-			$(this).closest(".spria_metabox_gallery").find(".custom_preview_images").html('');
-			$(this).closest(".spria_metabox_gallery").find(".spria_remove_gallery").hide();
-			return false;
-		});
+		// $("body").on('click', '.spria_upload_gallery', function(event) {
+		// 	rtMetaGalleryBtn = $(this);
+		// 	rtMetaGalleryFrame.open();
+		// });
+		// $("body").on('click', '.spria_remove_gallery', function(event) {
+		// 	event.preventDefault();
+		// 	$(this).closest(".spria_metabox_gallery").find(".custom_upload_image").val("");
+		// 	$(this).closest(".spria_metabox_gallery").find(".custom_preview_images").html('');
+		// 	$(this).closest(".spria_metabox_gallery").find(".spria_remove_gallery").hide();
+		// 	return false;
+		// });
 
-		rtMetaGalleryFrame.on("select", function () {
-			var selection  = rtMetaGalleryFrame.state().get('selection');
-			var ids  = [];
+		// rtMetaGalleryFrame.on("select", function () {
+		// 	var selection  = rtMetaGalleryFrame.state().get('selection');
+		// 	var ids  = [];
 
-			rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_preview_images").html('');
+		// 	rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_preview_images").html('');
 
-			selection.map( function( attachment ) {
-				attachment = attachment.toJSON();
-				ids.push(attachment.id);
-				rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_preview_images").append("<img src=" +attachment.url+">");
-			});
+		// 	selection.map( function( attachment ) {
+		// 		attachment = attachment.toJSON();
+		// 		ids.push(attachment.id);
+		// 		rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_preview_images").append("<img src=" +attachment.url+">");
+		// 	});
 
-			rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_upload_image").val(ids);
-			rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".spria_remove_gallery").show();
-		});
+		// 	rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_upload_image").val(ids);
+		// 	rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".spria_remove_gallery").show();
+		// });
 
-		rtMetaGalleryFrame.on('open',function(event) {
-			var selection = rtMetaGalleryFrame.state().get('selection');
-			var ids = rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_upload_image").val().split(',');
+		// rtMetaGalleryFrame.on('open',function(event) {
+		// 	var selection = rtMetaGalleryFrame.state().get('selection');
+		// 	var ids = rtMetaGalleryBtn.closest(".spria_metabox_gallery").find(".custom_upload_image").val().split(',');
 
-			ids.forEach(function(id) {
-				var attachment = wp.media.attachment(id);
-				attachment.fetch();
-				selection.add( attachment ? [ attachment ] : [] );
-			});
-		});
+		// 	ids.forEach(function(id) {
+		// 		var attachment = wp.media.attachment(id);
+		// 		attachment.fetch();
+		// 		selection.add( attachment ? [ attachment ] : [] );
+		// 	});
+		// });
 
 		// File upload field
-		$("body").on('click', '.spria_upload_file', function(event) {
+		/**$("body").on('click', '.spria_upload_file', function(event) {
 			var btnClicked = $(this);
 			var custom_uploader = wp.media({
 				multiple: false
@@ -193,7 +192,7 @@
 			$(this).closest(".spria_metabox_file").find(".custom_preview_file").attr("href", "#").html("").hide();
 			$(this).closest(".spria_metabox_file").find(".spria_remove_file_wrap").hide();
 			return false;
-		});
+		});**/
 	});
 
 	function executePickers($item) {
@@ -216,11 +215,11 @@
 		}
 	}
 
-	function remove_uploaded_image($item){
-		$item.find(".custom_upload_image").val("").trigger('change');
-		$item.find(".custom_preview_image").attr("src", "").hide();
-		$item.find(".spria_remove_image_wrap").hide();
-	}
+	// function remove_uploaded_image($item){
+	// 	$item.find(".custom_upload_image").val("").trigger('change');
+	// 	$item.find(".custom_preview_image").attr("src", "").hide();
+	// 	$item.find(".spria_remove_image_wrap").hide();
+	// }
 
 	/* Taxonomy Fields adding items ajax fix */
 	$( document ).ajaxComplete( function( event, request, options ) {
@@ -245,9 +244,9 @@
 			}
 
 			// Image upload field
-			$("#addtag .spria_metabox_image").each(function() {
-				remove_uploaded_image($(this));
-			});
+			// $("#addtag .spria_metabox_image").each(function() {
+			// 	remove_uploaded_image($(this));
+			// });
 
 			// Number
 			$('#addtag input[type="number"]').val('');

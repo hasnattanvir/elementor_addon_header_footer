@@ -37,13 +37,19 @@ class Custom_Widgets_Init {
 	/* - Add a custom class in every widget
 	/*====================================================================*/ 
 	public function spria_widget_form_extend( $instance, $widget ) {
-		$row = '';
-		if ( !isset($instance['classes']) )
-			$instance['classes'] = null;   
-			$row .= "<p><label>Custom Class:</label>\t<input type='text' name='widget-{$widget->id_base}[{$widget->number}][classes]' id='widget-{$widget->id_base}-{$widget->number}-classes' class='widefat' value='{$instance['classes']}'/>\n";
-			$row .= "</p>\n";
-			echo wp_kses_post($row);
-			return $instance;
+		// Check if 'classes' key exists in the instance array, if not, initialize it with a default value
+		if ( !isset($instance['classes']) ) {
+			$instance['classes'] = ''; // Set a default value, e.g., an empty string
+		}
+	
+		// Build the form row for the custom class input
+		$row = "<p><label>Custom Class:</label>\t<input type='text' name='widget-{$widget->id_base}[{$widget->number}][classes]' id='widget-{$widget->id_base}-{$widget->number}-classes' class='widefat' value='" . esc_attr($instance['classes']) . "'/>\n";
+		$row .= "</p>\n";
+	
+		// Output the form row
+		echo wp_kses_post($row);
+	
+		return $instance;
 	}
 
 	public function spria_widget_update( $instance, $new_instance ) {

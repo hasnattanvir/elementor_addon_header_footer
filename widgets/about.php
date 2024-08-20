@@ -12,8 +12,8 @@ class About_Widget extends \WP_Widget {
 		$id = curlwareelements_PREFIX . '_about';
 		parent::__construct(
             $id, // Base ID
-            esc_html__( 'A1: About', 'spria-core' ), // Name
-            array( 'description' => esc_html__( 'spria: About Widget', 'spria-core' )
+            esc_html__( 'A1: About', 'curlware-header-footer-elementor' ), // Name
+            array( 'description' => esc_html__( 'CW: About Widget', 'curlware-header-footer-elementor' )
         ) );
 	}
 
@@ -63,19 +63,19 @@ class About_Widget extends \WP_Widget {
 
 		$fields = array(
 			'title'       => array(
-				'label'   => esc_html__( 'Title', 'spria-core' ),
+				'label'   => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
 				'type'    => 'text',
 			),
 			'logo'       => array(
-				'label'   => esc_html__( 'Logo Image', 'spria-core' ),
+				'label'   => esc_html__( 'Logo Image', 'curlware-header-footer-elementor' ),
 				'type'    => 'image',
 			),
 			'desc'        => array(
-				'label'   => esc_html__( 'Description', 'spria-core' ),
+				'label'   => esc_html__( 'Description', 'curlware-header-footer-elementor' ),
 				'type'    => 'textarea',
 			),
 		);
 
-		spria_Widget_Fields::display( $fields, $instance, $this );
+		Curlware_Widget_Fields::display( $fields, $instance, $this );
 	}
 }
