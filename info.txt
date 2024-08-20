@@ -13,4 +13,3 @@ socoders_elements_footer_widget_function{
 4. admin/class-curlware-admin.php
 - inti page function add new setting
 - make a class back block function ( this function return admin dashboard control icon)
-test
