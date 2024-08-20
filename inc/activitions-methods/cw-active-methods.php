@@ -1,3 +1,4 @@
+
 <?php
 
 defined( 'ABSPATH' ) || die();
@@ -38,6 +39,7 @@ add_action('plugins_loaded', 'cw_check_and_handle_theme_for_plugin');
 if (! function_exists('cw_check_and_handle_theme_for_plugin')){
     function cw_check_and_handle_theme_for_plugin() {
  
+<<<<<<< HEAD
         if ( ! function_exists('is_plugin_active')) {
             include_once(ABSPATH . 'wp-admin/includes/plugin.php');
         }
@@ -58,6 +60,22 @@ if (! function_exists('cw_check_and_handle_theme_for_plugin')){
                     deactivate_plugins($cw_hfa_plugin);
                 }
                 add_action('admin_notices', 'notify_admin_to_switch_theme');
+=======
+    if (!function_exists('is_plugin_active')) {
+        include_once(ABSPATH . 'wp-admin/includes/plugin.php');
+    }
+
+    $elementor_plugin = 'elementor/elementor.php'; 
+    $cw_hfa_plugin = 'elementor_addon_header_footer/curlware-header-footer-elementor.php';
+    $current_theme = wp_get_theme();
+
+    if (is_plugin_active($elementor_plugin)) {
+        
+        if ($current_theme->get('Name') === 'Tanvir Dev') {
+           
+            if (!is_plugin_active($cw_hfa_plugin)) {
+                activate_plugin($cw_hfa_plugin);
+>>>>>>> 008168b2d26d0817667c5d3b352288835af29de9
             }
         } else {
           
@@ -96,9 +114,16 @@ if( ! function_exists('notify_admin_to_activate_elementor') ){
 if( ! function_exists('remove_plugin_menu_items') ){
     function remove_plugin_menu_items() {
 	
+<<<<<<< HEAD
         if (function_exists('remove_menu_page')) {
             remove_menu_page('elementor-hf'); 
         }
     }
     
 }
+=======
+	if (function_exists('remove_menu_page')) {
+		remove_menu_page('elementor-hf'); 
+	}
+}
+>>>>>>> 008168b2d26d0817667c5d3b352288835af29de9
