@@ -474,7 +474,7 @@ class WorkingProcess extends Widget_Base {
 			<?php } ?>
 
             <?php if ('style2' == $settings['process_style']) {  ?>
-                <div class="sc-process-system d-flex align-items-center reverse_style_<?php echo $settings['reverse_style']; ?>">
+                <div class="sc-process-system d-flex align-items-center reverse_style_<?php echo esc_attr( $settings['reverse_style']); ?>">
 					<?php if ( '' !== $settings['icon']['value'] ) { ?>
 						<div class="process-icon">
 							<i><?php \Elementor\Icons_Manager::render_icon( $settings['icon'], [ 'aria-hidden' => 'true' ] ); ?></i>	

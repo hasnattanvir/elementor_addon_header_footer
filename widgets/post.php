@@ -10,8 +10,8 @@ class Post_Widget extends \WP_Widget {
 		$id = curlwareelements_PREFIX . '_post';
 		parent::__construct(
             $id, // Base ID
-            esc_html__( 'A3: Posts', 'spria-core' ), // Name
-            array( 'description' => esc_html__( 'spria: Posts Widget', 'spria-core' )
+            esc_html__( 'A3: Posts', 'curlware-header-footer-elementor' ), // Name
+            array( 'description' => esc_html__( 'CW: Posts Widget', 'curlware-header-footer-elementor' )
         ) );
 	}
 
@@ -50,14 +50,14 @@ class Post_Widget extends \WP_Widget {
 		<?php if ( $query->have_posts() ) 
 		:?>
             <div class="post-item sc-mb-35">
-                <?php echo wp_kses_stripslashes( $html ); ?>
+                <?php echo wp_kses_post( $html ); ?>
 					<?php while ( $query->have_posts() ) : $query->the_post();
     					$post_date = get_the_date( 'd M Y' );
     					?>
                         <div class="recent-content d-flex align-items-center sc-mb-13">
                             <?php if ( $layout == 2 && has_post_thumbnail() ) { ?>
                             <div class="recent-image">
-                                <?php the_post_thumbnail( 'spria_small' ); ?>
+                                <?php the_post_thumbnail( 'thumbnail' ); ?>
                             </div>
                             <?php } ?>
 
@@ -68,14 +68,14 @@ class Post_Widget extends \WP_Widget {
 
                                 <div class="calender-item">
                                     <i class="ri-calendar-fill"></i>
-                                    <span><?php echo $post_date; ?></span>
+                                    <span><?php echo esc_html($post_date); ?></span>
                                 </div>
                             </div>
                         </div>
 					<?php endwhile;?>
 	        </div>
 		<?php else: ?>
-			<div><?php esc_html_e( 'Currently there are no posts to display', 'spria-core' ); ?></div>
+			<div><?php esc_html_e( 'Currently there are no posts to display', 'curlware-header-footer-elementor' ); ?></div>
 		<?php endif;?>
 		<?php wp_reset_postdata();?>
 		<?php
@@ -106,46 +106,46 @@ class Post_Widget extends \WP_Widget {
 		$instance = wp_parse_args( (array) $instance, $defaults );
 
 		$categories = get_categories();
-		$category_dropdown = array( '0' => esc_html__( 'All Categories', 'spria-core' ) );
+		$category_dropdown = array( '0' => esc_html__( 'All Categories', 'curlware-header-footer-elementor' ) );
 
 		foreach ( $categories as $category ) {
 			$category_dropdown[$category->term_id] = $category->name;
 		}
 
 		$orderby = array(
-			'date'        => esc_html__( 'Date (Recents comes first)', 'spria-core' ),
-			'title'       => esc_html__( 'Title', 'spria-core' ),
-			'menu_order'  => esc_html__( 'Custom Order (Available via Order field inside Page Attributes box)', 'spria-core' ),
+			'date'        => esc_html__( 'Date (Recents comes first)', 'curlware-header-footer-elementor' ),
+			'title'       => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
+			'menu_order'  => esc_html__( 'Custom Order (Available via Order field inside Page Attributes box)', 'curlware-header-footer-elementor' ),
 		);
 
 		$fields = array(
 			'title'       => array(
-				'label'   => esc_html__( 'Title', 'spria-core' ),
+				'label'   => esc_html__( 'Title', 'curlware-header-footer-elementor' ),
 				'type'    => 'text',
 			),
 			'cat'        => array(
-				'label'   => esc_html__( 'Category', 'spria-core' ),
+				'label'   => esc_html__( 'Category', 'curlware-header-footer-elementor' ),
 				'type'    => 'select',
 				'options' => $category_dropdown,
 			),
 			'orderby' => array(
-				'label'   => esc_html__( 'Order by', 'spria-core' ),
+				'label'   => esc_html__( 'Order by', 'curlware-header-footer-elementor' ),
 				'type'    => 'select',
 				'options' => $orderby,
 			),
 			'number' => array(
-				'label'   => esc_html__( 'Number of Post', 'spria-core' ),
+				'label'   => esc_html__( 'Number of Post', 'curlware-header-footer-elementor' ),
 				'type'    => 'number',
 			),
 			'layout'      => array(
-				'label'   => esc_html__( 'Thumbnail Image', 'spria-core' ),
+				'label'   => esc_html__( 'Thumbnail Image', 'curlware-header-footer-elementor' ),
 				'type'    => 'select',
 				'options' => array(
-					'1' => esc_html__( 'Without Thumbnail', 'spria-core' ),
-					'2' => esc_html__( 'With Thumbnail', 'spria-core' ),
+					'1' => esc_html__( 'Without Thumbnail', 'curlware-header-footer-elementor' ),
+					'2' => esc_html__( 'With Thumbnail', 'curlware-header-footer-elementor' ),
 				),
 			),
 		);
-		spria_Widget_Fields::display( $fields, $instance, $this );
+		Curlware_Widget_Fields::display( $fields, $instance, $this );
 	}
 }

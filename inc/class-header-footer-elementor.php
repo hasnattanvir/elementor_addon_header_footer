@@ -367,7 +367,7 @@ class Header_Footer_Elementor {
 	 * Prints the Header content.
 	 */
 	public static function get_header_content() {
-		echo self::$elementor_instance->frontend->get_builder_content_for_display( get_socoders_elements_header_id() );
+		 echo self::$elementor_instance->frontend->get_builder_content_for_display( get_socoders_elements_header_id() );
 	}
 
 	/**

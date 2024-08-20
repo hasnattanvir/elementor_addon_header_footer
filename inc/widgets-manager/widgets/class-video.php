@@ -250,7 +250,7 @@ class Video extends Widget_Base {
 	protected function render() {	
 	
 		$settings = $this->get_settings_for_display();	
-		$rand = rand(12, 3330);
+		$rand = wp_rand(12, 3330);
 
 		$this->add_inline_editing_attributes( 'description', 'basic' );
         $this->add_render_attribute( 'description', 'class', 'video-desc' ); 
