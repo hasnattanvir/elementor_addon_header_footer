@@ -1,4 +1,3 @@
-
 <?php
 
 defined( 'ABSPATH' ) || die();
@@ -44,7 +43,7 @@ function cw_check_and_handle_theme_for_plugin() {
 
     if (is_plugin_active($elementor_plugin)) {
         
-        if ($current_theme->get('Name') === 'Tanvir Dev') {
+        if ($current_theme->get('Name') === 'curlware') {
            
             if (!is_plugin_active($cw_hfa_plugin)) {
                 activate_plugin($cw_hfa_plugin);
@@ -70,10 +69,16 @@ if(!function_exists('notify_admin_to_switch_theme')){
         ?>
         <div class="notice notice-warning is-dismissible">
             <p><?php echo esc_html('The "Curlware Header Footer Elementor Addon" plugin is only active when the "Curlware" theme is active. Please switch back to the "Curlware" theme to use this plugin.', 'curlware-header-footer-elementor'); ?></p>
+            <a href="<?php echo esc_url(admin_url('themes.php')); ?>" class="button-primary">
+                <?php echo esc_html('Switch to Curlware Theme'); ?>
+            </a>
+
         </div> 
         <?php
     }
 }
+
+
 
 
 function notify_admin_to_activate_elementor() {
