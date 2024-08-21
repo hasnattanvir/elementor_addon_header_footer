@@ -900,3 +900,19 @@ span.dashicons.dashicons-update.sce-loader {
   color: #fff;
   padding: 6px 25px;
 }
+
+
+
+/* Theme plugin switch notice box style */
+.cw-active-warning-notice{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+}
+.cw-active-warning-notice p{
+    margin: 0;
+}
+.cw-active-warning-notice a{
+    width: fit-content;
+}
