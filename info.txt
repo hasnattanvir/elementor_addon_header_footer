@@ -1,7 +1,7 @@
 1. curlware-header-footer-elementor.php
-cw_elements_footer_widget_function{
-    register new one
-}
+    cw_elements_footer_widget_function{
+        register new one
+    }
 
 2. go widgets-manager/widgets
 - create new one class-authorbio.php
