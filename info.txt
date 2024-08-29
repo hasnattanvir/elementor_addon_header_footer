@@ -1,5 +1,5 @@
 1. curlware-header-footer-elementor.php
-socoders_elements_footer_widget_function{
+cw_elements_footer_widget_function{
     register new one
 }
 

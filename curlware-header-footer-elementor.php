@@ -39,7 +39,7 @@ require_once curlwareelements_DIR . '/inc/meta/post-meta.php'; // Post Meta
  */
 function curlwareelements_plugin_activation() {
 
-	$footer_widget = socoders_elements_footer_widget_function();
+	$footer_widget = cw_elements_footer_widget_function();
 	update_option( 'socoders_elements_plugin_is_activated', 'yes' );
 	update_option( 'curlwareelements_addon_option', $footer_widget );
 }
@@ -51,7 +51,7 @@ function curlwareelements_init() {
 	Header_Footer_Elementor::instance();
 }
 add_action( 'plugins_loaded', 'curlwareelements_init' );
-function socoders_elements_footer_widget_function() {
+function cw_elements_footer_widget_function() {
 	$array = [
         'curlwareelements_copyright' => 'curlwareelements_copyright',
         'curlwareelements_pricing_switcher' => 'curlwareelements_pricing_switcher',
@@ -81,8 +81,6 @@ function socoders_elements_footer_widget_function() {
 		'curlwareelements_ProjectGrid' => 'curlwareelements_ProjectGrid',
 		'curlwareelements_SCoffcanvas' => 'curlwareelements_SCoffcanvas',
 		'curlwareelements_SC_AuthorBiopic' => 'curlwareelements_SC_AuthorBiopic',
-
-
 	];
 	return $array;
 }

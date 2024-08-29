@@ -15,6 +15,11 @@ class socoders_elements_Admin {
 	 */
 	private static $_instance = null;
 
+    /**
+	 * Declare the property
+	 */
+    public $curlwareelements_options;
+
 	/**
 	 * Instance of socoders_elements_Admin
 	 */
